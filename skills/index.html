@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EthioSkills Intelligence — Labour Market Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="./vendor/chart.umd.js"></script>
+<style>
+  :root {
+    --ink: #20242B;
+    --ink-soft: #4B5259;
+    --paper: #FAF7F0;
+    --paper-raised: #FFFFFF;
+    --line: #E3DDCE;
+    --navy: #1F3B57;
+    --navy-soft: #2E4B6B;
+    --gold: #B5892B;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Source Sans 3", sans-serif;
+  }
+  .wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 28px 20px 40px;
+  }
+  header.page-head {
+    margin-bottom: 22px;
+  }
+  h1 {
+    font-family: "Fraunces", serif;
+    font-weight: 600;
+    font-size: clamp(22px, 4vw, 30px);
+    margin: 0 0 6px;
+    color: var(--navy);
+  }
+  .sub {
+    color: var(--ink-soft);
+    font-size: 14px;
+    margin: 0;
+  }
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 20px 0 22px;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 12px;
+  }
+  .tab-btn {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 13.5px;
+    font-weight: 600;
+    padding: 7px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: var(--paper-raised);
+    color: var(--ink-soft);
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+  }
+  .tab-btn:hover { border-color: var(--navy-soft); color: var(--navy); }
+  .tab-btn.active {
+    background: var(--navy);
+    border-color: var(--navy);
+    color: #fff;
+  }
+  .stat-row {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 22px;
+    flex-wrap: wrap;
+  }
+  .stat-tile {
+    background: var(--paper-raised);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 14px 18px;
+    min-width: 140px;
+  }
+  .stat-tile .num {
+    font-family: "Fraunces", serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--navy);
+    line-height: 1.1;
+  }
+  .stat-tile .label {
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    margin-top: 3px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .panel {
+    background: var(--paper-raised);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 18px 20px 12px;
+  }
+  .panel h2 {
+    font-family: "Fraunces", serif;
+    font-size: 16.5px;
+    font-weight: 600;
+    color: var(--ink);
+    margin: 0 0 2px;
+  }
+  .panel .panel-sub {
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    margin: 0 0 12px;
+  }
+  .chart-holder {
+    position: relative;
+  }
+  .empty-state {
+    padding: 30px 10px;
+    text-align: center;
+    color: var(--ink-soft);
+    font-size: 13.5px;
+  }
+  .method-note {
+    font-size: 11.5px;
+    color: var(--ink-soft);
+    margin: 4px 2px 0;
+  }
+  .panel-sub.clickable-hint {
+    color: var(--gold);
+    font-weight: 600;
+  }
+  .drilldown {
+    display: none;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px dashed var(--line);
+  }
+  .drilldown-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13.5px;
+    color: var(--navy);
+  }
+  .drilldown-close {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: var(--ink-soft);
+    font-size: 16px;
+    line-height: 1;
+    padding: 2px 6px;
+  }
+  .drilldown-close:hover { color: var(--ink); }
+  .spec-list {
+    list-style: none;
+    margin: 6px 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .spec-list li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    padding: 5px 8px;
+    background: var(--paper);
+    border-radius: 6px;
+  }
+  .spec-count {
+    font-weight: 600;
+    color: var(--navy);
+  }
+  .job-list { list-style:none; margin:8px 0 0; padding:0; display:flex; flex-direction:column; gap:5px; max-height:340px; overflow-y:auto; }
+  .job-list li { font-size:13px; padding:6px 8px; background:var(--paper); border-radius:6px; display:flex; flex-direction:column; gap:1px; }
+  .job-list a { color:var(--navy); font-weight:600; text-decoration:none; }
+  .job-list a:hover { text-decoration:underline; }
+  .job-meta { font-size:11.5px; color:var(--ink-soft); }
+  .note { font-size:12px; color:var(--ink-soft); margin:10px 0 0; line-height:1.45; }
+  .tbl-wrap { overflow-x:auto; margin-top:8px; }
+  table.x { border-collapse:collapse; width:100%; font-size:12.5px; }
+  table.x th, table.x td { padding:5px 7px; text-align:right; border-bottom:1px solid var(--line); white-space:nowrap; }
+  table.x th:first-child, table.x td:first-child { text-align:left; white-space:normal; min-width:180px; }
+  table.x th { color:var(--ink-soft); font-weight:600; }
+  .filters { display:flex; flex-wrap:wrap; gap:8px; margin:8px 0; }
+  .filters select { font:inherit; font-size:13px; padding:5px 8px; border:1px solid var(--line); border-radius:6px; background:#fff; max-width:100%; }
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  @media (min-width: 640px) {
+    .two-col { grid-template-columns: 1fr 1fr; }
+  }
+  footer.page-foot {
+    margin-top: 26px;
+    padding-top: 14px;
+    border-top: 1px solid var(--line);
+    font-size: 11.5px;
+    color: var(--ink-soft);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  @media (min-width: 760px) {
+    .grid { grid-template-columns: 1fr 1fr; }
+    .panel.wide { grid-column: 1 / -1; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="page-head">
+    <p class="sub" style="text-transform:uppercase; letter-spacing:0.07em; font-weight:700; font-size:12px; color:var(--navy-soft); margin:0 0 4px;">EthioSkills Intelligence</p>
+    <h1>Ethiopia Labour Market Dashboard</h1>
+    <p class="sub">Skills, education levels, sectors, job roles and locations in demand. Tracked automatically from live job postings.</p>
+    <p class="sub" style="margin-top:8px;">
+      Weekly Intelligence Report:
+      <a href="./reports/weekly-intelligence-report.html" style="color:var(--navy-soft); font-weight:600; text-decoration:none;">HTML</a>
+      &nbsp;/&nbsp;
+      <a href="./reports/weekly-intelligence-report.pdf" style="color:var(--navy-soft); font-weight:600; text-decoration:none;">PDF</a>
+      &nbsp;&middot;&nbsp;
+      Monthly Intelligence Report:
+      <a href="./reports/monthly-intelligence-report.html" style="color:var(--navy-soft); font-weight:600; text-decoration:none;">HTML</a>
+      &nbsp;/&nbsp;
+      <a href="./reports/monthly-intelligence-report.pdf" style="color:var(--navy-soft); font-weight:600; text-decoration:none;">PDF</a>
+    </p>
+  </header>
+
+  <div class="tabs" id="tabs"></div>
+  <div class="stat-row" id="statRow"></div>
+
+  <div class="panel wide" style="margin-bottom:20px;">
+    <h2>Posting Trends Over Time</h2>
+    <p class="panel-sub" id="trendsSub">How many new postings were first tracked per period, across the whole history so far.</p>
+    <div class="tabs" id="trendTabs" style="margin:0 0 14px; border-bottom:none; padding-bottom:0;"></div>
+    <div class="chart-holder"><canvas id="trendsChart" height="220"></canvas></div>
+  </div>
+
+  <div class="grid">
+    <div class="panel wide">
+      <h2>Most Requested Skills</h2>
+      <p class="panel-sub" id="skillsSub"></p>
+      <div class="chart-holder"><canvas id="skillsChart" height="260"></canvas></div>
+    </div>
+    <div class="panel">
+      <h2>Education Level Required</h2>
+      <p class="panel-sub" id="eduSub"></p>
+      <div class="chart-holder"><canvas id="eduChart" height="220"></canvas></div>
+      <div class="drilldown" id="eduSpecialization"></div>
+      <div class="drilldown" id="eduSkills"></div>
+    </div>
+    <div class="panel">
+      <h2>Experience Required</h2>
+      <p class="panel-sub" id="expSub"></p>
+      <div class="chart-holder"><canvas id="expChart" height="220"></canvas></div>
+      <div class="drilldown" id="expSkills"></div>
+    </div>
+    <div class="panel">
+      <h2>Salary / Pay (Monthly ETB)</h2>
+      <p class="panel-sub" id="salarySub"></p>
+      <div class="chart-holder"><canvas id="salaryChart" height="220"></canvas></div>
+      <div class="drilldown" id="salarySkills"></div>
+    </div>
+    <div class="panel">
+      <h2>Most Active Sectors</h2>
+      <p class="panel-sub" id="catSub"></p>
+      <div class="chart-holder"><canvas id="catChart" height="220"></canvas></div>
+      <div class="drilldown" id="catSkills"></div>
+    </div>
+    <div class="panel">
+      <h2>Sector Subcategories</h2>
+      <p class="panel-sub" id="subCatSub"></p>
+      <div class="chart-holder"><canvas id="subCatChart" height="220"></canvas></div>
+      <div class="drilldown" id="subCatSkills"></div>
+      <p class="note" id="subCatNote"></p>
+    </div>
+    <div class="panel">
+      <h2>Job Roles</h2>
+      <p class="panel-sub" id="jobsSub"></p>
+      <div class="chart-holder"><canvas id="jobsChart" height="220"></canvas></div>
+      <div class="drilldown" id="jobsSkills"></div>
+    </div>
+    <div class="panel">
+      <h2>Locations</h2>
+      <p class="panel-sub" id="locSub"></p>
+      <div class="chart-holder"><canvas id="locChart" height="220"></canvas></div>
+      <div class="drilldown" id="locSkills"></div>
+      <p class="note" id="locNote"></p>
+    </div>
+    <div class="panel">
+      <h2>Job Sources</h2>
+      <p class="panel-sub" id="sourcesSub"></p>
+      <div class="chart-holder"><canvas id="sourcesChart" height="220"></canvas></div>
+      <div class="drilldown" id="sourcesSkills"></div>
+    </div>
+    <div class="panel wide">
+      <h2>Salary transparency</h2>
+      <p class="panel-sub" id="salTranSub"></p>
+      <div class="tabs" id="salTabs" style="margin:0 0 10px; border-bottom:none; padding-bottom:0;"></div>
+      <div class="chart-holder"><canvas id="salTranChart" height="200"></canvas></div>
+      <div class="tbl-wrap" id="salTranTable"></div>
+      <p class="note" id="salTranNote"></p>
+    </div>
+    <div class="panel wide">
+      <h2>Education and experience by sector and role</h2>
+      <p class="panel-sub">Share of postings stating each requirement. Percentages use only postings that state the item; the known columns show how many that is.</p>
+      <div class="tabs" id="crossTabs" style="margin:0 0 10px; border-bottom:none; padding-bottom:0;"></div>
+      <div class="tbl-wrap" id="crossTable"></div>
+      <p class="note" id="crossNote"></p>
+    </div>
+    <div class="panel wide">
+      <h2>Open vacancies</h2>
+      <p class="panel-sub" id="openSub"></p>
+      <div class="filters">
+        <select id="fSub"></select><select id="fReg"></select><select id="fSrc"></select><select id="fRole"></select>
+      </div>
+      <ul class="job-list" id="openList"></ul>
+    </div>
+    <div class="panel wide">
+      <h2>Top Hirers</h2>
+      <p class="panel-sub" id="hirersSub"></p>
+      <div class="two-col">
+        <div>
+          <p class="panel-sub" style="font-weight:600; color:var(--ink);">By individual employer</p>
+          <div class="chart-holder"><canvas id="employersChart" height="220"></canvas></div>
+          <div class="drilldown" id="employersSkills"></div>
+        </div>
+        <div>
+          <p class="panel-sub" style="font-weight:600; color:var(--ink);">By type (Private, Public or NGO)</p>
+          <div class="chart-holder"><canvas id="employerTypeChart" height="220"></canvas></div>
+          <div class="drilldown" id="employerTypeSkills"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="method-note">Skills are classified with ESCO, job roles with ISCO-08, education with ISCED 2011 and sectors with ISIC Rev.4. Postings that don't match a category are left out of that chart rather than guessed at. Employer type (Private, Public or NGO) is a keyword heuristic on the employer's own name, not a verified registry lookup. Education specialization (what field a level is in) relies on free text descriptions, which mainly exist for HaHuJobs postings. Salary is only counted when a posting itself states a clear monthly Birr or ETB figure. "Negotiable" or "As per company scale" are left out rather than guessed at. The "most critical skills" shown when clicking a bar on most charts (Skills, Education, Experience, Salary, Sectors, Sector Subcategories, Job Roles, Locations and Top Hirers) only appears once at least 3 postings in that group state explicit skills, so it is never built from a single posting.</p>
+
+  <footer class="page-foot">
+    <span id="generatedAt">Loading…</span>
+    <span id="sourceBreakdown">Data from EthioJobs and HaHuJobs, tracked daily</span>
+  </footer>
+</div>
+
+<script>
+const NAVY = "#1F3B57";
+const LINE = "#E3DDCE";
+const INK = "#20242B";
+const INK_SOFT = "#4B5259";
+
+const WINDOW_LABELS = {
+  daily: "Daily", weekly: "Weekly", monthly: "Monthly",
+  quarterly: "Quarterly", yearly: "Yearly", all_time: "All Time"
+};
+const WINDOW_ORDER = ["daily", "weekly", "monthly", "quarterly", "yearly", "all_time"];
+
+let payload = null;
+let charts = {
+  skills: null, edu: null, cat: null, jobs: null, loc: null,
+  exp: null, subCat: null, employers: null, employerType: null, salary: null,
+  sources: null, trends: null, salTran: null,
+};
+let currentWindow = "monthly";
+let currentTrend = "monthly";
+
+const TREND_LABELS = { daily: "Day", weekly: "Week", monthly: "Month", yearly: "Year" };
+const TREND_ORDER = ["daily", "weekly", "monthly", "yearly"];
+
+function drawLine(canvasId, key, series) {
+  const ctx = document.getElementById(canvasId);
+  const holder = ctx.parentElement;
+  if (charts[key]) { charts[key].destroy(); charts[key] = null; }
+
+  if (!series || series.length === 0) {
+    ctx.style.display = "none";
+    let empty = holder.querySelector(".empty-state");
+    if (!empty) {
+      empty = document.createElement("div");
+      empty.className = "empty-state";
+      empty.textContent = "Not enough tracked history yet to show a trend.";
+      holder.appendChild(empty);
+    }
+    return;
+  }
+  const existingEmpty = holder.querySelector(".empty-state");
+  if (existingEmpty) existingEmpty.remove();
+  ctx.style.display = "block";
+
+  const labels = series.map(d => d.period);
+  const values = series.map(d => d.count);
+
+  charts[key] = new Chart(ctx, {
+    type: "line",
+    data: {
+      labels,
+      datasets: [{
+        data: values,
+        borderColor: NAVY,
+        backgroundColor: "rgba(31,59,87,0.08)",
+        fill: true,
+        tension: 0.25,
+        pointRadius: 3,
+        pointBackgroundColor: NAVY,
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: "#20242B",
+          padding: 10,
+          titleFont: { family: "Source Sans 3" },
+          bodyFont: { family: "Source Sans 3" }
+        }
+      },
+      scales: {
+        x: { grid: { display: false }, border: { display: false }, ticks: { color: INK_SOFT, font: { family: "Source Sans 3", size: 11.5 } } },
+        y: { beginAtZero: true, grid: { color: LINE }, border: { display: false }, ticks: { color: INK, font: { family: "Source Sans 3", size: 11.5 } } }
+      }
+    }
+  });
+}
+
+function renderTrends(granularity) {
+  currentTrend = granularity;
+  document.querySelectorAll("#trendTabs .tab-btn").forEach(btn => {
+    btn.classList.toggle("active", btn.dataset.trend === granularity);
+  });
+  const series = payload.trends ? payload.trends[granularity] : null;
+  drawLine("trendsChart", "trends", series);
+}
+
+function buildTrendTabs() {
+  const el = document.getElementById("trendTabs");
+  el.innerHTML = "";
+  TREND_ORDER.forEach(g => {
+    const btn = document.createElement("button");
+    btn.className = "tab-btn";
+    btn.dataset.trend = g;
+    btn.textContent = "By " + TREND_LABELS[g];
+    btn.onclick = () => renderTrends(g);
+    el.appendChild(btn);
+  });
+}
+
+function commonOpts(maxVal) {
+  return {
+    indexAxis: "y",
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        backgroundColor: "#20242B",
+        padding: 10,
+        titleFont: { family: "Source Sans 3" },
+        bodyFont: { family: "Source Sans 3" }
+      }
+    },
+    scales: {
+      x: {
+        beginAtZero: true,
+        suggestedMax: maxVal,
+        grid: { color: LINE },
+        ticks: { display: false },
+        border: { display: false }
+      },
+      y: {
+        grid: { display: false },
+        border: { display: false },
+        ticks: { color: INK, font: { family: "Source Sans 3", size: 12.5 } }
+      }
+    }
+  };
+}
+
+
+// ---- label wrapping so long names are not clipped ----
+function wrapLabel(label, max) {
+  const words = String(label).split(" "); const lines = []; let cur = "";
+  words.forEach(w => { if ((cur + " " + w).trim().length > max && cur) { lines.push(cur); cur = w; } else { cur = (cur + " " + w).trim(); } });
+  if (cur) lines.push(cur); return lines;
+}
+const esc = t => String(t == null ? "" : t).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+// ---- open jobs ----
+let jobsData = null;
+function jobsFor(field, label) { return (jobsData || []).filter(j => j[field] === label); }
+function jobItem(j) {
+  const dl = j.d ? "closes " + j.d : "no deadline stated";
+  return `<li><a href="${esc(j.u)}" target="_blank" rel="noopener">${esc(j.t || "Untitled")}</a><span class="job-meta">${esc(j.e)} &middot; ${esc(j.l)} &middot; ${esc(dl)} &middot; ${esc(j.src)}</span></li>`;
+}
+function showOpenJobs(field, label, panelId) {
+  const base = document.getElementById(panelId); if (!base) return;
+  let box = document.getElementById(panelId + "_jobs");
+  if (!box) { box = document.createElement("div"); box.id = panelId + "_jobs"; box.className = "drilldown"; base.insertAdjacentElement("afterend", box); }
+  if (!jobsData) { box.innerHTML = "<p class='panel-sub'>Vacancy links are not available yet.</p>"; box.style.display = "block"; return; }
+  const list = jobsFor(field, label);
+  const shown = list.slice(0, 60).map(jobItem).join("");
+  box.innerHTML = `<div class="drilldown-head"><strong>Open vacancies: ${esc(label)} (${list.length})</strong>
+    <button class="drilldown-close" onclick="this.closest('.drilldown').style.display='none'">&times;</button></div>
+    <p class="note" style="margin:4px 0 0">Open or no deadline stated. Soonest deadline first. Each title links to the posting on its source site.${list.length > 60 ? " Showing the first 60." : ""}</p>
+    <ul class="job-list">${shown || "<li>No open vacancies in this group right now.</li>"}</ul>`;
+  box.style.display = "block";
+}
+function fillSelect(id, title, values) {
+  const el = document.getElementById(id); const cur = el.value;
+  el.innerHTML = `<option value="">${title}</option>` + values.map(v => `<option value="${esc(v)}">${esc(v)}</option>`).join("");
+  el.value = values.includes(cur) ? cur : ""; el.onchange = renderOpenList;
+}
+function renderOpenList() {
+  if (!jobsData) return;
+  const f = { c: document.getElementById("fSub").value, r: document.getElementById("fReg").value,
+              src: document.getElementById("fSrc").value, k: document.getElementById("fRole").value };
+  const list = jobsData.filter(j => Object.keys(f).every(k => !f[k] || j[k] === f[k]));
+  document.getElementById("openList").innerHTML = list.slice(0, 100).map(jobItem).join("") || "<li>No match.</li>";
+  document.getElementById("openSub").textContent =
+    `${list.length} of ${jobsData.length} open or undated postings match. Showing up to 100, soonest deadline first.`;
+}
+function buildOpenFilters() {
+  const uniq = k => [...new Set(jobsData.map(j => j[k]).filter(Boolean))].sort();
+  fillSelect("fSub", "All subcategories", uniq("c")); fillSelect("fReg", "All regions", uniq("r"));
+  fillSelect("fSrc", "All sources", uniq("src")); fillSelect("fRole", "All job roles", uniq("k"));
+  renderOpenList();
+}
+
+// ---- salary transparency ----
+let salGran = "monthly";
+function renderSalary(data) {
+  const st = data.salary_transparency; if (!st) return;
+  const o = st.overall;
+  document.getElementById("salTranSub").textContent =
+    `${o.any_pct}% of ${o.postings} postings give any pay information; ${o.figure_pct}% state an amount.`;
+  const tabs = document.getElementById("salTabs"); tabs.innerHTML = "";
+  ["monthly", "weekly"].forEach(g => { const b = document.createElement("button"); b.className = "tab-btn" + (g === salGran ? " active" : "");
+    b.textContent = g === "monthly" ? "By month" : "By week"; b.onclick = () => { salGran = g; renderSalary(data); }; tabs.appendChild(b); });
+  const series = st[salGran] || [];
+  if (charts.salTran) { charts.salTran.destroy(); charts.salTran = null; }
+  const ctx = document.getElementById("salTranChart");
+  if (series.length) {
+    charts.salTran = new Chart(ctx, { type: "line", data: { labels: series.map(x => x.period), datasets: [
+      { label: "Any pay information (%)", data: series.map(x => x.any_pct), borderColor: NAVY, backgroundColor: NAVY, tension: 0.25 },
+      { label: "States an amount (%)", data: series.map(x => x.figure_pct), borderColor: "#B5762A", backgroundColor: "#B5762A", tension: 0.25 } ] },
+      options: { responsive: true, maintainAspectRatio: false, scales: { y: { beginAtZero: true, title: { display: true, text: "% of postings" } } },
+                 plugins: { legend: { position: "bottom" } } } });
+  }
+  const rows = (arr, name) => arr.length ? `<table class="x"><tr><th>${name}</th><th>Postings</th><th>Amount stated</th><th>Wording only</th><th>Any pay info %</th><th>Amount %</th></tr>` +
+    arr.map(x => `<tr><td>${esc(x.label || x.period)}</td><td>${x.postings}</td><td>${x.figure}</td><td>${x.wording}</td><td>${x.any_pct}</td><td>${x.figure_pct}</td></tr>`).join("") + "</table>" : "";
+  document.getElementById("salTranTable").innerHTML =
+    rows(series, salGran === "monthly" ? "Month" : "Week") + "<div style='height:10px'></div>" +
+    rows(st.by_source, "Source") + "<div style='height:10px'></div>" + rows(st.by_sector, "Subcategory");
+  document.getElementById("salTranNote").textContent = payload.notes.salary_transparency;
+}
+
+// ---- education and experience cross tabs ----
+let crossMode = "by_sector";
+function renderCross(data) {
+  const c = data.edu_exp_cross; if (!c) return;
+  const tabs = document.getElementById("crossTabs"); tabs.innerHTML = "";
+  [["by_sector", "By sector"], ["by_role", "By job role"]].forEach(([k, t]) => { const b = document.createElement("button");
+    b.className = "tab-btn" + (k === crossMode ? " active" : ""); b.textContent = t; b.onclick = () => { crossMode = k; renderCross(data); }; tabs.appendChild(b); });
+  const rows = c[crossMode] || [];
+  if (!rows.length) { document.getElementById("crossTable").innerHTML = "<p class='panel-sub'>Not enough postings in this window.</p>"; return; }
+  const eo = c.education_order, xo = c.experience_order;
+  document.getElementById("crossTable").innerHTML = `<table class="x"><tr><th>${crossMode === "by_sector" ? "Sector" : "Role"}</th><th>Postings</th><th>Edu known</th>` +
+    eo.map(e => `<th>${esc(e)} %</th>`).join("") + `<th>Exp known</th>` + xo.map(x => `<th>${esc(x)} %</th>`).join("") + `<th>Median min yrs</th></tr>` +
+    rows.map(r => `<tr><td>${esc(r.label)}</td><td>${r.postings}</td><td>${r.education_known}</td>` + eo.map(e => `<td>${r.education[e] == null ? "" : r.education[e]}</td>`).join("") +
+      `<td>${r.experience_known}</td>` + xo.map(x => `<td>${r.experience[x] == null ? "" : r.experience[x]}</td>`).join("") + `<td>${r.median_min_years == null ? "" : r.median_min_years}</td></tr>`).join("") + "</table>";
+  document.getElementById("crossNote").textContent = c.note;
+}
+
+function drawBar(canvasId, key, items, labelKey, countKey, onBarClick) {
+  const ctx = document.getElementById(canvasId);
+  const holder = ctx.parentElement;
+  if (charts[key]) { charts[key].destroy(); charts[key] = null; }
+
+  if (!items || items.length === 0) {
+    ctx.style.display = "none";
+    let empty = holder.querySelector(".empty-state");
+    if (!empty) {
+      empty = document.createElement("div");
+      empty.className = "empty-state";
+      empty.textContent = "Not enough data yet for this time window. Check back after a few more days of tracking.";
+      holder.appendChild(empty);
+    }
+    return;
+  }
+  const existingEmpty = holder.querySelector(".empty-state");
+  if (existingEmpty) existingEmpty.remove();
+  ctx.style.display = "block";
+
+  const labels = items.map(d => d[labelKey]).reverse();
+  const shownLabels = labels.map(l => wrapLabel(l, 30));
+  holder.style.height = Math.max(220, items.length * 34 + 30) + "px";
+  const values = items.map(d => d[countKey]).reverse();
+  const maxVal = Math.max(...values);
+
+  const options = commonOpts(maxVal * 1.15);
+  if (onBarClick) {
+    options.onClick = (evt, elements) => {
+      if (!elements.length) return;
+      onBarClick(labels[elements[0].index]);
+    };
+    options.onHover = (evt, elements) => {
+      evt.native.target.style.cursor = elements.length ? "pointer" : "default";
+    };
+  }
+
+  charts[key] = new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels: shownLabels,
+      datasets: [{
+        data: values,
+        backgroundColor: NAVY,
+        borderRadius: 4,
+        barThickness: 18, maxBarThickness: 22,
+      }]
+    },
+    options,
+    plugins: [{
+      id: "valueLabels",
+      afterDatasetsDraw(chart) {
+        const { ctx } = chart;
+        chart.data.datasets[0].data.forEach((val, i) => {
+          const meta = chart.getDatasetMeta(0);
+          const bar = meta.data[i];
+          ctx.save();
+          ctx.fillStyle = INK;
+          ctx.font = "600 12px 'Source Sans 3', sans-serif";
+          ctx.textAlign = "left";
+          ctx.textBaseline = "middle";
+          ctx.fillText(val, bar.x + 6, bar.y);
+          ctx.restore();
+        });
+      }
+    }]
+  });
+}
+
+function showEduSpecialization(level) {
+  const data = payload.windows[currentWindow];
+  const specs = data.education_specializations && data.education_specializations[level];
+  const panel = document.getElementById("eduSpecialization");
+
+  if (!specs || !specs.fields.length) {
+    const total = specs ? specs.total : 0;
+    const withField = specs ? specs.with_field_stated : 0;
+    panel.innerHTML = `
+      <div class="drilldown-head">
+        <strong>What field is this ${level} in?</strong>
+        <button class="drilldown-close" onclick="hideEduSpecialization()">&times;</button>
+      </div>
+      <p class="panel-sub" style="margin:4px 0 0;">
+        ${withField} of ${total} postings at this level state a specific field of study clearly enough to classify.
+        Not enough yet to break this level down further.
+      </p>`;
+    panel.style.display = "block";
+    return;
+  }
+
+  const rows = specs.fields
+    .map(f => `<li><span>${f.label}</span><span class="spec-count">${f.count}</span></li>`)
+    .join("");
+  panel.innerHTML = `
+    <div class="drilldown-head">
+      <strong>What field is this ${level} in?</strong>
+      <button class="drilldown-close" onclick="hideEduSpecialization()">&times;</button>
+    </div>
+    <p class="panel-sub" style="margin:4px 0 8px;">
+      ${specs.with_field_stated} of ${specs.total} postings requiring a ${level} name a specific field of study
+    </p>
+    <ul class="spec-list">${rows}</ul>`;
+  panel.style.display = "block";
+}
+
+function hideEduSpecialization() {
+  const panel = document.getElementById("eduSpecialization");
+  panel.style.display = "none";
+  panel.innerHTML = "";
+}
+
+function hideCriticalSkills(panelId) {
+  const panel = document.getElementById(panelId);
+  if (!panel) return;
+  panel.style.display = "none";
+  panel.innerHTML = "";
+}
+
+function showCriticalSkills(label, dataKey, panelId) {
+  const data = payload.windows[currentWindow];
+  const groups = data[dataKey] || {};
+  const entry = groups[label];
+  const panel = document.getElementById(panelId);
+  if (!panel) return;
+
+  if (!entry || !entry.skills.length) {
+    panel.innerHTML = `
+      <div class="drilldown-head">
+        <strong>Most critical skills for ${label}</strong>
+        <button class="drilldown-close" onclick="hideCriticalSkills('${panelId}')">&times;</button>
+      </div>
+      <p class="panel-sub" style="margin:4px 0 0;">
+        Not enough postings in this group state explicit skills yet to call out a top 1-3.
+      </p>`;
+    panel.style.display = "block";
+    return;
+  }
+
+  const rows = entry.skills
+    .map(s => `<li><span>${s.label}</span><span class="spec-count">${s.count}</span></li>`)
+    .join("");
+  panel.innerHTML = `
+    <div class="drilldown-head">
+      <strong>Most critical skills for ${label}</strong>
+      <button class="drilldown-close" onclick="hideCriticalSkills('${panelId}')">&times;</button>
+    </div>
+    <p class="panel-sub" style="margin:4px 0 8px;">
+      Based on ${entry.postings_considered} posting(s) in this group stating explicit skills
+    </p>
+    <ul class="spec-list">${rows}</ul>`;
+  panel.style.display = "block";
+}
+
+function renderStatRow(windowData, windowKey) {
+  const statRow = document.getElementById("statRow");
+  const edu = windowData.education;
+  const pct = edu.total > 0 ? Math.round((edu.known_total / edu.total) * 100) : 0;
+  statRow.innerHTML = `
+    <div class="stat-tile">
+      <div class="num">${windowData.posting_count}</div>
+      <div class="label">Postings tracked (${WINDOW_LABELS[windowKey].toLowerCase()})</div>
+    </div>
+    <div class="stat-tile">
+      <div class="num">${edu.known_total}</div>
+      <div class="label">State a clear education level (${pct}%)</div>
+    </div>
+  `;
+}
+
+function renderWindow(windowKey) {
+  currentWindow = windowKey;
+  const data = payload.windows[windowKey];
+  if (!data) return;
+
+  document.querySelectorAll(".tab-btn").forEach(btn => {
+    btn.classList.toggle("active", btn.dataset.window === windowKey);
+  });
+
+  renderStatRow(data, windowKey);
+
+  const srcEl = document.getElementById("sourceBreakdown");
+  if (srcEl && data.source_breakdown && data.source_breakdown.length) {
+    srcEl.textContent = "Data from " + data.source_breakdown
+      .map(s => `${s.label} (${s.count})`).join(", ");
+  }
+
+  hideEduSpecialization();
+  hideCriticalSkills("subCatSkills");
+  hideCriticalSkills("jobsSkills");
+  hideCriticalSkills("eduSkills");
+  hideCriticalSkills("expSkills");
+  hideCriticalSkills("salarySkills");
+  hideCriticalSkills("catSkills");
+  hideCriticalSkills("locSkills");
+  hideCriticalSkills("employersSkills");
+  hideCriticalSkills("employerTypeSkills");
+  document.querySelectorAll("[id$='_jobs']").forEach(e => e.style.display = "none");
+
+  document.getElementById("skillsSub").textContent =
+    `Top skills explicitly required, ESCO classified, ${WINDOW_LABELS[windowKey]} view`;
+  document.getElementById("eduSub").textContent =
+    `${data.education.known_total} of ${data.education.total} postings state an ISCED level. Click a bar to see what field`;
+  document.getElementById("expSub").textContent =
+    `${data.experience.known_total} of ${data.experience.total} postings state years of experience, ${WINDOW_LABELS[windowKey]} view`;
+  document.getElementById("salarySub").textContent =
+    `${data.salary.known_total} of ${data.salary.total} postings state a clear monthly figure, ${WINDOW_LABELS[windowKey]} view`;
+  document.getElementById("catSub").textContent =
+    `Top sectors (ISIC Rev.4), ${WINDOW_LABELS[windowKey]} view`;
+  document.getElementById("subCatSub").textContent =
+    `One fixed list of subcategories, each posting counted once. Click a bar for its critical skills and open vacancies. ${WINDOW_LABELS[windowKey]} view`;
+  document.getElementById("jobsSub").textContent =
+    `Top job roles (ISCO-08 major groups). Click a bar for critical skills and open vacancies. ${WINDOW_LABELS[windowKey]} view`;
+  document.getElementById("locSub").textContent =
+    `Town then regional state; NC = no city named. Click a bar for open vacancies. ${WINDOW_LABELS[windowKey]} view`;
+  document.getElementById("hirersSub").textContent =
+    `Who is hiring the most, ${WINDOW_LABELS[windowKey]} view`;
+  document.getElementById("sourcesSub").textContent =
+    `Postings contributed per site. A vacancy posted to more than one site counts toward each`;
+
+  drawBar("skillsChart", "skills", data.top_skills, "label", "count");
+  drawBar("eduChart", "edu", data.education.levels, "label", "count", (label) => {
+    showEduSpecialization(label);
+    showCriticalSkills(label, "critical_skills_by_education", "eduSkills");
+  });
+  drawBar("expChart", "exp", data.experience.buckets, "label", "count",
+    (label) => showCriticalSkills(label, "critical_skills_by_experience", "expSkills"));
+  drawBar("salaryChart", "salary", data.salary.buckets, "label", "count",
+    (label) => showCriticalSkills(label, "critical_skills_by_salary_bucket", "salarySkills"));
+  drawBar("catChart", "cat", data.top_categories, "label", "count",
+    (label) => showCriticalSkills(label, "critical_skills_by_sector", "catSkills"));
+  drawBar("subCatChart", "subCat", data.sector_subcategories, "label", "count",
+    (label) => { showCriticalSkills(label, "critical_skills_by_subsector", "subCatSkills"); showOpenJobs("c", label, "subCatSkills"); });
+  drawBar("jobsChart", "jobs", data.top_jobs, "label", "count",
+    (label) => { showCriticalSkills(label, "critical_skills_by_role", "jobsSkills"); showOpenJobs("k", label, "jobsSkills"); });
+  drawBar("locChart", "loc", data.top_locations, "label", "count",
+    (label) => { showCriticalSkills(label, "critical_skills_by_location", "locSkills"); showOpenJobs("l", label, "locSkills"); });
+  drawBar("employersChart", "employers", data.top_employers, "label", "count",
+    (label) => { showCriticalSkills(label, "critical_skills_by_employer", "employersSkills"); showOpenJobs("e", label, "employersSkills"); });
+  drawBar("employerTypeChart", "employerType", data.employer_type.types, "label", "count",
+    (label) => showCriticalSkills(label, "critical_skills_by_employer_type", "employerTypeSkills"));
+  drawBar("sourcesChart", "sources", data.source_sites, "label", "count", (label) => showOpenJobs("src", label, "sourcesSkills"));
+  document.getElementById("locNote").textContent = payload.notes.location;
+  document.getElementById("subCatNote").textContent = payload.notes.subcategories;
+  renderSalary(data);
+  renderCross(data);
+}
+
+function buildTabs() {
+  const tabsEl = document.getElementById("tabs");
+  tabsEl.innerHTML = "";
+  WINDOW_ORDER.forEach(w => {
+    if (!payload.windows[w]) return;
+    const btn = document.createElement("button");
+    btn.className = "tab-btn";
+    btn.dataset.window = w;
+    btn.textContent = WINDOW_LABELS[w];
+    btn.onclick = () => renderWindow(w);
+    tabsEl.appendChild(btn);
+  });
+}
+
+fetch("./data/jobs.json", { cache: "no-store" }).then(r => r.ok ? r.json() : null).then(j => { if (j) { jobsData = j.jobs; if (payload) buildOpenFilters(); } }).catch(() => {});
+fetch("./data/rollups.json", { cache: "no-store" })
+  .then(r => {
+    if (!r.ok) throw new Error("rollups.json not found");
+    return r.json();
+  })
+  .then(json => {
+    payload = json;
+    document.getElementById("generatedAt").textContent =
+      `Last updated: ${payload.generated_at}`;
+    buildTabs();
+    buildTrendTabs();
+    renderTrends(currentTrend);
+    // Prefer the first window that actually has data, default monthly
+    const preferred = payload.windows.monthly && payload.windows.monthly.posting_count > 0
+      ? "monthly" : WINDOW_ORDER.find(w => payload.windows[w] && payload.windows[w].posting_count > 0) || "all_time";
+    renderWindow(preferred);
+    if (jobsData) buildOpenFilters();
+  })
+  .catch(err => {
+    document.getElementById("generatedAt").textContent = "Could not load data.";
+    document.getElementById("tabs").innerHTML =
+      `<p style="color:var(--ink-soft); font-size:13px;">Dashboard data isn't available yet. It appears after the first successful pipeline run.</p>`;
+    console.error(err);
+  });
+</script>
+</body>
+</html>

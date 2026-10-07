@@ -1,0 +1,3193 @@
+[
+  {
+    "date": "2026-10-01",
+    "weekly": {
+      "posting_count": 1603,
+      "coverage": {
+        "education": {
+          "known": 462,
+          "total": 1603
+        },
+        "experience": {
+          "known": 1324,
+          "total": 1603
+        },
+        "salary": {
+          "known": 55,
+          "total": 1603
+        },
+        "employer_type": {
+          "known": 868,
+          "total": 1603
+        }
+      },
+      "top_skills": [
+        {
+          "label": "Communication",
+          "count": 338
+        },
+        {
+          "label": "Attention to detail",
+          "count": 140
+        },
+        {
+          "label": "Problem solving",
+          "count": 121
+        },
+        {
+          "label": "Teamwork",
+          "count": 79
+        },
+        {
+          "label": "Accounting",
+          "count": 72
+        },
+        {
+          "label": "Decision-making",
+          "count": 53
+        },
+        {
+          "label": "Creativity",
+          "count": 29
+        },
+        {
+          "label": "Coordination",
+          "count": 28
+        },
+        {
+          "label": "Microsoft Office",
+          "count": 24
+        },
+        {
+          "label": "Analytical thinking",
+          "count": 23
+        }
+      ],
+      "top_categories": [
+        {
+          "label": "Professional, scientific and technical activities",
+          "count": 660
+        },
+        {
+          "label": "Education",
+          "count": 215
+        },
+        {
+          "label": "Financial and insurance activities",
+          "count": 192
+        },
+        {
+          "label": "Human health and social work activities",
+          "count": 138
+        },
+        {
+          "label": "Accommodation and food service activities",
+          "count": 136
+        },
+        {
+          "label": "Transportation and storage",
+          "count": 99
+        },
+        {
+          "label": "Wholesale and retail trade",
+          "count": 71
+        },
+        {
+          "label": "Information and communication",
+          "count": 68
+        },
+        {
+          "label": "Administrative and support service activities",
+          "count": 53
+        },
+        {
+          "label": "Construction",
+          "count": 48
+        }
+      ],
+      "top_jobs": [
+        {
+          "label": "Professionals",
+          "count": 623
+        },
+        {
+          "label": "Managers",
+          "count": 228
+        },
+        {
+          "label": "Technicians and associate professionals",
+          "count": 133
+        },
+        {
+          "label": "Service and sales workers",
+          "count": 91
+        },
+        {
+          "label": "Clerical support workers",
+          "count": 57
+        },
+        {
+          "label": "Plant and machine operators, and assemblers",
+          "count": 29
+        },
+        {
+          "label": "Craft and related trades workers",
+          "count": 19
+        },
+        {
+          "label": "Elementary occupations",
+          "count": 5
+        }
+      ],
+      "top_locations": [
+        {
+          "label": "Addis Ababa",
+          "count": 1176
+        },
+        {
+          "label": "Oromia",
+          "count": 74
+        },
+        {
+          "label": "Bule Hora",
+          "count": 59
+        },
+        {
+          "label": "Hawassa",
+          "count": 20
+        },
+        {
+          "label": "Jimma",
+          "count": 18
+        },
+        {
+          "label": "Adama",
+          "count": 15
+        },
+        {
+          "label": "Arba Minch",
+          "count": 11
+        },
+        {
+          "label": "Somali",
+          "count": 8
+        },
+        {
+          "label": "Amhara",
+          "count": 8
+        },
+        {
+          "label": "Harar",
+          "count": 7
+        }
+      ],
+      "top_employers": [
+        {
+          "label": "Bule Hora University",
+          "count": 59
+        },
+        {
+          "label": "Talent Search - Ethiojobs",
+          "count": 19
+        },
+        {
+          "label": "Ethiopian Food and Drug Authority (Efda)",
+          "count": 19
+        },
+        {
+          "label": "Lesso Ethiopia Trading PLC",
+          "count": 18
+        },
+        {
+          "label": "Amg Holdings",
+          "count": 15
+        },
+        {
+          "label": "Leofam Business Group",
+          "count": 15
+        },
+        {
+          "label": "Mercy Corps Ethiopia",
+          "count": 14
+        },
+        {
+          "label": "Commercial Nominees PLC",
+          "count": 13
+        },
+        {
+          "label": "Radisson Blu",
+          "count": 13
+        },
+        {
+          "label": "Amg Holdings PLC",
+          "count": 13
+        }
+      ]
+    },
+    "monthly": {
+      "posting_count": 1905,
+      "coverage": {
+        "education": {
+          "known": 594,
+          "total": 1905
+        },
+        "experience": {
+          "known": 1490,
+          "total": 1905
+        },
+        "salary": {
+          "known": 61,
+          "total": 1905
+        },
+        "employer_type": {
+          "known": 1036,
+          "total": 1905
+        }
+      },
+      "top_skills": [
+        {
+          "label": "Communication",
+          "count": 520
+        },
+        {
+          "label": "Problem solving",
+          "count": 188
+        },
+        {
+          "label": "Attention to detail",
+          "count": 182
+        },
+        {
+          "label": "Teamwork",
+          "count": 112
+        },
+        {
+          "label": "Accounting",
+          "count": 102
+        },
+        {
+          "label": "Decision-making",
+          "count": 68
+        },
+        {
+          "label": "Creativity",
+          "count": 42
+        },
+        {
+          "label": "Leadership",
+          "count": 38
+        },
+        {
+          "label": "Coordination",
+          "count": 36
+        },
+        {
+          "label": "Analytical thinking",
+          "count": 31
+        }
+      ],
+      "top_categories": [
+        {
+          "label": "Professional, scientific and technical activities",
+          "count": 765
+        },
+        {
+          "label": "Financial and insurance activities",
+          "count": 262
+        },
+        {
+          "label": "Education",
+          "count": 222
+        },
+        {
+          "label": "Human health and social work activities",
+          "count": 185
+        },
+        {
+          "label": "Accommodation and food service activities",
+          "count": 140
+        },
+        {
+          "label": "Transportation and storage",
+          "count": 120
+        },
+        {
+          "label": "Wholesale and retail trade",
+          "count": 108
+        },
+        {
+          "label": "Information and communication",
+          "count": 81
+        },
+        {
+          "label": "Administrative and support service activities",
+          "count": 71
+        },
+        {
+          "label": "Manufacturing",
+          "count": 54
+        }
+      ],
+      "top_jobs": [
+        {
+          "label": "Professionals",
+          "count": 714
+        },
+        {
+          "label": "Managers",
+          "count": 287
+        },
+        {
+          "label": "Technicians and associate professionals",
+          "count": 159
+        },
+        {
+          "label": "Service and sales workers",
+          "count": 104
+        },
+        {
+          "label": "Clerical support workers",
+          "count": 69
+        },
+        {
+          "label": "Plant and machine operators, and assemblers",
+          "count": 30
+        },
+        {
+          "label": "Craft and related trades workers",
+          "count": 23
+        },
+        {
+          "label": "Elementary occupations",
+          "count": 5
+        }
+      ],
+      "top_locations": [
+        {
+          "label": "Addis Ababa",
+          "count": 1410
+        },
+        {
+          "label": "Oromia",
+          "count": 95
+        },
+        {
+          "label": "Bule Hora",
+          "count": 59
+        },
+        {
+          "label": "Hawassa",
+          "count": 20
+        },
+        {
+          "label": "Jimma",
+          "count": 18
+        },
+        {
+          "label": "Adama",
+          "count": 15
+        },
+        {
+          "label": "Somali",
+          "count": 14
+        },
+        {
+          "label": "Amhara",
+          "count": 11
+        },
+        {
+          "label": "Arba Minch",
+          "count": 11
+        },
+        {
+          "label": "Afar",
+          "count": 10
+        }
+      ],
+      "top_employers": [
+        {
+          "label": "Bule Hora University",
+          "count": 59
+        },
+        {
+          "label": "Talent Search - Ethiojobs",
+          "count": 20
+        },
+        {
+          "label": "Ethiopian Food and Drug Authority (Efda)",
+          "count": 19
+        },
+        {
+          "label": "Lesso Ethiopia Trading PLC",
+          "count": 18
+        },
+        {
+          "label": "Marie Stopes International Ethiopia",
+          "count": 17
+        },
+        {
+          "label": "Commercial Nominees PLC",
+          "count": 15
+        },
+        {
+          "label": "Amg Holdings",
+          "count": 15
+        },
+        {
+          "label": "Leofam Business Group",
+          "count": 15
+        },
+        {
+          "label": "Mercy Corps Ethiopia",
+          "count": 14
+        },
+        {
+          "label": "Radisson Blu",
+          "count": 13
+        }
+      ]
+    }
+  },
+  {
+    "date": "2026-10-02",
+    "weekly": {
+      "posting_count": 2399,
+      "coverage": {
+        "education": {
+          "known": 560,
+          "total": 2399
+        },
+        "experience": {
+          "known": 1680,
+          "total": 2399
+        },
+        "salary": {
+          "known": 70,
+          "total": 2399
+        },
+        "employer_type": {
+          "known": 1074,
+          "total": 2399
+        }
+      },
+      "top_skills": [
+        {
+          "label": "Communication",
+          "count": 430
+        },
+        {
+          "label": "Problem solving",
+          "count": 156
+        },
+        {
+          "label": "Attention to detail",
+          "count": 151
+        },
+        {
+          "label": "Teamwork",
+          "count": 81
+        },
+        {
+          "label": "Accounting",
+          "count": 69
+        },
+        {
+          "label": "Decision-making",
+          "count": 49
+        },
+        {
+          "label": "Creativity",
+          "count": 47
+        },
+        {
+          "label": "Leadership",
+          "count": 40
+        },
+        {
+          "label": "Customer service",
+          "count": 30
+        },
+        {
+          "label": "Microsoft Office",
+          "count": 28
+        }
+      ],
+      "top_categories": [
+        {
+          "label": "Professional, scientific and technical activities",
+          "count": 753
+        },
+        {
+          "label": "Financial and insurance activities",
+          "count": 262
+        },
+        {
+          "label": "Education",
+          "count": 237
+        },
+        {
+          "label": "Accommodation and food service activities",
+          "count": 155
+        },
+        {
+          "label": "Human health and social work activities",
+          "count": 144
+        },
+        {
+          "label": "Transportation and storage",
+          "count": 136
+        },
+        {
+          "label": "Information and communication",
+          "count": 120
+        },
+        {
+          "label": "Manufacturing",
+          "count": 95
+        },
+        {
+          "label": "Construction",
+          "count": 85
+        },
+        {
+          "label": "Wholesale and retail trade",
+          "count": 80
+        }
+      ],
+      "top_jobs": [
+        {
+          "label": "Professionals",
+          "count": 871
+        },
+        {
+          "label": "Managers",
+          "count": 338
+        },
+        {
+          "label": "Technicians and associate professionals",
+          "count": 181
+        },
+        {
+          "label": "Service and sales workers",
+          "count": 149
+        },
+        {
+          "label": "Clerical support workers",
+          "count": 75
+        },
+        {
+          "label": "Plant and machine operators, and assemblers",
+          "count": 49
+        },
+        {
+          "label": "Craft and related trades workers",
+          "count": 21
+        },
+        {
+          "label": "Elementary occupations",
+          "count": 9
+        },
+        {
+          "label": "Skilled agricultural, forestry and fishery workers",
+          "count": 1
+        }
+      ],
+      "top_locations": [
+        {
+          "label": "Addis Ababa",
+          "count": 1454
+        },
+        {
+          "label": "Addis Ababa, Ethiopia",
+          "count": 267
+        },
+        {
+          "label": "Oromia",
+          "count": 75
+        },
+        {
+          "label": "Bule Hora",
+          "count": 59
+        },
+        {
+          "label": "Addis Ababa, Addis Ababa, Ethiopia",
+          "count": 50
+        },
+        {
+          "label": "Addis Ababa - Ethiopia",
+          "count": 48
+        },
+        {
+          "label": "Ethiopia",
+          "count": 33
+        },
+        {
+          "label": "Hawassa",
+          "count": 22
+        },
+        {
+          "label": "Jimma",
+          "count": 21
+        },
+        {
+          "label": "Adama",
+          "count": 16
+        }
+      ],
+      "top_employers": [
+        {
+          "label": "Company",
+          "count": 131
+        },
+        {
+          "label": "Private Client",
+          "count": 76
+        },
+        {
+          "label": "Bule Hora University",
+          "count": 59
+        },
+        {
+          "label": "Talent Search - Ethiojobs",
+          "count": 29
+        },
+        {
+          "label": "National Aviation College",
+          "count": 29
+        },
+        {
+          "label": "Ethiopian Food and Drug Authority (Efda)",
+          "count": 19
+        },
+        {
+          "label": "Lesso Ethiopia Trading PLC",
+          "count": 18
+        },
+        {
+          "label": "Leofam Business Group",
+          "count": 15
+        },
+        {
+          "label": "Amg Holdings",
+          "count": 14
+        },
+        {
+          "label": "Commercial Nominees PLC",
+          "count": 13
+        }
+      ]
+    },
+    "monthly": {
+      "posting_count": 2794,
+      "coverage": {
+        "education": {
+          "known": 729,
+          "total": 2794
+        },
+        "experience": {
+          "known": 1909,
+          "total": 2794
+        },
+        "salary": {
+          "known": 76,
+          "total": 2794
+        },
+        "employer_type": {
+          "known": 1282,
+          "total": 2794
+        }
+      },
+      "top_skills": [
+        {
+          "label": "Communication",
+          "count": 669
+        },
+        {
+          "label": "Problem solving",
+          "count": 246
+        },
+        {
+          "label": "Attention to detail",
+          "count": 222
+        },
+        {
+          "label": "Teamwork",
+          "count": 122
+        },
+        {
+          "label": "Accounting",
+          "count": 109
+        },
+        {
+          "label": "Decision-making",
+          "count": 74
+        },
+        {
+          "label": "Creativity",
+          "count": 65
+        },
+        {
+          "label": "Leadership",
+          "count": 57
+        },
+        {
+          "label": "Coordination",
+          "count": 40
+        },
+        {
+          "label": "Analytical thinking",
+          "count": 36
+        }
+      ],
+      "top_categories": [
+        {
+          "label": "Professional, scientific and technical activities",
+          "count": 899
+        },
+        {
+          "label": "Financial and insurance activities",
+          "count": 348
+        },
+        {
+          "label": "Education",
+          "count": 251
+        },
+        {
+          "label": "Human health and social work activities",
+          "count": 193
+        },
+        {
+          "label": "Accommodation and food service activities",
+          "count": 164
+        },
+        {
+          "label": "Transportation and storage",
+          "count": 162
+        },
+        {
+          "label": "Information and communication",
+          "count": 139
+        },
+        {
+          "label": "Wholesale and retail trade",
+          "count": 125
+        },
+        {
+          "label": "Manufacturing",
+          "count": 109
+        },
+        {
+          "label": "Construction",
+          "count": 89
+        }
+      ],
+      "top_jobs": [
+        {
+          "label": "Professionals",
+          "count": 1003
+        },
+        {
+          "label": "Managers",
+          "count": 410
+        },
+        {
+          "label": "Technicians and associate professionals",
+          "count": 213
+        },
+        {
+          "label": "Service and sales workers",
+          "count": 166
+        },
+        {
+          "label": "Clerical support workers",
+          "count": 92
+        },
+        {
+          "label": "Plant and machine operators, and assemblers",
+          "count": 51
+        },
+        {
+          "label": "Craft and related trades workers",
+          "count": 26
+        },
+        {
+          "label": "Elementary occupations",
+          "count": 9
+        },
+        {
+          "label": "Skilled agricultural, forestry and fishery workers",
+          "count": 1
+        }
+      ],
+      "top_locations": [
+        {
+          "label": "Addis Ababa",
+          "count": 1761
+        },
+        {
+          "label": "Addis Ababa, Ethiopia",
+          "count": 267
+        },
+        {
+          "label": "Oromia",
+          "count": 105
+        },
+        {
+          "label": "Bule Hora",
+          "count": 59
+        },
+        {
+          "label": "Addis Ababa, Addis Ababa, Ethiopia",
+          "count": 50
+        },
+        {
+          "label": "Addis Ababa - Ethiopia",
+          "count": 48
+        },
+        {
+          "label": "Ethiopia",
+          "count": 33
+        },
+        {
+          "label": "Hawassa",
+          "count": 22
+        },
+        {
+          "label": "Jimma",
+          "count": 21
+        },
+        {
+          "label": "Adama",
+          "count": 16
+        }
+      ],
+      "top_employers": [
+        {
+          "label": "Company",
+          "count": 131
+        },
+        {
+          "label": "Private Client",
+          "count": 76
+        },
+        {
+          "label": "Bule Hora University",
+          "count": 59
+        },
+        {
+          "label": "Talent Search - Ethiojobs",
+          "count": 30
+        },
+        {
+          "label": "National Aviation College",
+          "count": 29
+        },
+        {
+          "label": "Marie Stopes International Ethiopia",
+          "count": 19
+        },
+        {
+          "label": "Ethiopian Food and Drug Authority (Efda)",
+          "count": 19
+        },
+        {
+          "label": "Lesso Ethiopia Trading PLC",
+          "count": 18
+        },
+        {
+          "label": "Commercial Nominees PLC",
+          "count": 17
+        },
+        {
+          "label": "Amg Holdings",
+          "count": 17
+        }
+      ]
+    }
+  },
+  {
+    "date": "2026-10-03",
+    "weekly": {
+      "posting_count": 2391,
+      "coverage": {
+        "education": {
+          "known": 544,
+          "total": 2391
+        },
+        "experience": {
+          "known": 1685,
+          "total": 2391
+        },
+        "salary": {
+          "known": 75,
+          "total": 2391
+        },
+        "employer_type": {
+          "known": 1057,
+          "total": 2391
+        }
+      },
+      "top_skills": [
+        {
+          "label": "Communication",
+          "count": 415
+        },
+        {
+          "label": "Problem solving",
+          "count": 149
+        },
+        {
+          "label": "Attention to detail",
+          "count": 148
+        },
+        {
+          "label": "Accounting",
+          "count": 67
+        },
+        {
+          "label": "Teamwork",
+          "count": 58
+        },
+        {
+          "label": "Creativity",
+          "count": 46
+        },
+        {
+          "label": "Decision-making",
+          "count": 42
+        },
+        {
+          "label": "Leadership",
+          "count": 31
+        },
+        {
+          "label": "Time management",
+          "count": 26
+        },
+        {
+          "label": "Customer service",
+          "count": 25
+        }
+      ],
+      "top_categories": [
+        {
+          "label": "Professional, scientific and technical activities",
+          "count": 755
+        },
+        {
+          "label": "Financial and insurance activities",
+          "count": 256
+        },
+        {
+          "label": "Education",
+          "count": 238
+        },
+        {
+          "label": "Accommodation and food service activities",
+          "count": 151
+        },
+        {
+          "label": "Human health and social work activities",
+          "count": 136
+        },
+        {
+          "label": "Transportation and storage",
+          "count": 132
+        },
+        {
+          "label": "Information and communication",
+          "count": 120
+        },
+        {
+          "label": "Construction",
+          "count": 87
+        },
+        {
+          "label": "Manufacturing",
+          "count": 86
+        },
+        {
+          "label": "Wholesale and retail trade",
+          "count": 73
+        }
+      ],
+      "top_jobs": [
+        {
+          "label": "Professionals",
+          "count": 867
+        },
+        {
+          "label": "Managers",
+          "count": 340
+        },
+        {
+          "label": "Technicians and associate professionals",
+          "count": 181
+        },
+        {
+          "label": "Service and sales workers",
+          "count": 138
+        },
+        {
+          "label": "Clerical support workers",
+          "count": 79
+        },
+        {
+          "label": "Plant and machine operators, and assemblers",
+          "count": 47
+        },
+        {
+          "label": "Craft and related trades workers",
+          "count": 21
+        },
+        {
+          "label": "Elementary occupations",
+          "count": 9
+        },
+        {
+          "label": "Skilled agricultural, forestry and fishery workers",
+          "count": 2
+        }
+      ],
+      "top_locations": [
+        {
+          "label": "Addis Ababa",
+          "count": 1417
+        },
+        {
+          "label": "Addis Ababa, Ethiopia",
+          "count": 290
+        },
+        {
+          "label": "Oromia",
+          "count": 70
+        },
+        {
+          "label": "Bule Hora",
+          "count": 59
+        },
+        {
+          "label": "Addis Ababa, Addis Ababa, Ethiopia",
+          "count": 50
+        },
+        {
+          "label": "Addis Ababa - Ethiopia",
+          "count": 50
+        },
+        {
+          "label": "Ethiopia",
+          "count": 33
+        },
+        {
+          "label": "Hawassa",
+          "count": 22
+        },
+        {
+          "label": "Jimma",
+          "count": 21
+        },
+        {
+          "label": "Adama",
+          "count": 16
+        }
+      ],
+      "top_employers": [
+        {
+          "label": "Company",
+          "count": 142
+        },
+        {
+          "label": "Private Client",
+          "count": 88
+        },
+        {
+          "label": "Bule Hora University",
+          "count": 59
+        },
+        {
+          "label": "Talent Search - Ethiojobs",
+          "count": 29
+        },
+        {
+          "label": "National Aviation College",
+          "count": 29
+        },
+        {
+          "label": "Ethiopian Food and Drug Authority (Efda)",
+          "count": 19
+        },
+        {
+          "label": "Lesso Ethiopia Trading PLC",
+          "count": 18
+        },
+        {
+          "label": "Unlimited Packaging PLC",
+          "count": 16
+        },
+        {
+          "label": "Amg Holdings PLC",
+          "count": 15
+        },
+        {
+          "label": "Leofam Business Group",
+          "count": 15
+        }
+      ]
+    },
+    "monthly": {
+      "posting_count": 2866,
+      "coverage": {
+        "education": {
+          "known": 745,
+          "total": 2866
+        },
+        "experience": {
+          "known": 1950,
+          "total": 2866
+        },
+        "salary": {
+          "known": 82,
+          "total": 2866
+        },
+        "employer_type": {
+          "known": 1307,
+          "total": 2866
+        }
+      },
+      "top_skills": [
+        {
+          "label": "Communication",
+          "count": 683
+        },
+        {
+          "label": "Problem solving",
+          "count": 250
+        },
+        {
+          "label": "Attention to detail",
+          "count": 230
+        },
+        {
+          "label": "Teamwork",
+          "count": 123
+        },
+        {
+          "label": "Accounting",
+          "count": 113
+        },
+        {
+          "label": "Decision-making",
+          "count": 76
+        },
+        {
+          "label": "Creativity",
+          "count": 68
+        },
+        {
+          "label": "Leadership",
+          "count": 58
+        },
+        {
+          "label": "Coordination",
+          "count": 40
+        },
+        {
+          "label": "Analytical thinking",
+          "count": 36
+        }
+      ],
+      "top_categories": [
+        {
+          "label": "Professional, scientific and technical activities",
+          "count": 922
+        },
+        {
+          "label": "Financial and insurance activities",
+          "count": 355
+        },
+        {
+          "label": "Education",
+          "count": 253
+        },
+        {
+          "label": "Human health and social work activities",
+          "count": 195
+        },
+        {
+          "label": "Accommodation and food service activities",
+          "count": 170
+        },
+        {
+          "label": "Transportation and storage",
+          "count": 162
+        },
+        {
+          "label": "Information and communication",
+          "count": 145
+        },
+        {
+          "label": "Wholesale and retail trade",
+          "count": 127
+        },
+        {
+          "label": "Manufacturing",
+          "count": 110
+        },
+        {
+          "label": "Construction",
+          "count": 92
+        }
+      ],
+      "top_jobs": [
+        {
+          "label": "Professionals",
+          "count": 1020
+        },
+        {
+          "label": "Managers",
+          "count": 421
+        },
+        {
+          "label": "Technicians and associate professionals",
+          "count": 220
+        },
+        {
+          "label": "Service and sales workers",
+          "count": 169
+        },
+        {
+          "label": "Clerical support workers",
+          "count": 96
+        },
+        {
+          "label": "Plant and machine operators, and assemblers",
+          "count": 51
+        },
+        {
+          "label": "Craft and related trades workers",
+          "count": 26
+        },
+        {
+          "label": "Elementary occupations",
+          "count": 9
+        },
+        {
+          "label": "Skilled agricultural, forestry and fishery workers",
+          "count": 2
+        }
+      ],
+      "top_locations": [
+        {
+          "label": "Addis Ababa",
+          "count": 1789
+        },
+        {
+          "label": "Addis Ababa, Ethiopia",
+          "count": 290
+        },
+        {
+          "label": "Oromia",
+          "count": 108
+        },
+        {
+          "label": "Bule Hora",
+          "count": 59
+        },
+        {
+          "label": "Addis Ababa, Addis Ababa, Ethiopia",
+          "count": 50
+        },
+        {
+          "label": "Addis Ababa - Ethiopia",
+          "count": 50
+        },
+        {
+          "label": "Ethiopia",
+          "count": 33
+        },
+        {
+          "label": "Hawassa",
+          "count": 22
+        },
+        {
+          "label": "Jimma",
+          "count": 21
+        },
+        {
+          "label": "Adama",
+          "count": 16
+        }
+      ],
+      "top_employers": [
+        {
+          "label": "Company",
+          "count": 142
+        },
+        {
+          "label": "Private Client",
+          "count": 88
+        },
+        {
+          "label": "Bule Hora University",
+          "count": 59
+        },
+        {
+          "label": "Talent Search - Ethiojobs",
+          "count": 30
+        },
+        {
+          "label": "National Aviation College",
+          "count": 29
+        },
+        {
+          "label": "Marie Stopes International Ethiopia",
+          "count": 19
+        },
+        {
+          "label": "Ethiopian Food and Drug Authority (Efda)",
+          "count": 19
+        },
+        {
+          "label": "Lesso Ethiopia Trading PLC",
+          "count": 18
+        },
+        {
+          "label": "Commercial Nominees PLC",
+          "count": 17
+        },
+        {
+          "label": "Amg Holdings",
+          "count": 17
+        }
+      ]
+    }
+  },
+  {
+    "date": "2026-10-04",
+    "weekly": {
+      "posting_count": 2434,
+      "coverage": {
+        "education": {
+          "known": 553,
+          "total": 2434
+        },
+        "experience": {
+          "known": 1694,
+          "total": 2434
+        },
+        "salary": {
+          "known": 75,
+          "total": 2434
+        },
+        "employer_type": {
+          "known": 1064,
+          "total": 2434
+        }
+      },
+      "top_skills": [
+        {
+          "label": "Communication",
+          "count": 420
+        },
+        {
+          "label": "Problem solving",
+          "count": 154
+        },
+        {
+          "label": "Attention to detail",
+          "count": 146
+        },
+        {
+          "label": "Accounting",
+          "count": 64
+        },
+        {
+          "label": "Teamwork",
+          "count": 57
+        },
+        {
+          "label": "Creativity",
+          "count": 49
+        },
+        {
+          "label": "Decision-making",
+          "count": 42
+        },
+        {
+          "label": "Leadership",
+          "count": 32
+        },
+        {
+          "label": "Customer service",
+          "count": 28
+        },
+        {
+          "label": "Time management",
+          "count": 25
+        }
+      ],
+      "top_categories": [
+        {
+          "label": "Professional, scientific and technical activities",
+          "count": 766
+        },
+        {
+          "label": "Financial and insurance activities",
+          "count": 253
+        },
+        {
+          "label": "Education",
+          "count": 239
+        },
+        {
+          "label": "Accommodation and food service activities",
+          "count": 151
+        },
+        {
+          "label": "Human health and social work activities",
+          "count": 141
+        },
+        {
+          "label": "Transportation and storage",
+          "count": 131
+        },
+        {
+          "label": "Information and communication",
+          "count": 122
+        },
+        {
+          "label": "Manufacturing",
+          "count": 94
+        },
+        {
+          "label": "Construction",
+          "count": 90
+        },
+        {
+          "label": "Wholesale and retail trade",
+          "count": 78
+        }
+      ],
+      "top_jobs": [
+        {
+          "label": "Professionals",
+          "count": 873
+        },
+        {
+          "label": "Managers",
+          "count": 347
+        },
+        {
+          "label": "Technicians and associate professionals",
+          "count": 185
+        },
+        {
+          "label": "Service and sales workers",
+          "count": 141
+        },
+        {
+          "label": "Clerical support workers",
+          "count": 81
+        },
+        {
+          "label": "Plant and machine operators, and assemblers",
+          "count": 49
+        },
+        {
+          "label": "Craft and related trades workers",
+          "count": 23
+        },
+        {
+          "label": "Elementary occupations",
+          "count": 9
+        },
+        {
+          "label": "Skilled agricultural, forestry and fishery workers",
+          "count": 2
+        }
+      ],
+      "top_locations": [
+        {
+          "label": "Addis Ababa",
+          "count": 1433
+        },
+        {
+          "label": "Addis Ababa, Ethiopia",
+          "count": 307
+        },
+        {
+          "label": "Oromia",
+          "count": 72
+        },
+        {
+          "label": "Bule Hora",
+          "count": 59
+        },
+        {
+          "label": "Addis Ababa, Addis Ababa, Ethiopia",
+          "count": 50
+        },
+        {
+          "label": "Addis Ababa - Ethiopia",
+          "count": 50
+        },
+        {
+          "label": "Ethiopia",
+          "count": 33
+        },
+        {
+          "label": "Hawassa",
+          "count": 22
+        },
+        {
+          "label": "Jimma",
+          "count": 22
+        },
+        {
+          "label": "Adama",
+          "count": 16
+        }
+      ],
+      "top_employers": [
+        {
+          "label": "Company",
+          "count": 147
+        },
+        {
+          "label": "Private Client",
+          "count": 97
+        },
+        {
+          "label": "Bule Hora University",
+          "count": 59
+        },
+        {
+          "label": "Talent Search - Ethiojobs",
+          "count": 29
+        },
+        {
+          "label": "National Aviation College",
+          "count": 29
+        },
+        {
+          "label": "Ethiopian Food and Drug Authority (Efda)",
+          "count": 19
+        },
+        {
+          "label": "Lesso Ethiopia Trading PLC",
+          "count": 18
+        },
+        {
+          "label": "Unlimited Packaging PLC",
+          "count": 16
+        },
+        {
+          "label": "Amg Holdings PLC",
+          "count": 16
+        },
+        {
+          "label": "Leofam Business Group",
+          "count": 15
+        }
+      ]
+    },
+    "monthly": {
+      "posting_count": 2916,
+      "coverage": {
+        "education": {
+          "known": 755,
+          "total": 2916
+        },
+        "experience": {
+          "known": 1965,
+          "total": 2916
+        },
+        "salary": {
+          "known": 82,
+          "total": 2916
+        },
+        "employer_type": {
+          "known": 1320,
+          "total": 2916
+        }
+      },
+      "top_skills": [
+        {
+          "label": "Communication",
+          "count": 693
+        },
+        {
+          "label": "Problem solving",
+          "count": 258
+        },
+        {
+          "label": "Attention to detail",
+          "count": 231
+        },
+        {
+          "label": "Teamwork",
+          "count": 123
+        },
+        {
+          "label": "Accounting",
+          "count": 113
+        },
+        {
+          "label": "Decision-making",
+          "count": 76
+        },
+        {
+          "label": "Creativity",
+          "count": 71
+        },
+        {
+          "label": "Leadership",
+          "count": 59
+        },
+        {
+          "label": "Coordination",
+          "count": 40
+        },
+        {
+          "label": "Analytical thinking",
+          "count": 36
+        }
+      ],
+      "top_categories": [
+        {
+          "label": "Professional, scientific and technical activities",
+          "count": 937
+        },
+        {
+          "label": "Financial and insurance activities",
+          "count": 355
+        },
+        {
+          "label": "Education",
+          "count": 254
+        },
+        {
+          "label": "Human health and social work activities",
+          "count": 200
+        },
+        {
+          "label": "Accommodation and food service activities",
+          "count": 170
+        },
+        {
+          "label": "Transportation and storage",
+          "count": 162
+        },
+        {
+          "label": "Information and communication",
+          "count": 147
+        },
+        {
+          "label": "Wholesale and retail trade",
+          "count": 132
+        },
+        {
+          "label": "Manufacturing",
+          "count": 118
+        },
+        {
+          "label": "Construction",
+          "count": 95
+        }
+      ],
+      "top_jobs": [
+        {
+          "label": "Professionals",
+          "count": 1030
+        },
+        {
+          "label": "Managers",
+          "count": 428
+        },
+        {
+          "label": "Technicians and associate professionals",
+          "count": 225
+        },
+        {
+          "label": "Service and sales workers",
+          "count": 172
+        },
+        {
+          "label": "Clerical support workers",
+          "count": 98
+        },
+        {
+          "label": "Plant and machine operators, and assemblers",
+          "count": 53
+        },
+        {
+          "label": "Craft and related trades workers",
+          "count": 28
+        },
+        {
+          "label": "Elementary occupations",
+          "count": 9
+        },
+        {
+          "label": "Skilled agricultural, forestry and fishery workers",
+          "count": 2
+        }
+      ],
+      "top_locations": [
+        {
+          "label": "Addis Ababa",
+          "count": 1812
+        },
+        {
+          "label": "Addis Ababa, Ethiopia",
+          "count": 307
+        },
+        {
+          "label": "Oromia",
+          "count": 110
+        },
+        {
+          "label": "Bule Hora",
+          "count": 59
+        },
+        {
+          "label": "Addis Ababa, Addis Ababa, Ethiopia",
+          "count": 50
+        },
+        {
+          "label": "Addis Ababa - Ethiopia",
+          "count": 50
+        },
+        {
+          "label": "Ethiopia",
+          "count": 33
+        },
+        {
+          "label": "Hawassa",
+          "count": 22
+        },
+        {
+          "label": "Jimma",
+          "count": 22
+        },
+        {
+          "label": "Adama",
+          "count": 16
+        }
+      ],
+      "top_employers": [
+        {
+          "label": "Company",
+          "count": 147
+        },
+        {
+          "label": "Private Client",
+          "count": 97
+        },
+        {
+          "label": "Bule Hora University",
+          "count": 59
+        },
+        {
+          "label": "Talent Search - Ethiojobs",
+          "count": 30
+        },
+        {
+          "label": "National Aviation College",
+          "count": 29
+        },
+        {
+          "label": "Marie Stopes International Ethiopia",
+          "count": 19
+        },
+        {
+          "label": "Ethiopian Food and Drug Authority (Efda)",
+          "count": 19
+        },
+        {
+          "label": "Lesso Ethiopia Trading PLC",
+          "count": 18
+        },
+        {
+          "label": "Commercial Nominees PLC",
+          "count": 17
+        },
+        {
+          "label": "Amg Holdings",
+          "count": 17
+        }
+      ]
+    }
+  },
+  {
+    "date": "2026-10-05",
+    "weekly": {
+      "posting_count": 2664,
+      "coverage": {
+        "education": {
+          "known": 801,
+          "total": 2664
+        },
+        "experience": {
+          "known": 1866,
+          "total": 2664
+        },
+        "salary": {
+          "known": 80,
+          "total": 2664
+        },
+        "employer_type": {
+          "known": 1150,
+          "total": 2664
+        }
+      },
+      "top_skills": [
+        {
+          "label": "Communication",
+          "count": 439
+        },
+        {
+          "label": "Problem solving",
+          "count": 144
+        },
+        {
+          "label": "Attention to detail",
+          "count": 129
+        },
+        {
+          "label": "Teamwork",
+          "count": 59
+        },
+        {
+          "label": "Accounting",
+          "count": 58
+        },
+        {
+          "label": "Leadership",
+          "count": 48
+        },
+        {
+          "label": "Creativity",
+          "count": 43
+        },
+        {
+          "label": "Decision-making",
+          "count": 31
+        },
+        {
+          "label": "Time management",
+          "count": 31
+        },
+        {
+          "label": "Customer service",
+          "count": 31
+        }
+      ],
+      "top_categories": [
+        {
+          "label": "Professional, scientific and technical activities",
+          "count": 818
+        },
+        {
+          "label": "Education",
+          "count": 299
+        },
+        {
+          "label": "Financial and insurance activities",
+          "count": 243
+        },
+        {
+          "label": "Human health and social work activities",
+          "count": 164
+        },
+        {
+          "label": "Transportation and storage",
+          "count": 159
+        },
+        {
+          "label": "Accommodation and food service activities",
+          "count": 150
+        },
+        {
+          "label": "Information and communication",
+          "count": 125
+        },
+        {
+          "label": "Manufacturing",
+          "count": 105
+        },
+        {
+          "label": "Construction",
+          "count": 102
+        },
+        {
+          "label": "Wholesale and retail trade",
+          "count": 84
+        }
+      ],
+      "top_jobs": [
+        {
+          "label": "Professionals",
+          "count": 954
+        },
+        {
+          "label": "Managers",
+          "count": 362
+        },
+        {
+          "label": "Technicians and associate professionals",
+          "count": 209
+        },
+        {
+          "label": "Service and sales workers",
+          "count": 159
+        },
+        {
+          "label": "Clerical support workers",
+          "count": 86
+        },
+        {
+          "label": "Plant and machine operators, and assemblers",
+          "count": 47
+        },
+        {
+          "label": "Craft and related trades workers",
+          "count": 25
+        },
+        {
+          "label": "Elementary occupations",
+          "count": 12
+        },
+        {
+          "label": "Skilled agricultural, forestry and fishery workers",
+          "count": 2
+        }
+      ],
+      "top_locations": [
+        {
+          "label": "Addis Ababa",
+          "count": 1517
+        },
+        {
+          "label": "Addis Ababa, Ethiopia",
+          "count": 386
+        },
+        {
+          "label": "Oromia",
+          "count": 69
+        },
+        {
+          "label": "Addis Ababa - Ethiopia",
+          "count": 62
+        },
+        {
+          "label": "Bule Hora",
+          "count": 59
+        },
+        {
+          "label": "Addis Ababa, Addis Ababa, Ethiopia",
+          "count": 50
+        },
+        {
+          "label": "Ethiopia",
+          "count": 34
+        },
+        {
+          "label": "Hawassa",
+          "count": 22
+        },
+        {
+          "label": "Jimma",
+          "count": 22
+        },
+        {
+          "label": "Amhara",
+          "count": 20
+        }
+      ],
+      "top_employers": [
+        {
+          "label": "Bule Hora University",
+          "count": 59
+        },
+        {
+          "label": "National Aviation College",
+          "count": 29
+        },
+        {
+          "label": "World Vision Ethiopia",
+          "count": 28
+        },
+        {
+          "label": "Ethiopian Food and Drug Authority (Efda)",
+          "count": 19
+        },
+        {
+          "label": "Ethiopian Construction Works Corporation",
+          "count": 19
+        },
+        {
+          "label": "Lesso Ethiopia Trading PLC",
+          "count": 18
+        },
+        {
+          "label": "Werabe University",
+          "count": 18
+        },
+        {
+          "label": "Unlimited Packaging PLC",
+          "count": 16
+        },
+        {
+          "label": "Amg Holdings PLC",
+          "count": 16
+        },
+        {
+          "label": "Leofam Business Group",
+          "count": 15
+        }
+      ]
+    },
+    "monthly": {
+      "posting_count": 3232,
+      "coverage": {
+        "education": {
+          "known": 1028,
+          "total": 3232
+        },
+        "experience": {
+          "known": 2189,
+          "total": 3232
+        },
+        "salary": {
+          "known": 88,
+          "total": 3232
+        },
+        "employer_type": {
+          "known": 1451,
+          "total": 3232
+        }
+      },
+      "top_skills": [
+        {
+          "label": "Communication",
+          "count": 766
+        },
+        {
+          "label": "Problem solving",
+          "count": 272
+        },
+        {
+          "label": "Attention to detail",
+          "count": 240
+        },
+        {
+          "label": "Teamwork",
+          "count": 130
+        },
+        {
+          "label": "Accounting",
+          "count": 122
+        },
+        {
+          "label": "Leadership",
+          "count": 77
+        },
+        {
+          "label": "Decision-making",
+          "count": 77
+        },
+        {
+          "label": "Creativity",
+          "count": 75
+        },
+        {
+          "label": "Coordination",
+          "count": 44
+        },
+        {
+          "label": "Time management",
+          "count": 43
+        }
+      ],
+      "top_categories": [
+        {
+          "label": "Professional, scientific and technical activities",
+          "count": 1028
+        },
+        {
+          "label": "Financial and insurance activities",
+          "count": 380
+        },
+        {
+          "label": "Education",
+          "count": 318
+        },
+        {
+          "label": "Human health and social work activities",
+          "count": 226
+        },
+        {
+          "label": "Transportation and storage",
+          "count": 191
+        },
+        {
+          "label": "Accommodation and food service activities",
+          "count": 170
+        },
+        {
+          "label": "Information and communication",
+          "count": 156
+        },
+        {
+          "label": "Wholesale and retail trade",
+          "count": 143
+        },
+        {
+          "label": "Manufacturing",
+          "count": 130
+        },
+        {
+          "label": "Construction",
+          "count": 109
+        }
+      ],
+      "top_jobs": [
+        {
+          "label": "Professionals",
+          "count": 1149
+        },
+        {
+          "label": "Managers",
+          "count": 455
+        },
+        {
+          "label": "Technicians and associate professionals",
+          "count": 253
+        },
+        {
+          "label": "Service and sales workers",
+          "count": 194
+        },
+        {
+          "label": "Clerical support workers",
+          "count": 107
+        },
+        {
+          "label": "Plant and machine operators, and assemblers",
+          "count": 54
+        },
+        {
+          "label": "Craft and related trades workers",
+          "count": 32
+        },
+        {
+          "label": "Elementary occupations",
+          "count": 13
+        },
+        {
+          "label": "Skilled agricultural, forestry and fishery workers",
+          "count": 2
+        }
+      ],
+      "top_locations": [
+        {
+          "label": "Addis Ababa",
+          "count": 1952
+        },
+        {
+          "label": "Addis Ababa, Ethiopia",
+          "count": 386
+        },
+        {
+          "label": "Oromia",
+          "count": 114
+        },
+        {
+          "label": "Addis Ababa - Ethiopia",
+          "count": 62
+        },
+        {
+          "label": "Bule Hora",
+          "count": 59
+        },
+        {
+          "label": "Addis Ababa, Addis Ababa, Ethiopia",
+          "count": 50
+        },
+        {
+          "label": "Ethiopia",
+          "count": 34
+        },
+        {
+          "label": "Amhara",
+          "count": 27
+        },
+        {
+          "label": "Hawassa",
+          "count": 22
+        },
+        {
+          "label": "Jimma",
+          "count": 22
+        }
+      ],
+      "top_employers": [
+        {
+          "label": "Bule Hora University",
+          "count": 59
+        },
+        {
+          "label": "World Vision Ethiopia",
+          "count": 30
+        },
+        {
+          "label": "National Aviation College",
+          "count": 29
+        },
+        {
+          "label": "Marie Stopes International Ethiopia",
+          "count": 19
+        },
+        {
+          "label": "Ethiopian Food and Drug Authority (Efda)",
+          "count": 19
+        },
+        {
+          "label": "Ethiopian Construction Works Corporation",
+          "count": 19
+        },
+        {
+          "label": "Lesso Ethiopia Trading PLC",
+          "count": 18
+        },
+        {
+          "label": "Werabe University",
+          "count": 18
+        },
+        {
+          "label": "Commercial Nominees PLC",
+          "count": 17
+        },
+        {
+          "label": "Amg Holdings",
+          "count": 17
+        }
+      ]
+    }
+  },
+  {
+    "date": "2026-10-06",
+    "weekly": {
+      "posting_count": 2946,
+      "coverage": {
+        "education": {
+          "known": 991,
+          "total": 2946
+        },
+        "experience": {
+          "known": 2059,
+          "total": 2946
+        },
+        "salary": {
+          "known": 81,
+          "total": 2946
+        },
+        "employer_type": {
+          "known": 1220,
+          "total": 2946
+        }
+      },
+      "top_skills": [
+        {
+          "label": "Communication",
+          "count": 423
+        },
+        {
+          "label": "Problem solving",
+          "count": 139
+        },
+        {
+          "label": "Attention to detail",
+          "count": 110
+        },
+        {
+          "label": "Accounting",
+          "count": 57
+        },
+        {
+          "label": "Teamwork",
+          "count": 52
+        },
+        {
+          "label": "Leadership",
+          "count": 52
+        },
+        {
+          "label": "Creativity",
+          "count": 43
+        },
+        {
+          "label": "Customer service",
+          "count": 34
+        },
+        {
+          "label": "Time management",
+          "count": 33
+        },
+        {
+          "label": "Decision-making",
+          "count": 30
+        }
+      ],
+      "top_categories": [
+        {
+          "label": "Professional, scientific and technical activities",
+          "count": 849
+        },
+        {
+          "label": "Education",
+          "count": 336
+        },
+        {
+          "label": "Financial and insurance activities",
+          "count": 240
+        },
+        {
+          "label": "Transportation and storage",
+          "count": 175
+        },
+        {
+          "label": "Human health and social work activities",
+          "count": 160
+        },
+        {
+          "label": "Accommodation and food service activities",
+          "count": 139
+        },
+        {
+          "label": "Information and communication",
+          "count": 136
+        },
+        {
+          "label": "Public administration and defence",
+          "count": 128
+        },
+        {
+          "label": "Manufacturing",
+          "count": 106
+        },
+        {
+          "label": "Construction",
+          "count": 104
+        }
+      ],
+      "top_jobs": [
+        {
+          "label": "Professionals",
+          "count": 1056
+        },
+        {
+          "label": "Managers",
+          "count": 408
+        },
+        {
+          "label": "Technicians and associate professionals",
+          "count": 234
+        },
+        {
+          "label": "Service and sales workers",
+          "count": 167
+        },
+        {
+          "label": "Clerical support workers",
+          "count": 97
+        },
+        {
+          "label": "Plant and machine operators, and assemblers",
+          "count": 51
+        },
+        {
+          "label": "Craft and related trades workers",
+          "count": 28
+        },
+        {
+          "label": "Elementary occupations",
+          "count": 11
+        },
+        {
+          "label": "Skilled agricultural, forestry and fishery workers",
+          "count": 4
+        }
+      ],
+      "top_locations": [
+        {
+          "label": "Addis Ababa",
+          "count": 1624
+        },
+        {
+          "label": "Addis Ababa, Ethiopia",
+          "count": 450
+        },
+        {
+          "label": "Addis Ababa - Ethiopia",
+          "count": 71
+        },
+        {
+          "label": "Oromia",
+          "count": 63
+        },
+        {
+          "label": "Bule Hora",
+          "count": 59
+        },
+        {
+          "label": "Addis Ababa, Addis Ababa, Ethiopia",
+          "count": 50
+        },
+        {
+          "label": "Ethiopia",
+          "count": 43
+        },
+        {
+          "label": "Werabe",
+          "count": 27
+        },
+        {
+          "label": "Hawassa",
+          "count": 25
+        },
+        {
+          "label": "Jimma",
+          "count": 25
+        }
+      ],
+      "top_employers": [
+        {
+          "label": "Bule Hora University",
+          "count": 59
+        },
+        {
+          "label": "World Vision Ethiopia",
+          "count": 31
+        },
+        {
+          "label": "National Aviation College",
+          "count": 29
+        },
+        {
+          "label": "Werabe University",
+          "count": 29
+        },
+        {
+          "label": "Heineken Ethiopia",
+          "count": 19
+        },
+        {
+          "label": "Ethiopian Food and Drug Authority (Efda)",
+          "count": 19
+        },
+        {
+          "label": "Ethiopian Construction Works Corporation",
+          "count": 19
+        },
+        {
+          "label": "Lesso Ethiopia Trading PLC",
+          "count": 18
+        },
+        {
+          "label": "Unlimited Packaging PLC",
+          "count": 16
+        },
+        {
+          "label": "Amg Holdings PLC",
+          "count": 16
+        }
+      ]
+    },
+    "monthly": {
+      "posting_count": 3572,
+      "coverage": {
+        "education": {
+          "known": 1236,
+          "total": 3572
+        },
+        "experience": {
+          "known": 2411,
+          "total": 3572
+        },
+        "salary": {
+          "known": 89,
+          "total": 3572
+        },
+        "employer_type": {
+          "known": 1548,
+          "total": 3572
+        }
+      },
+      "top_skills": [
+        {
+          "label": "Communication",
+          "count": 790
+        },
+        {
+          "label": "Problem solving",
+          "count": 277
+        },
+        {
+          "label": "Attention to detail",
+          "count": 241
+        },
+        {
+          "label": "Teamwork",
+          "count": 131
+        },
+        {
+          "label": "Accounting",
+          "count": 125
+        },
+        {
+          "label": "Leadership",
+          "count": 82
+        },
+        {
+          "label": "Decision-making",
+          "count": 77
+        },
+        {
+          "label": "Creativity",
+          "count": 76
+        },
+        {
+          "label": "Time management",
+          "count": 47
+        },
+        {
+          "label": "Customer service",
+          "count": 46
+        }
+      ],
+      "top_categories": [
+        {
+          "label": "Professional, scientific and technical activities",
+          "count": 1079
+        },
+        {
+          "label": "Financial and insurance activities",
+          "count": 385
+        },
+        {
+          "label": "Education",
+          "count": 356
+        },
+        {
+          "label": "Human health and social work activities",
+          "count": 229
+        },
+        {
+          "label": "Transportation and storage",
+          "count": 209
+        },
+        {
+          "label": "Accommodation and food service activities",
+          "count": 177
+        },
+        {
+          "label": "Information and communication",
+          "count": 167
+        },
+        {
+          "label": "Wholesale and retail trade",
+          "count": 145
+        },
+        {
+          "label": "Manufacturing",
+          "count": 133
+        },
+        {
+          "label": "Public administration and defence",
+          "count": 128
+        }
+      ],
+      "top_jobs": [
+        {
+          "label": "Professionals",
+          "count": 1267
+        },
+        {
+          "label": "Managers",
+          "count": 507
+        },
+        {
+          "label": "Technicians and associate professionals",
+          "count": 285
+        },
+        {
+          "label": "Service and sales workers",
+          "count": 209
+        },
+        {
+          "label": "Clerical support workers",
+          "count": 120
+        },
+        {
+          "label": "Plant and machine operators, and assemblers",
+          "count": 60
+        },
+        {
+          "label": "Craft and related trades workers",
+          "count": 35
+        },
+        {
+          "label": "Elementary occupations",
+          "count": 13
+        },
+        {
+          "label": "Skilled agricultural, forestry and fishery workers",
+          "count": 4
+        }
+      ],
+      "top_locations": [
+        {
+          "label": "Addis Ababa",
+          "count": 2098
+        },
+        {
+          "label": "Addis Ababa, Ethiopia",
+          "count": 450
+        },
+        {
+          "label": "Oromia",
+          "count": 114
+        },
+        {
+          "label": "Addis Ababa - Ethiopia",
+          "count": 71
+        },
+        {
+          "label": "Bule Hora",
+          "count": 59
+        },
+        {
+          "label": "Addis Ababa, Addis Ababa, Ethiopia",
+          "count": 50
+        },
+        {
+          "label": "Ethiopia",
+          "count": 43
+        },
+        {
+          "label": "Amhara",
+          "count": 28
+        },
+        {
+          "label": "Werabe",
+          "count": 27
+        },
+        {
+          "label": "Hawassa",
+          "count": 25
+        }
+      ],
+      "top_employers": [
+        {
+          "label": "Bule Hora University",
+          "count": 59
+        },
+        {
+          "label": "World Vision Ethiopia",
+          "count": 33
+        },
+        {
+          "label": "National Aviation College",
+          "count": 29
+        },
+        {
+          "label": "Werabe University",
+          "count": 29
+        },
+        {
+          "label": "Heineken Ethiopia",
+          "count": 21
+        },
+        {
+          "label": "Marie Stopes International Ethiopia",
+          "count": 19
+        },
+        {
+          "label": "Ethiopian Food and Drug Authority (Efda)",
+          "count": 19
+        },
+        {
+          "label": "Ethiopian Construction Works Corporation",
+          "count": 19
+        },
+        {
+          "label": "Lesso Ethiopia Trading PLC",
+          "count": 18
+        },
+        {
+          "label": "Commercial Nominees PLC",
+          "count": 17
+        }
+      ]
+    }
+  },
+  {
+    "date": "2026-10-07",
+    "weekly": {
+      "posting_count": 3155,
+      "coverage": {
+        "education": {
+          "known": 1038,
+          "total": 3155
+        },
+        "experience": {
+          "known": 2176,
+          "total": 3155
+        },
+        "salary": {
+          "known": 91,
+          "total": 3155
+        },
+        "employer_type": {
+          "known": 1276,
+          "total": 3155
+        }
+      },
+      "top_skills": [
+        {
+          "label": "Communication",
+          "count": 387
+        },
+        {
+          "label": "Problem solving",
+          "count": 126
+        },
+        {
+          "label": "Attention to detail",
+          "count": 93
+        },
+        {
+          "label": "Accounting",
+          "count": 52
+        },
+        {
+          "label": "Leadership",
+          "count": 48
+        },
+        {
+          "label": "Teamwork",
+          "count": 45
+        },
+        {
+          "label": "Creativity",
+          "count": 41
+        },
+        {
+          "label": "Customer service",
+          "count": 38
+        },
+        {
+          "label": "Time management",
+          "count": 32
+        },
+        {
+          "label": "Accountability",
+          "count": 32
+        }
+      ],
+      "top_categories": [
+        {
+          "label": "Professional, scientific and technical activities",
+          "count": 848
+        },
+        {
+          "label": "Education",
+          "count": 355
+        },
+        {
+          "label": "Financial and insurance activities",
+          "count": 243
+        },
+        {
+          "label": "Transportation and storage",
+          "count": 182
+        },
+        {
+          "label": "Human health and social work activities",
+          "count": 163
+        },
+        {
+          "label": "Public administration and defence",
+          "count": 146
+        },
+        {
+          "label": "Information and communication",
+          "count": 142
+        },
+        {
+          "label": "Accommodation and food service activities",
+          "count": 140
+        },
+        {
+          "label": "Construction",
+          "count": 115
+        },
+        {
+          "label": "Manufacturing",
+          "count": 113
+        }
+      ],
+      "top_jobs": [
+        {
+          "label": "Professionals",
+          "count": 1117
+        },
+        {
+          "label": "Managers",
+          "count": 439
+        },
+        {
+          "label": "Technicians and associate professionals",
+          "count": 240
+        },
+        {
+          "label": "Service and sales workers",
+          "count": 183
+        },
+        {
+          "label": "Clerical support workers",
+          "count": 100
+        },
+        {
+          "label": "Plant and machine operators, and assemblers",
+          "count": 55
+        },
+        {
+          "label": "Craft and related trades workers",
+          "count": 26
+        },
+        {
+          "label": "Elementary occupations",
+          "count": 11
+        },
+        {
+          "label": "Skilled agricultural, forestry and fishery workers",
+          "count": 5
+        }
+      ],
+      "top_locations": [
+        {
+          "label": "Addis Ababa, Addis Ababa",
+          "count": 2415
+        },
+        {
+          "label": "Unspecified",
+          "count": 127
+        },
+        {
+          "label": "Bule Hora, Oromia",
+          "count": 59
+        },
+        {
+          "label": "NC, Oromia",
+          "count": 51
+        },
+        {
+          "label": "Jimma, Oromia",
+          "count": 31
+        },
+        {
+          "label": "Hawassa, Sidama",
+          "count": 30
+        },
+        {
+          "label": "Worabe, Central Ethiopia",
+          "count": 28
+        },
+        {
+          "label": "Adama, Oromia",
+          "count": 22
+        },
+        {
+          "label": "Remote",
+          "count": 21
+        },
+        {
+          "label": "NC, Amhara",
+          "count": 19
+        }
+      ],
+      "top_employers": [
+        {
+          "label": "Bule Hora University",
+          "count": 59
+        },
+        {
+          "label": "World Vision Ethiopia",
+          "count": 31
+        },
+        {
+          "label": "Werabe University",
+          "count": 30
+        },
+        {
+          "label": "National Aviation College",
+          "count": 29
+        },
+        {
+          "label": "Heineken Ethiopia",
+          "count": 21
+        },
+        {
+          "label": "Ethiopian Food and Drug Authority (Efda)",
+          "count": 19
+        },
+        {
+          "label": "Ethiopian Construction Works Corporation",
+          "count": 19
+        },
+        {
+          "label": "Lesso Ethiopia Trading PLC",
+          "count": 18
+        },
+        {
+          "label": "Unlimited Packaging PLC",
+          "count": 16
+        },
+        {
+          "label": "Amg Holdings PLC",
+          "count": 16
+        }
+      ]
+    },
+    "monthly": {
+      "posting_count": 3877,
+      "coverage": {
+        "education": {
+          "known": 1316,
+          "total": 3877
+        },
+        "experience": {
+          "known": 2596,
+          "total": 3877
+        },
+        "salary": {
+          "known": 99,
+          "total": 3877
+        },
+        "employer_type": {
+          "known": 1661,
+          "total": 3877
+        }
+      },
+      "top_skills": [
+        {
+          "label": "Communication",
+          "count": 810
+        },
+        {
+          "label": "Problem solving",
+          "count": 281
+        },
+        {
+          "label": "Attention to detail",
+          "count": 241
+        },
+        {
+          "label": "Teamwork",
+          "count": 132
+        },
+        {
+          "label": "Accounting",
+          "count": 128
+        },
+        {
+          "label": "Leadership",
+          "count": 83
+        },
+        {
+          "label": "Decision-making",
+          "count": 77
+        },
+        {
+          "label": "Creativity",
+          "count": 77
+        },
+        {
+          "label": "Customer service",
+          "count": 50
+        },
+        {
+          "label": "Time management",
+          "count": 48
+        }
+      ],
+      "top_categories": [
+        {
+          "label": "Professional, scientific and technical activities",
+          "count": 1131
+        },
+        {
+          "label": "Financial and insurance activities",
+          "count": 413
+        },
+        {
+          "label": "Education",
+          "count": 375
+        },
+        {
+          "label": "Human health and social work activities",
+          "count": 242
+        },
+        {
+          "label": "Transportation and storage",
+          "count": 225
+        },
+        {
+          "label": "Information and communication",
+          "count": 179
+        },
+        {
+          "label": "Accommodation and food service activities",
+          "count": 179
+        },
+        {
+          "label": "Wholesale and retail trade",
+          "count": 146
+        },
+        {
+          "label": "Public administration and defence",
+          "count": 146
+        },
+        {
+          "label": "Manufacturing",
+          "count": 145
+        }
+      ],
+      "top_jobs": [
+        {
+          "label": "Professionals",
+          "count": 1368
+        },
+        {
+          "label": "Managers",
+          "count": 545
+        },
+        {
+          "label": "Technicians and associate professionals",
+          "count": 303
+        },
+        {
+          "label": "Service and sales workers",
+          "count": 230
+        },
+        {
+          "label": "Clerical support workers",
+          "count": 125
+        },
+        {
+          "label": "Plant and machine operators, and assemblers",
+          "count": 65
+        },
+        {
+          "label": "Craft and related trades workers",
+          "count": 37
+        },
+        {
+          "label": "Elementary occupations",
+          "count": 13
+        },
+        {
+          "label": "Skilled agricultural, forestry and fishery workers",
+          "count": 5
+        }
+      ],
+      "top_locations": [
+        {
+          "label": "Addis Ababa, Addis Ababa",
+          "count": 2956
+        },
+        {
+          "label": "Unspecified",
+          "count": 187
+        },
+        {
+          "label": "NC, Oromia",
+          "count": 120
+        },
+        {
+          "label": "Bule Hora, Oromia",
+          "count": 59
+        },
+        {
+          "label": "Jimma, Oromia",
+          "count": 31
+        },
+        {
+          "label": "Hawassa, Sidama",
+          "count": 30
+        },
+        {
+          "label": "NC, Amhara",
+          "count": 29
+        },
+        {
+          "label": "Worabe, Central Ethiopia",
+          "count": 28
+        },
+        {
+          "label": "Adama, Oromia",
+          "count": 22
+        },
+        {
+          "label": "Remote",
+          "count": 21
+        }
+      ],
+      "top_employers": [
+        {
+          "label": "Bule Hora University",
+          "count": 59
+        },
+        {
+          "label": "World Vision Ethiopia",
+          "count": 33
+        },
+        {
+          "label": "Werabe University",
+          "count": 30
+        },
+        {
+          "label": "National Aviation College",
+          "count": 29
+        },
+        {
+          "label": "Heineken Ethiopia",
+          "count": 23
+        },
+        {
+          "label": "Marie Stopes International Ethiopia",
+          "count": 19
+        },
+        {
+          "label": "Ethiopian Food and Drug Authority (Efda)",
+          "count": 19
+        },
+        {
+          "label": "Ethiopian Construction Works Corporation",
+          "count": 19
+        },
+        {
+          "label": "Amg Holdings",
+          "count": 18
+        },
+        {
+          "label": "Lesso Ethiopia Trading PLC",
+          "count": 18
+        }
+      ]
+    }
+  }
+]
