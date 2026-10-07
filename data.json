@@ -1,670 +1,671 @@
 {
- "profile": {
-  "name": "Mesfin Abraham Ali",
-  "initials": "MA",
-  "tagline": "Development economics, education, labour markets",
-  "headline": "Evidence on education, work and inequality in Ethiopia",
-  "bio": "I am <strong>Mesfin Abraham Ali</strong>, a development economist and PhD candidate at Wageningen University and Research. I study how schooling expanded across Ethiopia and what it did for jobs and living standards. I also take on evaluations, market studies and data verification.",
-  "role": "PhD candidate",
-  "affiliation": "Wageningen University and Research",
-  "photos": [
-   {
-    "src": "img/hero_periods.svg",
-    "alt": "Bars showing the periods covered by the dissertation, 1900 to 2018"
-   }
-  ]
- },
- "hero": {
-  "welcomeTitle": "Development economist",
-  "studentTitle": "",
-  "welcomeText": ""
- },
- "hiring": {
-  "enabled": true,
-  "title": "Open to consultancy and collaboration",
-  "description": "I take on impact evaluations, market and feasibility studies, data cleaning and source verification, and I welcome research collaboration on education, labour markets, inequality and gender in Ethiopia and the wider Global South."
- },
- "opportunities": {
-  "title": "",
-  "summary": "",
-  "positions": []
- },
- "expertise": [],
- "researchProfile": {
-  "title": "Research Highlights and Interests",
-  "summary": "My dissertation follows the expansion of formal education in Ethiopia from the mid nineteenth century and links it to labour markets, intergenerational mobility and structural change. It sits within the NWO Vici project South South Divergence, under Prof. Ewout Frankema.",
-  "interests": [
-   "Education and labour markets",
-   "Structural change in Ethiopia",
-   "Economic inequality in Africa",
-   "Gender and spatial inequality",
-   "Economic history",
-   "Impact evaluation"
+  "profile": {
+    "name": "Mesfin Abraham Ali",
+    "initials": "MA",
+    "tagline": "Development economics, education, labour markets",
+    "headline": "Evidence on education, work and inequality in Ethiopia",
+    "bio": "I am <strong>Mesfin Abraham Ali</strong>, a development economist and PhD candidate at Wageningen University and Research. I study how schooling expanded across Ethiopia and what it did for jobs and living standards. I also take on evaluations, market studies and data verification.",
+    "role": "PhD candidate",
+    "affiliation": "Wageningen University and Research",
+    "photos": [
+      {
+        "src": "img/hero_periods.svg",
+        "alt": "Bars showing the periods covered by the dissertation, 1900 to 2018"
+      }
+    ]
+  },
+  "hero": {
+    "welcomeTitle": "Development economist",
+    "studentTitle": "",
+    "welcomeText": ""
+  },
+  "hiring": {
+    "enabled": true,
+    "title": "Open to consultancy and collaboration",
+    "description": "I take on impact evaluations, market and feasibility studies, data cleaning and source verification, and I welcome research collaboration on education, labour markets, inequality and gender in Ethiopia and the wider Global South."
+  },
+  "opportunities": {
+    "title": "",
+    "summary": "",
+    "positions": []
+  },
+  "expertise": [],
+  "researchProfile": {
+    "title": "Research Highlights and Interests",
+    "summary": "My dissertation follows the expansion of formal education in Ethiopia from the mid nineteenth century and links it to labour markets, intergenerational mobility and structural change. It sits within the NWO Vici project South South Divergence, under Prof. Ewout Frankema.",
+    "interests": [
+      "Education and labour markets",
+      "Structural change in Ethiopia",
+      "Economic inequality in Africa",
+      "Gender and spatial inequality",
+      "Economic history",
+      "Impact evaluation"
+    ],
+    "metrics": [
+      {
+        "label": "Peer reviewed articles",
+        "value": "2"
+      },
+      {
+        "label": "Conference presentations",
+        "value": "6"
+      },
+      {
+        "label": "Years in research and teaching",
+        "value": "10+"
+      },
+      {
+        "label": "Languages",
+        "value": "3"
+      }
+    ],
+    "highlights": [
+      {
+        "title": "Dissertation chapters, work in progress",
+        "description": "Three empirical chapters, each intended as a journal article after the defence.",
+        "items": [
+          "Mapping the expansion of formal education in Ethiopia, 1900 to 2018",
+          "Educational infrastructure and intergenerational labour market outcomes",
+          "Structural transformation and educational inequality"
+        ]
+      },
+      {
+        "title": "Methods and tools",
+        "description": "What I use for research and applied work.",
+        "items": [
+          {
+            "name": "R",
+            "icon": "code",
+            "level": "expert",
+            "note": "Panel data, causal inference and Quarto reports."
+          },
+          {
+            "name": "Stata",
+            "icon": "monitor",
+            "level": "advanced",
+            "note": "Econometrics for research and teaching."
+          },
+          {
+            "name": "Excel",
+            "icon": "monitor",
+            "level": "advanced",
+            "note": "Data cleaning, financial projections and record comparison."
+          },
+          {
+            "name": "SPSS",
+            "icon": "monitor",
+            "level": "intermediate",
+            "note": "Survey data entry and analysis."
+          },
+          {
+            "name": "Power BI",
+            "icon": "monitor",
+            "level": "intermediate",
+            "note": "Dashboards for research and applied work."
+          },
+          {
+            "name": "QGIS",
+            "icon": "globe",
+            "level": "learning",
+            "note": "Spatial analysis and mapping, still developing."
+          },
+          {
+            "name": "Python",
+            "icon": "code",
+            "level": "learning",
+            "note": "Self taught, for data collection and processing."
+          }
+        ]
+      },
+      {
+        "title": "Research methods",
+        "description": "",
+        "items": [
+          "Difference in differences",
+          "Regression discontinuity",
+          "Panel data analysis",
+          "Impact evaluation design",
+          "Survey design and sampling",
+          "Archival research and source criticism",
+          "Inequality decomposition",
+          "Qualitative methods"
+        ]
+      },
+      {
+        "title": "Regional expertise",
+        "description": "",
+        "items": [
+          "Education policy in Sub Saharan Africa",
+          "Social stratification in Ethiopia",
+          "Urban and rural gaps in education",
+          "Horn of Africa institutions and economy"
+        ]
+      }
+    ]
+  },
+  "projects": [
+    {
+      "title": "Doctoral dissertation",
+      "subtitle": "Educational expansion, labour markets and structural change in Ethiopia",
+      "year": "2022 to 2026",
+      "image": "img/proj_dissertation.svg",
+      "description": "How the uneven spread of schools shaped jobs, mobility and inequality across generations.",
+      "longDescription": "The dissertation uses colonial and imperial administrative records, mission archives, government reports, census records and household surveys to build long run datasets. It applies panel econometrics and quasi experimental designs, including difference in differences and regression discontinuity, to estimate effects of educational infrastructure on labour market outcomes across generations. The early and unequal placement of schools produced regional and intergenerational gaps in access to skilled work that have proven persistent.",
+      "media": {
+        "featuredImage": "img/proj_dissertation.svg",
+        "featuredImageCaption": ""
+      },
+      "meta": [
+        {
+          "label": "Institution",
+          "value": "Wageningen University and Research"
+        },
+        {
+          "label": "Group",
+          "value": "Economic and Environmental History"
+        },
+        {
+          "label": "Status",
+          "value": "Submission expected October 2026"
+        }
+      ],
+      "highlights": [
+        "Archival records rebuilt into structured long run datasets",
+        "Quasi experimental estimates of the effect of school placement",
+        "Three chapters, each planned as a journal article"
+      ]
+    },
+    {
+      "title": "EthioSkills",
+      "subtitle": "Advertised demand for skills in Ethiopia",
+      "year": "Ongoing",
+      "image": "img/proj_ethioskills.svg",
+      "description": "A daily record of Ethiopian job postings, turned into weekly and monthly reports.",
+      "longDescription": "EthioSkills collects job postings from more than ten Ethiopian job sites every day, standardises titles, places, education and experience requirements, and classifies each posting. It measures advertised demand only. It does not measure total employment, and informal work is largely invisible in this source. Reports state these limits next to each result.",
+      "media": {
+        "featuredImage": "img/proj_ethioskills.svg",
+        "featuredImageCaption": ""
+      },
+      "meta": [
+        {
+          "label": "Type",
+          "value": "Public evidence tool"
+        },
+        {
+          "label": "Source",
+          "value": "Job postings"
+        },
+        {
+          "label": "Output",
+          "value": "Live dashboard, weekly and monthly reports"
+        }
+      ],
+      "highlights": [
+        "More than ten job sites collected daily",
+        "Postings standardised and classified",
+        "Limits stated in every report"
+      ],
+      "dashboard": "/skills/"
+    },
+    {
+      "title": "EthioGTS",
+      "subtitle": "A register of graduate tracer studies in Ethiopia",
+      "year": "Working edition, October 2026",
+      "image": "img/proj_ethiogts.svg",
+      "description": "Tracer studies made findable, checked against their sources and graded for quality.",
+      "longDescription": "The register holds 33 studies from 18 institutions. 11 are checked against the source document. 14 report an employment rate, ranging from 51.6 to 98.24 percent under 11 different wordings, so the rates are not comparable and the register never pools them. Response rates, employer data and results by gender are thinly reported. The project offers an annual report, a short decision brief and a minimum reporting standard for future studies.",
+      "media": {
+        "featuredImage": "img/proj_ethiogts.svg",
+        "featuredImageCaption": ""
+      },
+      "meta": [
+        {
+          "label": "Type",
+          "value": "Public evidence tool"
+        },
+        {
+          "label": "Studies",
+          "value": "33 from 18 institutions"
+        },
+        {
+          "label": "Checked",
+          "value": "11 against the source"
+        }
+      ],
+      "highlights": [
+        "Rates never pooled across studies",
+        "Quality grades for each study",
+        "Minimum reporting standard for future tracer studies"
+      ]
+    },
+    {
+      "title": "Impact evaluation, BENEFIT REALISE",
+      "subtitle": "Wheat productivity and livelihoods in Arsi zone",
+      "year": "2020 to 2021",
+      "image": "img/proj_evaluation.svg",
+      "description": "A quasi experimental evaluation of improved seed and capacity building for smallholders.",
+      "longDescription": "I was a member of the research team that evaluated whether capacity building and improved seed raised smallholder productivity under the Dutch funded BENEFIT REALISE programme. The team combined focus group discussions and key informant interviews with a household survey of 202 farm households, compared with a baseline of 200 households. I took part in supervising data collection and in data entry and management in SPSS and Stata. Wheat yield in the main intervention area rose by 593 kilograms per hectare relative to the comparison area, significant at the 5 percent level.",
+      "media": {
+        "featuredImage": "img/proj_evaluation.svg",
+        "featuredImageCaption": ""
+      },
+      "meta": [
+        {
+          "label": "Partner",
+          "value": "Arsi University"
+        },
+        {
+          "label": "Design",
+          "value": "Quasi experimental, intention to treat"
+        },
+        {
+          "label": "Sample",
+          "value": "202 farm households"
+        }
+      ],
+      "highlights": [
+        "Mixed methods with a household survey",
+        "Wheat yield gain of 593 kilograms per hectare",
+        "Recommendations on evaluation timing and data reliability"
+      ]
+    },
+    {
+      "title": "Midterm evaluation, Tulu Moye",
+      "subtitle": "SOS Children's Villages Ethiopia",
+      "year": "2021",
+      "image": "img/proj_childdev.svg",
+      "description": "A midterm evaluation of child development interventions.",
+      "longDescription": "I contributed to a midterm evaluation of the Tulu Moye Child Development Project. The work tracked case records through defined program stages, examined why some cases did not progress as expected, assessed performance against the project objectives, and produced an evaluation report with recommendations for program management.",
+      "media": {
+        "featuredImage": "img/proj_childdev.svg",
+        "featuredImageCaption": ""
+      },
+      "meta": [
+        {
+          "label": "Client",
+          "value": "SOS Children's Villages Ethiopia"
+        },
+        {
+          "label": "Year",
+          "value": "2021"
+        }
+      ],
+      "highlights": [
+        "Case records tracked through program stages",
+        "Performance assessed against stated objectives"
+      ]
+    },
+    {
+      "title": "Investment feasibility study",
+      "subtitle": "Oromia Public Enterprises Supervisory Agency",
+      "year": "2021",
+      "image": "img/proj_feasibility.svg",
+      "description": "A two stage assessment of proposed tourism and investment projects.",
+      "longDescription": "I contributed to a feasibility study of proposed tourism and investment projects across several development sites. Projects were scored on qualitative indicators and classified as potential or not. Potential projects went through an economic evaluation using the internal rate of return, and the highest scoring project was recommended to the regional government. I organised the indicator data and compiled the investment and revenue figures for the final comparison.",
+      "media": {
+        "featuredImage": "img/proj_feasibility.svg",
+        "featuredImageCaption": ""
+      },
+      "meta": [
+        {
+          "label": "Client",
+          "value": "Oromia Public Enterprises Supervisory Agency"
+        },
+        {
+          "label": "Method",
+          "value": "Scoring and internal rate of return"
+        }
+      ],
+      "highlights": [
+        "Qualitative scoring of each project",
+        "Internal rate of return for potential projects",
+        "Policy report for regional investment planning"
+      ]
+    }
   ],
-  "metrics": [
-   {
-    "label": "Peer reviewed articles",
-    "value": "2"
-   },
-   {
-    "label": "Conference presentations",
-    "value": "6"
-   },
-   {
-    "label": "Years in research and teaching",
-    "value": "10+"
-   },
-   {
-    "label": "Languages",
-    "value": "3"
-   }
+  "publications": [
+    {
+      "title": "Educational Expansion and Inequality in Ethiopia, A Historical Analysis, 1941 to 2018",
+      "authors": "Mesfin Abraham",
+      "highlightAuthor": "Mesfin Abraham",
+      "venue": "African Economic History Network Conference, Lesotho",
+      "year": 2025,
+      "type": "conference",
+      "image": "img/conf_aehn25.svg",
+      "thumbnail": "img/conf_aehn25.svg",
+      "description": "Presented in the Education and Health session. 18th annual conference, National University of Lesotho, Maseru.",
+      "citations": 0,
+      "bibtex": ""
+    },
+    {
+      "title": "Intergenerational Transmission of Education in Ethiopia, A Birth Cohort Approach, 1940 to 1980",
+      "authors": "Mesfin Abraham",
+      "highlightAuthor": "Mesfin Abraham",
+      "venue": "NS Posthumus Institute Conference, Nijmegen",
+      "year": 2025,
+      "type": "conference",
+      "image": "img/conf_posth25.svg",
+      "thumbnail": "img/conf_posth25.svg",
+      "description": "Presented in the Education session. Radboud University, Nijmegen.",
+      "citations": 0,
+      "bibtex": ""
+    },
+    {
+      "title": "Explaining Educational Expansion in Ethiopia, 1908 to 2018",
+      "authors": "Mesfin Abraham",
+      "highlightAuthor": "Mesfin Abraham",
+      "venue": "African Economic History Network Conference, Rome",
+      "year": 2024,
+      "type": "conference",
+      "image": "img/conf_aehn24.svg",
+      "thumbnail": "img/conf_aehn24.svg",
+      "description": "Presented in the Education, literacy and numeracy session. 17th annual conference, Sapienza University of Rome.",
+      "citations": 0,
+      "bibtex": ""
+    },
+    {
+      "title": "Educational Development and Inequalities in Ethiopia, 1941 to 2018",
+      "authors": "Mesfin Abraham",
+      "highlightAuthor": "Mesfin Abraham",
+      "venue": "African Economic History Network Conference, Pretoria",
+      "year": 2023,
+      "type": "conference",
+      "image": "img/conf_aehn23.svg",
+      "thumbnail": "img/conf_aehn23.svg",
+      "description": "Presented in the Education session. 16th annual conference, University of Pretoria.",
+      "citations": 0,
+      "bibtex": ""
+    },
+    {
+      "title": "Educational Expansion and Inequality in Ethiopia, 1942 to 2018",
+      "authors": "Mesfin Abraham",
+      "highlightAuthor": "Mesfin Abraham",
+      "venue": "WASS PhD Day, Wageningen",
+      "year": 2023,
+      "type": "conference",
+      "image": "img/conf_wass23.svg",
+      "thumbnail": "img/conf_wass23.svg",
+      "description": "Presented in the Education and Work PhD session.",
+      "citations": 0,
+      "bibtex": ""
+    },
+    {
+      "title": "Assessment of the Effect of Coronavirus Pandemic on Small and Micro Enterprises in Selected Towns of Arsi Zone",
+      "authors": "Mesfin Abraham",
+      "highlightAuthor": "Mesfin Abraham",
+      "venue": "Arsi Journal of Science and Innovation",
+      "year": 2020,
+      "type": "journal",
+      "image": "img/pub_arsi.svg",
+      "thumbnail": "img/pub_arsi.svg",
+      "description": "Peer reviewed journal article.",
+      "citations": 0,
+      "bibtex": "@article{abraham2020,title={Assessment of the Effect of Coronavirus Pandemic on Small and Micro Enterprises in Selected Towns of Arsi Zone},author={Abraham, Mesfin},journal={Arsi Journal of Science and Innovation},year={2020}}"
+    },
+    {
+      "title": "Ethiopia South Korea Trade Dynamics, An Analysis",
+      "authors": "Mesfin Abraham and Dipti Mohapatra",
+      "highlightAuthor": "Mesfin Abraham",
+      "venue": "Amity Journal of Commerce and Financial Review",
+      "year": 2018,
+      "type": "journal",
+      "image": "img/pub_amity.svg",
+      "thumbnail": "img/pub_amity.svg",
+      "description": "Peer reviewed journal article.",
+      "citations": 0,
+      "bibtex": "@article{abraham2018,title={Ethiopia South Korea Trade Dynamics, An Analysis},author={Abraham, Mesfin and Mohapatra, Dipti},journal={Amity Journal of Commerce and Financial Review},year={2018}}"
+    },
+    {
+      "title": "University Unrest, Dimensions and Implications",
+      "authors": "Mesfin Abraham",
+      "highlightAuthor": "Mesfin Abraham",
+      "venue": "Madda Walabu University working paper",
+      "year": 2018,
+      "type": "workshop",
+      "image": "img/pub_mwu.svg",
+      "thumbnail": "img/pub_mwu.svg",
+      "description": "Working paper.",
+      "citations": 0,
+      "bibtex": ""
+    },
+    {
+      "title": "Causes and Consequences of Mass Education in Ethiopia, 1908 to 2018 (research proposal)",
+      "authors": "Mesfin Abraham",
+      "highlightAuthor": "Mesfin Abraham",
+      "venue": "African Economic History Network Conference, Las Palmas",
+      "year": 2022,
+      "type": "conference",
+      "image": "img/conf_aehn22.svg",
+      "thumbnail": "img/conf_aehn22.svg",
+      "description": "Presented in the Education and Human Capital Accumulation session. 15th annual conference, University of Las Palmas de Gran Canaria.",
+      "citations": 0,
+      "bibtex": ""
+    }
   ],
-  "highlights": [
-   {
-    "title": "Dissertation chapters, work in progress",
-    "description": "Three empirical chapters, each intended as a journal article after the defence.",
-    "items": [
-     "Mapping the expansion of formal education in Ethiopia, 1900 to 2018",
-     "Educational infrastructure and intergenerational labour market outcomes",
-     "Structural transformation and educational inequality"
-    ]
-   },
-   {
-    "title": "Methods and tools",
-    "description": "What I use for research and applied work.",
-    "items": [
-     {
-      "name": "R",
-      "icon": "code",
-      "level": "expert",
-      "note": "Panel data, causal inference and Quarto reports."
-     },
-     {
-      "name": "Stata",
-      "icon": "monitor",
-      "level": "advanced",
-      "note": "Econometrics for research and teaching."
-     },
-     {
-      "name": "Excel",
-      "icon": "monitor",
-      "level": "advanced",
-      "note": "Data cleaning, financial projections and record comparison."
-     },
-     {
-      "name": "SPSS",
-      "icon": "monitor",
-      "level": "intermediate",
-      "note": "Survey data entry and analysis."
-     },
-     {
-      "name": "Power BI",
-      "icon": "monitor",
-      "level": "intermediate",
-      "note": "Dashboards for research and applied work."
-     },
-     {
-      "name": "QGIS",
-      "icon": "globe",
-      "level": "learning",
-      "note": "Spatial analysis and mapping, still developing."
-     },
-     {
-      "name": "Python",
-      "icon": "code",
-      "level": "learning",
-      "note": "Self taught, for data collection and processing."
-     }
-    ]
-   },
-   {
-    "title": "Research methods",
-    "description": "",
-    "items": [
-     "Difference in differences",
-     "Regression discontinuity",
-     "Panel data analysis",
-     "Impact evaluation design",
-     "Survey design and sampling",
-     "Archival research and source criticism",
-     "Inequality decomposition",
-     "Qualitative methods"
-    ]
-   },
-   {
-    "title": "Regional expertise",
-    "description": "",
-    "items": [
-     "Education policy in Sub Saharan Africa",
-     "Social stratification in Ethiopia",
-     "Urban and rural gaps in education",
-     "Horn of Africa institutions and economy"
-    ]
-   }
-  ]
- },
- "projects": [
-  {
-   "title": "Doctoral dissertation",
-   "subtitle": "Educational expansion, labour markets and structural change in Ethiopia",
-   "year": "2022 to 2026",
-   "image": "img/proj_dissertation.svg",
-   "description": "How the uneven spread of schools shaped jobs, mobility and inequality across generations.",
-   "longDescription": "The dissertation uses colonial and imperial administrative records, mission archives, government reports, census records and household surveys to build long run datasets. It applies panel econometrics and quasi experimental designs, including difference in differences and regression discontinuity, to estimate effects of educational infrastructure on labour market outcomes across generations. The early and unequal placement of schools produced regional and intergenerational gaps in access to skilled work that have proven persistent.",
-   "media": {
-    "featuredImage": "img/proj_dissertation.svg",
-    "featuredImageCaption": ""
-   },
-   "meta": [
+  "teaching": [
     {
-     "label": "Institution",
-     "value": "Wageningen University and Research"
+      "title": "Econometrics",
+      "subtitle": "Taught 2009 to 2019",
+      "videoUrl": "",
+      "bgColor": "#2d5a7b"
     },
     {
-     "label": "Group",
-     "value": "Economic and Environmental History"
+      "title": "Statistics",
+      "subtitle": "Taught 2009 to 2019",
+      "videoUrl": "",
+      "bgColor": "#5a7a6a"
     },
     {
-     "label": "Status",
-     "value": "Submission expected October 2026"
+      "title": "Microeconomics",
+      "subtitle": "Taught 2009 to 2019",
+      "videoUrl": "",
+      "bgColor": "#c8956c"
+    },
+    {
+      "title": "Macroeconomics",
+      "subtitle": "Taught 2009 to 2019",
+      "videoUrl": "",
+      "bgColor": "#4a6076"
+    },
+    {
+      "title": "Labour economics",
+      "subtitle": "Taught 2009 to 2019",
+      "videoUrl": "",
+      "bgColor": "#2d5a7b"
+    },
+    {
+      "title": "Industrial economics",
+      "subtitle": "Taught 2009 to 2019",
+      "videoUrl": "",
+      "bgColor": "#5a7a6a"
+    },
+    {
+      "title": "Development economics",
+      "subtitle": "Taught 2009 to 2019",
+      "videoUrl": "",
+      "bgColor": "#c8956c"
+    },
+    {
+      "title": "Research methods",
+      "subtitle": "Taught 2009 to 2019",
+      "videoUrl": "",
+      "bgColor": "#4a6076"
+    },
+    {
+      "title": "Economic thought",
+      "subtitle": "Taught 2009 to 2019",
+      "videoUrl": "",
+      "bgColor": "#2d5a7b"
+    },
+    {
+      "title": "Mathematical economics",
+      "subtitle": "Taught 2009 to 2019",
+      "videoUrl": "",
+      "bgColor": "#5a7a6a"
+    },
+    {
+      "title": "International trade",
+      "subtitle": "Taught 2009 to 2019",
+      "videoUrl": "",
+      "bgColor": "#c8956c"
+    },
+    {
+      "title": "Introduction to economics",
+      "subtitle": "Taught 2009 to 2019",
+      "videoUrl": "",
+      "bgColor": "#4a6076"
     }
-   ],
-   "highlights": [
-    "Archival records rebuilt into structured long run datasets",
-    "Quasi experimental estimates of the effect of school placement",
-    "Three chapters, each planned as a journal article"
-   ]
-  },
-  {
-   "title": "EthioSkills",
-   "subtitle": "Advertised demand for skills in Ethiopia",
-   "year": "Ongoing",
-   "image": "img/proj_ethioskills.svg",
-   "description": "A daily record of Ethiopian job postings, turned into weekly and monthly reports.",
-   "longDescription": "EthioSkills collects job postings from more than ten Ethiopian job sites every day, standardises titles, places, education and experience requirements, and classifies each posting. It measures advertised demand only. It does not measure total employment, and informal work is largely invisible in this source. Reports state these limits next to each result.",
-   "media": {
-    "featuredImage": "img/proj_ethioskills.svg",
-    "featuredImageCaption": ""
-   },
-   "meta": [
-    {
-     "label": "Type",
-     "value": "Public evidence tool"
-    },
-    {
-     "label": "Source",
-     "value": "Job postings"
-    },
-    {
-     "label": "Output",
-     "value": "Weekly and monthly reports"
-    }
-   ],
-   "highlights": [
-    "More than ten job sites collected daily",
-    "Postings standardised and classified",
-    "Limits stated in every report"
-   ]
-  },
-  {
-   "title": "EthioGTS",
-   "subtitle": "A register of graduate tracer studies in Ethiopia",
-   "year": "Working edition, October 2026",
-   "image": "img/proj_ethiogts.svg",
-   "description": "Tracer studies made findable, checked against their sources and graded for quality.",
-   "longDescription": "The register holds 33 studies from 18 institutions. 11 are checked against the source document. 14 report an employment rate, ranging from 51.6 to 98.24 percent under 11 different wordings, so the rates are not comparable and the register never pools them. Response rates, employer data and results by gender are thinly reported. The project offers an annual report, a short decision brief and a minimum reporting standard for future studies.",
-   "media": {
-    "featuredImage": "img/proj_ethiogts.svg",
-    "featuredImageCaption": ""
-   },
-   "meta": [
-    {
-     "label": "Type",
-     "value": "Public evidence tool"
-    },
-    {
-     "label": "Studies",
-     "value": "33 from 18 institutions"
-    },
-    {
-     "label": "Checked",
-     "value": "11 against the source"
-    }
-   ],
-   "highlights": [
-    "Rates never pooled across studies",
-    "Quality grades for each study",
-    "Minimum reporting standard for future tracer studies"
-   ]
-  },
-  {
-   "title": "Impact evaluation, BENEFIT REALISE",
-   "subtitle": "Wheat productivity and livelihoods in Arsi zone",
-   "year": "2020 to 2021",
-   "image": "img/proj_evaluation.svg",
-   "description": "A quasi experimental evaluation of improved seed and capacity building for smallholders.",
-   "longDescription": "I was a member of the research team that evaluated whether capacity building and improved seed raised smallholder productivity under the Dutch funded BENEFIT REALISE programme. The team combined focus group discussions and key informant interviews with a household survey of 202 farm households, compared with a baseline of 200 households. I took part in supervising data collection and in data entry and management in SPSS and Stata. Wheat yield in the main intervention area rose by 593 kilograms per hectare relative to the comparison area, significant at the 5 percent level.",
-   "media": {
-    "featuredImage": "img/proj_evaluation.svg",
-    "featuredImageCaption": ""
-   },
-   "meta": [
-    {
-     "label": "Partner",
-     "value": "Arsi University"
-    },
-    {
-     "label": "Design",
-     "value": "Quasi experimental, intention to treat"
-    },
-    {
-     "label": "Sample",
-     "value": "202 farm households"
-    }
-   ],
-   "highlights": [
-    "Mixed methods with a household survey",
-    "Wheat yield gain of 593 kilograms per hectare",
-    "Recommendations on evaluation timing and data reliability"
-   ]
-  },
-  {
-   "title": "Midterm evaluation, Tulu Moye",
-   "subtitle": "SOS Children's Villages Ethiopia",
-   "year": "2021",
-   "image": "img/proj_childdev.svg",
-   "description": "A midterm evaluation of child development interventions.",
-   "longDescription": "I contributed to a midterm evaluation of the Tulu Moye Child Development Project. The work tracked case records through defined program stages, examined why some cases did not progress as expected, assessed performance against the project objectives, and produced an evaluation report with recommendations for program management.",
-   "media": {
-    "featuredImage": "img/proj_childdev.svg",
-    "featuredImageCaption": ""
-   },
-   "meta": [
-    {
-     "label": "Client",
-     "value": "SOS Children's Villages Ethiopia"
-    },
-    {
-     "label": "Year",
-     "value": "2021"
-    }
-   ],
-   "highlights": [
-    "Case records tracked through program stages",
-    "Performance assessed against stated objectives"
-   ]
-  },
-  {
-   "title": "Investment feasibility study",
-   "subtitle": "Oromia Public Enterprises Supervisory Agency",
-   "year": "2021",
-   "image": "img/proj_feasibility.svg",
-   "description": "A two stage assessment of proposed tourism and investment projects.",
-   "longDescription": "I contributed to a feasibility study of proposed tourism and investment projects across several development sites. Projects were scored on qualitative indicators and classified as potential or not. Potential projects went through an economic evaluation using the internal rate of return, and the highest scoring project was recommended to the regional government. I organised the indicator data and compiled the investment and revenue figures for the final comparison.",
-   "media": {
-    "featuredImage": "img/proj_feasibility.svg",
-    "featuredImageCaption": ""
-   },
-   "meta": [
-    {
-     "label": "Client",
-     "value": "Oromia Public Enterprises Supervisory Agency"
-    },
-    {
-     "label": "Method",
-     "value": "Scoring and internal rate of return"
-    }
-   ],
-   "highlights": [
-    "Qualitative scoring of each project",
-    "Internal rate of return for potential projects",
-    "Policy report for regional investment planning"
-   ]
-  }
- ],
- "publications": [
-  {
-   "title": "Educational Expansion and Inequality in Ethiopia, A Historical Analysis, 1941 to 2018",
-   "authors": "Mesfin Abraham",
-   "highlightAuthor": "Mesfin Abraham",
-   "venue": "African Economic History Network Conference, Lesotho",
-   "year": 2025,
-   "type": "conference",
-   "image": "img/conf_aehn25.svg",
-   "thumbnail": "img/conf_aehn25.svg",
-   "description": "Presented in the Education and Health session. 18th annual conference, National University of Lesotho, Maseru.",
-   "citations": 0,
-   "bibtex": ""
-  },
-  {
-   "title": "Intergenerational Transmission of Education in Ethiopia, A Birth Cohort Approach, 1940 to 1980",
-   "authors": "Mesfin Abraham",
-   "highlightAuthor": "Mesfin Abraham",
-   "venue": "NS Posthumus Institute Conference, Nijmegen",
-   "year": 2025,
-   "type": "conference",
-   "image": "img/conf_posth25.svg",
-   "thumbnail": "img/conf_posth25.svg",
-   "description": "Presented in the Education session. Radboud University, Nijmegen.",
-   "citations": 0,
-   "bibtex": ""
-  },
-  {
-   "title": "Explaining Educational Expansion in Ethiopia, 1908 to 2018",
-   "authors": "Mesfin Abraham",
-   "highlightAuthor": "Mesfin Abraham",
-   "venue": "African Economic History Network Conference, Rome",
-   "year": 2024,
-   "type": "conference",
-   "image": "img/conf_aehn24.svg",
-   "thumbnail": "img/conf_aehn24.svg",
-   "description": "Presented in the Education, literacy and numeracy session. 17th annual conference, Sapienza University of Rome.",
-   "citations": 0,
-   "bibtex": ""
-  },
-  {
-   "title": "Educational Development and Inequalities in Ethiopia, 1941 to 2018",
-   "authors": "Mesfin Abraham",
-   "highlightAuthor": "Mesfin Abraham",
-   "venue": "African Economic History Network Conference, Pretoria",
-   "year": 2023,
-   "type": "conference",
-   "image": "img/conf_aehn23.svg",
-   "thumbnail": "img/conf_aehn23.svg",
-   "description": "Presented in the Education session. 16th annual conference, University of Pretoria.",
-   "citations": 0,
-   "bibtex": ""
-  },
-  {
-   "title": "Educational Expansion and Inequality in Ethiopia, 1942 to 2018",
-   "authors": "Mesfin Abraham",
-   "highlightAuthor": "Mesfin Abraham",
-   "venue": "WASS PhD Day, Wageningen",
-   "year": 2023,
-   "type": "conference",
-   "image": "img/conf_wass23.svg",
-   "thumbnail": "img/conf_wass23.svg",
-   "description": "Presented in the Education and Work PhD session.",
-   "citations": 0,
-   "bibtex": ""
-  },
-  {
-   "title": "Assessment of the Effect of Coronavirus Pandemic on Small and Micro Enterprises in Selected Towns of Arsi Zone",
-   "authors": "Mesfin Abraham",
-   "highlightAuthor": "Mesfin Abraham",
-   "venue": "Arsi Journal of Science and Innovation",
-   "year": 2020,
-   "type": "journal",
-   "image": "img/pub_arsi.svg",
-   "thumbnail": "img/pub_arsi.svg",
-   "description": "Peer reviewed journal article.",
-   "citations": 0,
-   "bibtex": "@article{abraham2020,title={Assessment of the Effect of Coronavirus Pandemic on Small and Micro Enterprises in Selected Towns of Arsi Zone},author={Abraham, Mesfin},journal={Arsi Journal of Science and Innovation},year={2020}}"
-  },
-  {
-   "title": "Ethiopia South Korea Trade Dynamics, An Analysis",
-   "authors": "Mesfin Abraham and Dipti Mohapatra",
-   "highlightAuthor": "Mesfin Abraham",
-   "venue": "Amity Journal of Commerce and Financial Review",
-   "year": 2018,
-   "type": "journal",
-   "image": "img/pub_amity.svg",
-   "thumbnail": "img/pub_amity.svg",
-   "description": "Peer reviewed journal article.",
-   "citations": 0,
-   "bibtex": "@article{abraham2018,title={Ethiopia South Korea Trade Dynamics, An Analysis},author={Abraham, Mesfin and Mohapatra, Dipti},journal={Amity Journal of Commerce and Financial Review},year={2018}}"
-  },
-  {
-   "title": "University Unrest, Dimensions and Implications",
-   "authors": "Mesfin Abraham",
-   "highlightAuthor": "Mesfin Abraham",
-   "venue": "Madda Walabu University working paper",
-   "year": 2018,
-   "type": "workshop",
-   "image": "img/pub_mwu.svg",
-   "thumbnail": "img/pub_mwu.svg",
-   "description": "Working paper.",
-   "citations": 0,
-   "bibtex": ""
-  },
-  {
-   "title": "Causes and Consequences of Mass Education in Ethiopia, 1908 to 2018 (research proposal)",
-   "authors": "Mesfin Abraham",
-   "highlightAuthor": "Mesfin Abraham",
-   "venue": "African Economic History Network Conference, Las Palmas",
-   "year": 2022,
-   "type": "conference",
-   "image": "img/conf_aehn22.svg",
-   "thumbnail": "img/conf_aehn22.svg",
-   "description": "Presented in the Education and Human Capital Accumulation session. 15th annual conference, University of Las Palmas de Gran Canaria.",
-   "citations": 0,
-   "bibtex": ""
-  }
- ],
- "teaching": [
-  {
-   "title": "Econometrics",
-   "subtitle": "Taught 2009 to 2019",
-   "videoUrl": "",
-   "bgColor": "#2d5a7b"
-  },
-  {
-   "title": "Statistics",
-   "subtitle": "Taught 2009 to 2019",
-   "videoUrl": "",
-   "bgColor": "#5a7a6a"
-  },
-  {
-   "title": "Microeconomics",
-   "subtitle": "Taught 2009 to 2019",
-   "videoUrl": "",
-   "bgColor": "#c8956c"
-  },
-  {
-   "title": "Macroeconomics",
-   "subtitle": "Taught 2009 to 2019",
-   "videoUrl": "",
-   "bgColor": "#4a6076"
-  },
-  {
-   "title": "Labour economics",
-   "subtitle": "Taught 2009 to 2019",
-   "videoUrl": "",
-   "bgColor": "#2d5a7b"
-  },
-  {
-   "title": "Industrial economics",
-   "subtitle": "Taught 2009 to 2019",
-   "videoUrl": "",
-   "bgColor": "#5a7a6a"
-  },
-  {
-   "title": "Development economics",
-   "subtitle": "Taught 2009 to 2019",
-   "videoUrl": "",
-   "bgColor": "#c8956c"
-  },
-  {
-   "title": "Research methods",
-   "subtitle": "Taught 2009 to 2019",
-   "videoUrl": "",
-   "bgColor": "#4a6076"
-  },
-  {
-   "title": "Economic thought",
-   "subtitle": "Taught 2009 to 2019",
-   "videoUrl": "",
-   "bgColor": "#2d5a7b"
-  },
-  {
-   "title": "Mathematical economics",
-   "subtitle": "Taught 2009 to 2019",
-   "videoUrl": "",
-   "bgColor": "#5a7a6a"
-  },
-  {
-   "title": "International trade",
-   "subtitle": "Taught 2009 to 2019",
-   "videoUrl": "",
-   "bgColor": "#c8956c"
-  },
-  {
-   "title": "Introduction to economics",
-   "subtitle": "Taught 2009 to 2019",
-   "videoUrl": "",
-   "bgColor": "#4a6076"
-  }
- ],
- "experience": [
-  {
-   "title": "Researcher",
-   "organization": "Wageningen University and Research, NWO Vici project South South Divergence",
-   "description": "Archival and quantitative research on long run educational and labour market development in Ethiopia. Course assistant for African History.",
-   "years": "2022 to present",
-   "icon": "globe"
-  },
-  {
-   "title": "Independent research and data consultant",
-   "organization": "Freelance",
-   "description": "Data provenance and source verification under a blind protocol for an anonymised client. Monitoring and evaluation, market research, data cleaning and economics tutoring.",
-   "years": "2026 to present",
-   "icon": "monitor"
-  },
-  {
-   "title": "Business development consultant",
-   "organization": "LVIA and Arsi University",
-   "description": "Supported business plans and entrepreneurship training for local start ups. Took part in facilitating a platform of government and non government stakeholders.",
-   "years": "2020",
-   "icon": "pencil"
-  },
-  {
-   "title": "Lecturer in Economics",
-   "organization": "Arsi University, Ethiopia",
-   "description": "Taught undergraduate and graduate economics and development policy. Supervised more than 15 undergraduate theses.",
-   "years": "2016 to 2019",
-   "icon": "pencil"
-  },
-  {
-   "title": "Lecturer and Head, Department of Economics",
-   "organization": "Madda Walabu University, Ethiopia",
-   "description": "Led academic planning for close to three years. Taught econometrics, development economics and research methods.",
-   "years": "2013 to 2016",
-   "icon": "monitor"
-  }
- ],
- "education": [
-  {
-   "title": "PhD in Economics",
-   "organization": "Wageningen University and Research, Netherlands",
-   "description": "Dissertation on educational expansion, labour markets and structural change in Ethiopia. Promoter Prof. Ewout Frankema. Submission expected October 2026.",
-   "years": "2022 to present",
-   "logo": ""
-  },
-  {
-   "title": "MA in Development Policy",
-   "organization": "KDI School of Public Policy and Management, South Korea",
-   "description": "Specialised in trade and industrial policy. Thesis on which firms create more jobs in Ethiopian manufacturing, awarded outstanding thesis.",
-   "years": "2012 to 2013",
-   "logo": ""
-  },
-  {
-   "title": "BA in Economics",
-   "organization": "Wollega University, Ethiopia",
-   "description": "Graduated with distinction.",
-   "years": "2007 to 2009",
-   "logo": ""
-  }
- ],
- "awards": [
-  {
-   "title": "WASS Junior Grant",
-   "subtitle": "2024",
-   "icon": "award",
-   "iconColor": "warm",
-   "organizer": "Wageningen School of Social Sciences",
-   "date": "2024",
-   "details": "Research grant awarded during the PhD."
-  },
-  {
-   "title": "Outstanding Master's Thesis Award",
-   "subtitle": "KDI School, 2013",
-   "icon": "award",
-   "iconColor": "warm",
-   "organizer": "KDI School of Public Policy and Management",
-   "date": "2013",
-   "details": "Awarded for the master's thesis on job creation in Ethiopian manufacturing."
-  },
-  {
-   "title": "KOICA Global Fellowship",
-   "subtitle": "2012",
-   "icon": "award",
-   "iconColor": "warm",
-   "organizer": "Korea International Cooperation Agency",
-   "date": "2012",
-   "details": "Fellowship for the master's programme in South Korea."
-  },
-  {
-   "title": "Reproducible Research using Quarto",
-   "subtitle": "Certificate, 2025",
-   "icon": "award",
-   "iconColor": "warm",
-   "organizer": "",
-   "date": "2025",
-   "details": "Training in reproducible reporting."
-  },
-  {
-   "title": "Chair, Ethiopian Students in Wageningen University Association",
-   "subtitle": "2025",
-   "icon": "award",
-   "iconColor": "warm",
-   "organizer": "Wageningen University and Research",
-   "date": "2025",
-   "details": "Led the founding of the association and chaired its activities."
-  }
- ],
- "contact": {
-  "email": "mesfin@mesfinabraham.com",
-  "phone": "",
-  "office": "Wageningen, the Netherlands",
-  "cvUrl": "mailto:mesfin@mesfinabraham.com?subject=CV%20request",
-  "mapEmbed": "",
-  "socials": [
-   {
-    "platform": "linkedin",
-    "url": "https://www.linkedin.com/in/mesfin-abraham-2517b553",
-    "label": "LinkedIn"
-   },
-   {
-    "platform": "wur",
-    "url": "https://www.wur.nl/en/persons/ma-mesfin-ali-ma",
-    "label": "Wageningen profile"
-   }
   ],
-  "heading": "Consultancy and research collaboration",
-  "intro": "To discuss an evaluation, a market or feasibility study, data verification, or a research collaboration, write to me with a short description of the question and the deadline."
- },
- "cv": {
-  "title": "Curriculum vitae",
-  "description": "A full CV with teaching, consulting and service is available on request.",
-  "note": "",
-  "buttonLabel": "Request my CV",
-  "url": "mailto:mesfin@mesfinabraham.com?subject=CV%20request"
- },
- "footer": {
-  "copyright": "Mesfin Abraham Ali",
-  "repoUrl": "https://github.com/riponcm/acadpro",
-  "designedBy": "Ripon Chandra Malo",
-  "version": "V2.0.2"
- },
- "settings": {
-  "template": "phd",
-  "templateLabel": "PhD candidate",
-  "_template_options": "Available templates: 'phd' (student view), 'professor' (professor/teacher view)",
-  "demoTemplateSwitcher": false,
-  "publicationStyle": "alt",
-  "scholarId": "",
-  "_theme_options": "Available themes: 'BH' (default light), 'blue' (academic light blue), 'dark'",
-  "theme": "blue"
- },
- "lab": {}
+  "experience": [
+    {
+      "title": "Researcher",
+      "organization": "Wageningen University and Research, NWO Vici project South South Divergence",
+      "description": "Archival and quantitative research on long run educational and labour market development in Ethiopia. Course assistant for African History.",
+      "years": "2022 to present",
+      "icon": "globe"
+    },
+    {
+      "title": "Independent research and data consultant",
+      "organization": "Freelance",
+      "description": "Data provenance and source verification under a blind protocol for an anonymised client. Monitoring and evaluation, market research, data cleaning and economics tutoring.",
+      "years": "2026 to present",
+      "icon": "monitor"
+    },
+    {
+      "title": "Business development consultant",
+      "organization": "LVIA and Arsi University",
+      "description": "Supported business plans and entrepreneurship training for local start ups. Took part in facilitating a platform of government and non government stakeholders.",
+      "years": "2020",
+      "icon": "pencil"
+    },
+    {
+      "title": "Lecturer in Economics",
+      "organization": "Arsi University, Ethiopia",
+      "description": "Taught undergraduate and graduate economics and development policy. Supervised more than 15 undergraduate theses.",
+      "years": "2016 to 2019",
+      "icon": "pencil"
+    },
+    {
+      "title": "Lecturer and Head, Department of Economics",
+      "organization": "Madda Walabu University, Ethiopia",
+      "description": "Led academic planning for close to three years. Taught econometrics, development economics and research methods.",
+      "years": "2013 to 2016",
+      "icon": "monitor"
+    }
+  ],
+  "education": [
+    {
+      "title": "PhD in Economics",
+      "organization": "Wageningen University and Research, Netherlands",
+      "description": "Dissertation on educational expansion, labour markets and structural change in Ethiopia. Promoter Prof. Ewout Frankema. Submission expected October 2026.",
+      "years": "2022 to present",
+      "logo": ""
+    },
+    {
+      "title": "MA in Development Policy",
+      "organization": "KDI School of Public Policy and Management, South Korea",
+      "description": "Specialised in trade and industrial policy. Thesis on which firms create more jobs in Ethiopian manufacturing, awarded outstanding thesis.",
+      "years": "2012 to 2013",
+      "logo": ""
+    },
+    {
+      "title": "BA in Economics",
+      "organization": "Wollega University, Ethiopia",
+      "description": "Graduated with distinction.",
+      "years": "2007 to 2009",
+      "logo": ""
+    }
+  ],
+  "awards": [
+    {
+      "title": "WASS Junior Grant",
+      "subtitle": "2024",
+      "icon": "award",
+      "iconColor": "warm",
+      "organizer": "Wageningen School of Social Sciences",
+      "date": "2024",
+      "details": "Research grant awarded during the PhD."
+    },
+    {
+      "title": "Outstanding Master's Thesis Award",
+      "subtitle": "KDI School, 2013",
+      "icon": "award",
+      "iconColor": "warm",
+      "organizer": "KDI School of Public Policy and Management",
+      "date": "2013",
+      "details": "Awarded for the master's thesis on job creation in Ethiopian manufacturing."
+    },
+    {
+      "title": "KOICA Global Fellowship",
+      "subtitle": "2012",
+      "icon": "award",
+      "iconColor": "warm",
+      "organizer": "Korea International Cooperation Agency",
+      "date": "2012",
+      "details": "Fellowship for the master's programme in South Korea."
+    },
+    {
+      "title": "Reproducible Research using Quarto",
+      "subtitle": "Certificate, 2025",
+      "icon": "award",
+      "iconColor": "warm",
+      "organizer": "",
+      "date": "2025",
+      "details": "Training in reproducible reporting."
+    },
+    {
+      "title": "Chair, Ethiopian Students in Wageningen University Association",
+      "subtitle": "2025",
+      "icon": "award",
+      "iconColor": "warm",
+      "organizer": "Wageningen University and Research",
+      "date": "2025",
+      "details": "Led the founding of the association and chaired its activities."
+    }
+  ],
+  "contact": {
+    "email": "mesfin@mesfinabraham.com",
+    "phone": "",
+    "office": "Wageningen, the Netherlands",
+    "cvUrl": "mailto:mesfin@mesfinabraham.com?subject=CV%20request",
+    "mapEmbed": "",
+    "socials": [
+      {
+        "platform": "linkedin",
+        "url": "https://www.linkedin.com/in/mesfin-abraham-2517b553",
+        "label": "LinkedIn"
+      },
+      {
+        "platform": "wur",
+        "url": "https://www.wur.nl/en/persons/ma-mesfin-ali-ma",
+        "label": "Wageningen profile"
+      }
+    ],
+    "heading": "Consultancy and research collaboration",
+    "intro": "To discuss an evaluation, a market or feasibility study, data verification, or a research collaboration, write to me with a short description of the question and the deadline."
+  },
+  "cv": {
+    "title": "Curriculum vitae",
+    "description": "A full CV with teaching, consulting and service is available on request.",
+    "note": "",
+    "buttonLabel": "Request my CV",
+    "url": "mailto:mesfin@mesfinabraham.com?subject=CV%20request"
+  },
+  "footer": {
+    "copyright": "Mesfin Abraham Ali",
+    "repoUrl": "https://github.com/riponcm/acadpro",
+    "designedBy": "Ripon Chandra Malo",
+    "version": "V2.0.2"
+  },
+  "settings": {
+    "template": "phd",
+    "templateLabel": "PhD candidate",
+    "_template_options": "Available templates: 'phd' (student view), 'professor' (professor/teacher view)",
+    "demoTemplateSwitcher": false,
+    "publicationStyle": "alt",
+    "scholarId": "",
+    "_theme_options": "Available themes: 'BH' (default light), 'blue' (academic light blue), 'dark'",
+    "theme": "blue"
+  },
+  "lab": {}
 }

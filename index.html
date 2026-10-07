@@ -341,7 +341,7 @@ a.compact-card:hover .ext-arrow{opacity:1;transform:translateX(0)}
 <body data-theme="light">
 <header class="header"><div class="wrap header-inner">
 <a class="brand" href="#top" id="brandLink"><div class="logo" id="brandInitials"></div><div class="brand-text"><div class="name" id="brandName"></div><div class="tagline" id="brandTagline"></div></div></a>
-<nav><a href="#research">Research</a><a href="#publications">Publications</a><a href="#projects">Projects</a><a href="#teaching">Courses</a><a href="#experience">Experience</a><a href="/skills/">Skills Barometer</a><a href="#contact">Contact</a>
+<nav><a href="#research">Research</a><a href="#publications">Publications</a><a href="#projects">Projects</a><a href="#teaching">Courses</a><a href="#experience">Experience</a><a href="/skills/">EthioSkills</a><a href="#contact">Contact</a>
 <button class="theme-btn" id="themeToggle" aria-label="Toggle theme"><svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></button></nav>
 </div></header>
 
@@ -477,7 +477,7 @@ function renderHiring(h, opportunities){
 function renderProjects(projects){
   window._projects = projects || [];
   document.getElementById('projectsGrid').innerHTML=projects.map(p=>
-    '<article class="card reveal"><div class="card-top"><div><button class="project-open project-detail-btn" type="button" data-project="'+window._projects.indexOf(p)+'"><h3>'+esc(p.title)+'</h3></button><div class="sub">'+esc(p.subtitle)+'</div></div><span class="tag">'+esc(p.year)+'</span></div><button class="project-open project-detail-btn" type="button" data-project="'+window._projects.indexOf(p)+'"><div class="card-media"><img src="'+p.image+'" alt="'+esc(p.title)+'" loading="lazy"></div></button><div class="card-desc">'+esc(p.description)+'</div><div class="card-actions">'+(p.github?'<a class="action-btn" href="'+p.github+'" target="_blank">'+ICONS.github+'GitHub</a>':'')+shareDropdownHTML(p.title,p.url)+'</div></article>'
+    '<article class="card reveal"><div class="card-top"><div><button class="project-open project-detail-btn" type="button" data-project="'+window._projects.indexOf(p)+'"><h3>'+esc(p.title)+'</h3></button><div class="sub">'+esc(p.subtitle)+'</div></div><span class="tag">'+esc(p.year)+'</span></div><button class="project-open project-detail-btn" type="button" data-project="'+window._projects.indexOf(p)+'"><div class="card-media"><img src="'+p.image+'" alt="'+esc(p.title)+'" loading="lazy"></div></button><div class="card-desc">'+esc(p.description)+'</div><div class="card-actions">'+(p.dashboard?'<a class="action-btn" href="'+p.dashboard+'">Open dashboard</a>':'')+(p.github?'<a class="action-btn" href="'+p.github+'" target="_blank">'+ICONS.github+'GitHub</a>':'')+shareDropdownHTML(p.title,p.url)+'</div></article>'
   ).join('');
 }
 
