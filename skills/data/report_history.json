@@ -2736,65 +2736,65 @@
   {
     "date": "2026-10-07",
     "weekly": {
-      "posting_count": 3155,
+      "posting_count": 3924,
       "coverage": {
         "education": {
-          "known": 1038,
-          "total": 3155
+          "known": 1476,
+          "total": 3924
         },
         "experience": {
-          "known": 2176,
-          "total": 3155
+          "known": 2178,
+          "total": 3924
         },
         "salary": {
           "known": 91,
-          "total": 3155
+          "total": 3924
         },
         "employer_type": {
-          "known": 1276,
-          "total": 3155
+          "known": 1835,
+          "total": 3924
         }
       },
       "top_skills": [
         {
           "label": "Communication",
-          "count": 387
+          "count": 420
         },
         {
           "label": "Problem solving",
-          "count": 126
+          "count": 145
+        },
+        {
+          "label": "Technical Skills",
+          "count": 106
         },
         {
           "label": "Attention to detail",
-          "count": 93
+          "count": 104
+        },
+        {
+          "label": "Soft Skills",
+          "count": 82
         },
         {
           "label": "Accounting",
-          "count": 52
-        },
-        {
-          "label": "Leadership",
-          "count": 48
+          "count": 68
         },
         {
           "label": "Teamwork",
-          "count": 45
+          "count": 61
+        },
+        {
+          "label": "Leadership",
+          "count": 55
         },
         {
           "label": "Creativity",
-          "count": 41
+          "count": 49
         },
         {
           "label": "Customer service",
-          "count": 38
-        },
-        {
-          "label": "Time management",
-          "count": 32
-        },
-        {
-          "label": "Accountability",
-          "count": 32
+          "count": 39
         }
       ],
       "top_categories": [
@@ -2824,7 +2824,7 @@
         },
         {
           "label": "Information and communication",
-          "count": 142
+          "count": 143
         },
         {
           "label": "Accommodation and food service activities",
@@ -2842,35 +2842,35 @@
       "top_jobs": [
         {
           "label": "Professionals",
-          "count": 1117
+          "count": 1298
         },
         {
           "label": "Managers",
-          "count": 439
+          "count": 500
         },
         {
           "label": "Technicians and associate professionals",
-          "count": 240
+          "count": 271
         },
         {
           "label": "Service and sales workers",
-          "count": 183
+          "count": 202
         },
         {
           "label": "Clerical support workers",
-          "count": 100
+          "count": 117
         },
         {
           "label": "Plant and machine operators, and assemblers",
-          "count": 55
+          "count": 65
         },
         {
           "label": "Craft and related trades workers",
-          "count": 26
+          "count": 45
         },
         {
           "label": "Elementary occupations",
-          "count": 11
+          "count": 13
         },
         {
           "label": "Skilled agricultural, forestry and fishery workers",
@@ -2880,7 +2880,11 @@
       "top_locations": [
         {
           "label": "Addis Ababa, Addis Ababa",
-          "count": 2415
+          "count": 2417
+        },
+        {
+          "label": "Discover Careers By Company, Region not identified",
+          "count": 766
         },
         {
           "label": "Unspecified",
@@ -2912,17 +2916,21 @@
         },
         {
           "label": "Remote",
-          "count": 21
-        },
-        {
-          "label": "NC, Amhara",
-          "count": 19
+          "count": 22
         }
       ],
       "top_employers": [
         {
           "label": "Bule Hora University",
           "count": 59
+        },
+        {
+          "label": "Kushladder Construction P.l.c",
+          "count": 39
+        },
+        {
+          "label": "Tnt Construction & Trading",
+          "count": 39
         },
         {
           "label": "World Vision Ethiopia",
@@ -2937,91 +2945,83 @@
           "count": 29
         },
         {
-          "label": "Heineken Ethiopia",
-          "count": 21
+          "label": "Jambo Investment Group",
+          "count": 29
         },
         {
           "label": "Ethiopian Food and Drug Authority (Efda)",
-          "count": 19
+          "count": 28
         },
         {
-          "label": "Ethiopian Construction Works Corporation",
-          "count": 19
+          "label": "Addis Global Academy",
+          "count": 28
         },
         {
-          "label": "Lesso Ethiopia Trading PLC",
-          "count": 18
-        },
-        {
-          "label": "Unlimited Packaging PLC",
-          "count": 16
-        },
-        {
-          "label": "Amg Holdings PLC",
-          "count": 16
+          "label": "Yotek Construction P.l.c",
+          "count": 27
         }
       ]
     },
     "monthly": {
-      "posting_count": 3877,
+      "posting_count": 4646,
       "coverage": {
         "education": {
-          "known": 1316,
-          "total": 3877
+          "known": 1754,
+          "total": 4646
         },
         "experience": {
-          "known": 2596,
-          "total": 3877
+          "known": 2598,
+          "total": 4646
         },
         "salary": {
           "known": 99,
-          "total": 3877
+          "total": 4646
         },
         "employer_type": {
-          "known": 1661,
-          "total": 3877
+          "known": 2220,
+          "total": 4646
         }
       },
       "top_skills": [
         {
           "label": "Communication",
-          "count": 810
+          "count": 843
         },
         {
           "label": "Problem solving",
-          "count": 281
+          "count": 300
         },
         {
           "label": "Attention to detail",
-          "count": 241
+          "count": 252
         },
         {
           "label": "Teamwork",
-          "count": 132
+          "count": 148
         },
         {
           "label": "Accounting",
-          "count": 128
+          "count": 144
+        },
+        {
+          "label": "Technical Skills",
+          "count": 106
         },
         {
           "label": "Leadership",
-          "count": 83
+          "count": 90
+        },
+        {
+          "label": "Creativity",
+          "count": 85
+        },
+        {
+          "label": "Soft Skills",
+          "count": 82
         },
         {
           "label": "Decision-making",
           "count": 77
-        },
-        {
-          "label": "Creativity",
-          "count": 77
-        },
-        {
-          "label": "Customer service",
-          "count": 50
-        },
-        {
-          "label": "Time management",
-          "count": 48
         }
       ],
       "top_categories": [
@@ -3047,7 +3047,7 @@
         },
         {
           "label": "Information and communication",
-          "count": 179
+          "count": 180
         },
         {
           "label": "Accommodation and food service activities",
@@ -3069,35 +3069,35 @@
       "top_jobs": [
         {
           "label": "Professionals",
-          "count": 1368
+          "count": 1549
         },
         {
           "label": "Managers",
-          "count": 545
+          "count": 606
         },
         {
           "label": "Technicians and associate professionals",
-          "count": 303
+          "count": 334
         },
         {
           "label": "Service and sales workers",
-          "count": 230
+          "count": 249
         },
         {
           "label": "Clerical support workers",
-          "count": 125
+          "count": 142
         },
         {
           "label": "Plant and machine operators, and assemblers",
-          "count": 65
+          "count": 75
         },
         {
           "label": "Craft and related trades workers",
-          "count": 37
+          "count": 56
         },
         {
           "label": "Elementary occupations",
-          "count": 13
+          "count": 15
         },
         {
           "label": "Skilled agricultural, forestry and fishery workers",
@@ -3107,7 +3107,11 @@
       "top_locations": [
         {
           "label": "Addis Ababa, Addis Ababa",
-          "count": 2956
+          "count": 2958
+        },
+        {
+          "label": "Discover Careers By Company, Region not identified",
+          "count": 766
         },
         {
           "label": "Unspecified",
@@ -3140,16 +3144,20 @@
         {
           "label": "Adama, Oromia",
           "count": 22
-        },
-        {
-          "label": "Remote",
-          "count": 21
         }
       ],
       "top_employers": [
         {
           "label": "Bule Hora University",
           "count": 59
+        },
+        {
+          "label": "Kushladder Construction P.l.c",
+          "count": 39
+        },
+        {
+          "label": "Tnt Construction & Trading",
+          "count": 39
         },
         {
           "label": "World Vision Ethiopia",
@@ -3164,28 +3172,20 @@
           "count": 29
         },
         {
-          "label": "Heineken Ethiopia",
-          "count": 23
-        },
-        {
-          "label": "Marie Stopes International Ethiopia",
-          "count": 19
+          "label": "Jambo Investment Group",
+          "count": 29
         },
         {
           "label": "Ethiopian Food and Drug Authority (Efda)",
-          "count": 19
+          "count": 28
         },
         {
-          "label": "Ethiopian Construction Works Corporation",
-          "count": 19
+          "label": "Addis Global Academy",
+          "count": 28
         },
         {
-          "label": "Amg Holdings",
-          "count": 18
-        },
-        {
-          "label": "Lesso Ethiopia Trading PLC",
-          "count": 18
+          "label": "Yotek Construction P.l.c",
+          "count": 27
         }
       ]
     }
