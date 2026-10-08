@@ -3189,5 +3189,462 @@
         }
       ]
     }
+  },
+  {
+    "date": "2026-10-08",
+    "weekly": {
+      "posting_count": 4016,
+      "coverage": {
+        "education": {
+          "known": 1720,
+          "total": 4016
+        },
+        "experience": {
+          "known": 2938,
+          "total": 4016
+        },
+        "salary": {
+          "known": 96,
+          "total": 4016
+        },
+        "employer_type": {
+          "known": 1852,
+          "total": 4016
+        }
+      },
+      "top_skills": [
+        {
+          "label": "Communication",
+          "count": 741
+        },
+        {
+          "label": "Time management",
+          "count": 627
+        },
+        {
+          "label": "Attention to detail",
+          "count": 612
+        },
+        {
+          "label": "Problem solving",
+          "count": 336
+        },
+        {
+          "label": "Technical Knowledge",
+          "count": 194
+        },
+        {
+          "label": "Accounting",
+          "count": 121
+        },
+        {
+          "label": "Leadership",
+          "count": 74
+        },
+        {
+          "label": "Strategic Thinking",
+          "count": 73
+        },
+        {
+          "label": "Teamwork",
+          "count": 45
+        },
+        {
+          "label": "Customer service",
+          "count": 45
+        }
+      ],
+      "top_categories": [
+        {
+          "label": "Professional, scientific and technical activities",
+          "count": 874
+        },
+        {
+          "label": "Education",
+          "count": 407
+        },
+        {
+          "label": "Construction",
+          "count": 400
+        },
+        {
+          "label": "Financial and insurance activities",
+          "count": 299
+        },
+        {
+          "label": "Transportation and storage",
+          "count": 230
+        },
+        {
+          "label": "Accommodation and food service activities",
+          "count": 187
+        },
+        {
+          "label": "Wholesale and retail trade",
+          "count": 185
+        },
+        {
+          "label": "Human health and social work activities",
+          "count": 182
+        },
+        {
+          "label": "Public administration and defence",
+          "count": 172
+        },
+        {
+          "label": "Information and communication",
+          "count": 145
+        }
+      ],
+      "top_jobs": [
+        {
+          "label": "Professionals",
+          "count": 1487
+        },
+        {
+          "label": "Managers",
+          "count": 542
+        },
+        {
+          "label": "Technicians and associate professionals",
+          "count": 316
+        },
+        {
+          "label": "Service and sales workers",
+          "count": 236
+        },
+        {
+          "label": "Clerical support workers",
+          "count": 149
+        },
+        {
+          "label": "Plant and machine operators, and assemblers",
+          "count": 125
+        },
+        {
+          "label": "Craft and related trades workers",
+          "count": 70
+        },
+        {
+          "label": "Elementary occupations",
+          "count": 38
+        },
+        {
+          "label": "Skilled agricultural, forestry and fishery workers",
+          "count": 5
+        }
+      ],
+      "top_locations": [
+        {
+          "label": "Addis Ababa, Addis Ababa",
+          "count": 3029
+        },
+        {
+          "label": "Unspecified",
+          "count": 135
+        },
+        {
+          "label": "Bule Hora, Oromia",
+          "count": 59
+        },
+        {
+          "label": "Project Based, Region not identified",
+          "count": 57
+        },
+        {
+          "label": "NC, Oromia",
+          "count": 53
+        },
+        {
+          "label": "On Site, Region not identified",
+          "count": 44
+        },
+        {
+          "label": "Adama, Oromia",
+          "count": 32
+        },
+        {
+          "label": "Jimma, Oromia",
+          "count": 31
+        },
+        {
+          "label": "Hawassa, Sidama",
+          "count": 30
+        },
+        {
+          "label": "Arba Minch, South Ethiopia",
+          "count": 29
+        }
+      ],
+      "top_employers": [
+        {
+          "label": "Bule Hora University",
+          "count": 59
+        },
+        {
+          "label": "Kushladder Construction P.l.c",
+          "count": 39
+        },
+        {
+          "label": "Tnt Construction & Trading",
+          "count": 39
+        },
+        {
+          "label": "World Vision Ethiopia",
+          "count": 32
+        },
+        {
+          "label": "Werabe University",
+          "count": 30
+        },
+        {
+          "label": "National Aviation College",
+          "count": 29
+        },
+        {
+          "label": "Jambo Investment Group",
+          "count": 29
+        },
+        {
+          "label": "Ethiopian Food and Drug Authority (Efda)",
+          "count": 28
+        },
+        {
+          "label": "Addis Global Academy",
+          "count": 28
+        },
+        {
+          "label": "Yotek Construction P.l.c",
+          "count": 27
+        }
+      ]
+    },
+    "monthly": {
+      "posting_count": 4738,
+      "coverage": {
+        "education": {
+          "known": 1998,
+          "total": 4738
+        },
+        "experience": {
+          "known": 3358,
+          "total": 4738
+        },
+        "salary": {
+          "known": 104,
+          "total": 4738
+        },
+        "employer_type": {
+          "known": 2237,
+          "total": 4738
+        }
+      },
+      "top_skills": [
+        {
+          "label": "Communication",
+          "count": 1164
+        },
+        {
+          "label": "Attention to detail",
+          "count": 760
+        },
+        {
+          "label": "Time management",
+          "count": 643
+        },
+        {
+          "label": "Problem solving",
+          "count": 491
+        },
+        {
+          "label": "Accounting",
+          "count": 197
+        },
+        {
+          "label": "Technical Knowledge",
+          "count": 194
+        },
+        {
+          "label": "Teamwork",
+          "count": 132
+        },
+        {
+          "label": "Leadership",
+          "count": 109
+        },
+        {
+          "label": "Decision-making",
+          "count": 85
+        },
+        {
+          "label": "Creativity",
+          "count": 78
+        }
+      ],
+      "top_categories": [
+        {
+          "label": "Professional, scientific and technical activities",
+          "count": 1157
+        },
+        {
+          "label": "Financial and insurance activities",
+          "count": 469
+        },
+        {
+          "label": "Education",
+          "count": 427
+        },
+        {
+          "label": "Construction",
+          "count": 410
+        },
+        {
+          "label": "Transportation and storage",
+          "count": 273
+        },
+        {
+          "label": "Wholesale and retail trade",
+          "count": 262
+        },
+        {
+          "label": "Human health and social work activities",
+          "count": 261
+        },
+        {
+          "label": "Accommodation and food service activities",
+          "count": 226
+        },
+        {
+          "label": "Information and communication",
+          "count": 182
+        },
+        {
+          "label": "Manufacturing",
+          "count": 175
+        }
+      ],
+      "top_jobs": [
+        {
+          "label": "Professionals",
+          "count": 1738
+        },
+        {
+          "label": "Managers",
+          "count": 648
+        },
+        {
+          "label": "Technicians and associate professionals",
+          "count": 379
+        },
+        {
+          "label": "Service and sales workers",
+          "count": 283
+        },
+        {
+          "label": "Clerical support workers",
+          "count": 174
+        },
+        {
+          "label": "Plant and machine operators, and assemblers",
+          "count": 135
+        },
+        {
+          "label": "Craft and related trades workers",
+          "count": 81
+        },
+        {
+          "label": "Elementary occupations",
+          "count": 40
+        },
+        {
+          "label": "Skilled agricultural, forestry and fishery workers",
+          "count": 5
+        }
+      ],
+      "top_locations": [
+        {
+          "label": "Addis Ababa, Addis Ababa",
+          "count": 3570
+        },
+        {
+          "label": "Unspecified",
+          "count": 195
+        },
+        {
+          "label": "NC, Oromia",
+          "count": 122
+        },
+        {
+          "label": "Bule Hora, Oromia",
+          "count": 59
+        },
+        {
+          "label": "Project Based, Region not identified",
+          "count": 57
+        },
+        {
+          "label": "On Site, Region not identified",
+          "count": 44
+        },
+        {
+          "label": "Adama, Oromia",
+          "count": 32
+        },
+        {
+          "label": "Jimma, Oromia",
+          "count": 31
+        },
+        {
+          "label": "Hawassa, Sidama",
+          "count": 30
+        },
+        {
+          "label": "NC, Amhara",
+          "count": 29
+        }
+      ],
+      "top_employers": [
+        {
+          "label": "Bule Hora University",
+          "count": 59
+        },
+        {
+          "label": "Kushladder Construction P.l.c",
+          "count": 39
+        },
+        {
+          "label": "Tnt Construction & Trading",
+          "count": 39
+        },
+        {
+          "label": "World Vision Ethiopia",
+          "count": 34
+        },
+        {
+          "label": "Werabe University",
+          "count": 30
+        },
+        {
+          "label": "National Aviation College",
+          "count": 29
+        },
+        {
+          "label": "Jambo Investment Group",
+          "count": 29
+        },
+        {
+          "label": "Ethiopian Food and Drug Authority (Efda)",
+          "count": 28
+        },
+        {
+          "label": "Addis Global Academy",
+          "count": 28
+        },
+        {
+          "label": "Yotek Construction P.l.c",
+          "count": 27
+        }
+      ]
+    }
   }
 ]

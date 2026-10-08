@@ -299,6 +299,11 @@
       <div class="drilldown" id="locSkills"></div>
       <p class="note" id="locNote"></p>
     </div>
+    <div class="panel" id="googleViaPanel">
+      <h2>Found Through Google Jobs</h2>
+      <p class="panel-sub" id="googleViaSub"></p>
+      <div class="chart-holder"><canvas id="googleViaChart" height="220"></canvas></div>
+    </div>
     <div class="panel">
       <h2>Job Sources</h2>
       <p class="panel-sub" id="sourcesSub"></p>
@@ -824,6 +829,13 @@ function renderWindow(windowKey) {
   drawBar("employerTypeChart", "employerType", data.employer_type.types, "label", "count",
     (label) => showCriticalSkills(label, "critical_skills_by_employer_type", "employerTypeSkills"));
   drawBar("sourcesChart", "sources", data.source_sites, "label", "count", (label) => showOpenJobs("src", label, "sourcesSkills"));
+  const gv = data.google_found_via || [];
+  document.getElementById("googleViaPanel").hidden = gv.length === 0;
+  if (gv.length) {
+    document.getElementById("googleViaSub").textContent =
+      `Sites Google found these postings on, ${WINDOW_LABELS[windowKey]} view. A sample from limited daily searches, not a full count`;
+    drawBar("googleViaChart", "googleVia", gv, "label", "count");
+  }
   document.getElementById("locNote").textContent = payload.notes.location;
   document.getElementById("subCatNote").textContent = payload.notes.subcategories;
   renderSalary(data);
