@@ -3193,41 +3193,41 @@
   {
     "date": "2026-10-08",
     "weekly": {
-      "posting_count": 4016,
+      "posting_count": 3152,
       "coverage": {
         "education": {
-          "known": 1720,
-          "total": 4016
+          "known": 1490,
+          "total": 3152
         },
         "experience": {
-          "known": 2938,
-          "total": 4016
+          "known": 2076,
+          "total": 3152
         },
         "salary": {
-          "known": 96,
-          "total": 4016
+          "known": 53,
+          "total": 3152
         },
         "employer_type": {
-          "known": 1852,
-          "total": 4016
+          "known": 1363,
+          "total": 3152
         }
       },
       "top_skills": [
         {
           "label": "Communication",
-          "count": 741
+          "count": 669
         },
         {
           "label": "Time management",
-          "count": 627
+          "count": 629
         },
         {
           "label": "Attention to detail",
-          "count": 612
+          "count": 579
         },
         {
           "label": "Problem solving",
-          "count": 336
+          "count": 311
         },
         {
           "label": "Technical Knowledge",
@@ -3235,99 +3235,99 @@
         },
         {
           "label": "Accounting",
-          "count": 121
+          "count": 98
         },
         {
           "label": "Leadership",
-          "count": 74
+          "count": 73
         },
         {
           "label": "Strategic Thinking",
           "count": 73
         },
         {
-          "label": "Teamwork",
-          "count": 45
+          "label": "Customer service",
+          "count": 44
         },
         {
-          "label": "Customer service",
-          "count": 45
+          "label": "Accountability",
+          "count": 40
         }
       ],
       "top_categories": [
         {
           "label": "Professional, scientific and technical activities",
-          "count": 874
-        },
-        {
-          "label": "Education",
-          "count": 407
+          "count": 506
         },
         {
           "label": "Construction",
-          "count": 400
+          "count": 377
+        },
+        {
+          "label": "Education",
+          "count": 251
         },
         {
           "label": "Financial and insurance activities",
-          "count": 299
+          "count": 240
         },
         {
           "label": "Transportation and storage",
-          "count": 230
-        },
-        {
-          "label": "Accommodation and food service activities",
-          "count": 187
-        },
-        {
-          "label": "Wholesale and retail trade",
-          "count": 185
-        },
-        {
-          "label": "Human health and social work activities",
-          "count": 182
+          "count": 177
         },
         {
           "label": "Public administration and defence",
-          "count": 172
+          "count": 169
+        },
+        {
+          "label": "Wholesale and retail trade",
+          "count": 161
+        },
+        {
+          "label": "Manufacturing",
+          "count": 123
         },
         {
           "label": "Information and communication",
-          "count": 145
+          "count": 114
+        },
+        {
+          "label": "Human health and social work activities",
+          "count": 101
         }
       ],
       "top_jobs": [
         {
           "label": "Professionals",
-          "count": 1487
+          "count": 1126
         },
         {
           "label": "Managers",
-          "count": 542
+          "count": 401
         },
         {
           "label": "Technicians and associate professionals",
-          "count": 316
+          "count": 238
         },
         {
           "label": "Service and sales workers",
-          "count": 236
+          "count": 188
         },
         {
           "label": "Clerical support workers",
-          "count": 149
+          "count": 113
         },
         {
           "label": "Plant and machine operators, and assemblers",
-          "count": 125
+          "count": 107
         },
         {
           "label": "Craft and related trades workers",
-          "count": 70
+          "count": 62
         },
         {
           "label": "Elementary occupations",
-          "count": 38
+          "count": 28
         },
         {
           "label": "Skilled agricultural, forestry and fishery workers",
@@ -3337,50 +3337,46 @@
       "top_locations": [
         {
           "label": "Addis Ababa, Addis Ababa",
-          "count": 3029
+          "count": 2411
         },
         {
           "label": "Unspecified",
-          "count": 135
-        },
-        {
-          "label": "Bule Hora, Oromia",
-          "count": 59
+          "count": 134
         },
         {
           "label": "Project Based, Region not identified",
           "count": 57
         },
         {
-          "label": "NC, Oromia",
-          "count": 53
-        },
-        {
           "label": "On Site, Region not identified",
           "count": 44
         },
         {
-          "label": "Adama, Oromia",
-          "count": 32
-        },
-        {
-          "label": "Jimma, Oromia",
-          "count": 31
-        },
-        {
-          "label": "Hawassa, Sidama",
+          "label": "NC, Oromia",
           "count": 30
         },
         {
-          "label": "Arba Minch, South Ethiopia",
-          "count": 29
+          "label": "Worabe, Central Ethiopia",
+          "count": 28
+        },
+        {
+          "label": "Remote",
+          "count": 24
+        },
+        {
+          "label": "NC, Gambela",
+          "count": 22
+        },
+        {
+          "label": "NC, Amhara",
+          "count": 18
+        },
+        {
+          "label": "NC, Dire Dawa",
+          "count": 18
         }
       ],
       "top_employers": [
-        {
-          "label": "Bule Hora University",
-          "count": 59
-        },
         {
           "label": "Kushladder Construction P.l.c",
           "count": 39
@@ -3406,43 +3402,47 @@
           "count": 29
         },
         {
-          "label": "Ethiopian Food and Drug Authority (Efda)",
-          "count": 28
-        },
-        {
           "label": "Addis Global Academy",
           "count": 28
         },
         {
           "label": "Yotek Construction P.l.c",
           "count": 27
+        },
+        {
+          "label": "Eden Business P.l.c",
+          "count": 27
+        },
+        {
+          "label": "Hamracon Construction",
+          "count": 25
         }
       ]
     },
     "monthly": {
-      "posting_count": 4738,
+      "posting_count": 4826,
       "coverage": {
         "education": {
-          "known": 1998,
-          "total": 4738
+          "known": 2024,
+          "total": 4826
         },
         "experience": {
-          "known": 3358,
-          "total": 4738
+          "known": 3394,
+          "total": 4826
         },
         "salary": {
-          "known": 104,
-          "total": 4738
+          "known": 106,
+          "total": 4826
         },
         "employer_type": {
-          "known": 2237,
-          "total": 4738
+          "known": 2272,
+          "total": 4826
         }
       },
       "top_skills": [
         {
           "label": "Communication",
-          "count": 1164
+          "count": 1168
         },
         {
           "label": "Attention to detail",
@@ -3450,11 +3450,11 @@
         },
         {
           "label": "Time management",
-          "count": 643
+          "count": 645
         },
         {
           "label": "Problem solving",
-          "count": 491
+          "count": 493
         },
         {
           "label": "Accounting",
@@ -3466,11 +3466,11 @@
         },
         {
           "label": "Teamwork",
-          "count": 132
+          "count": 133
         },
         {
           "label": "Leadership",
-          "count": 109
+          "count": 110
         },
         {
           "label": "Decision-making",
@@ -3478,37 +3478,37 @@
         },
         {
           "label": "Creativity",
-          "count": 78
+          "count": 79
         }
       ],
       "top_categories": [
         {
           "label": "Professional, scientific and technical activities",
-          "count": 1157
+          "count": 1181
         },
         {
           "label": "Financial and insurance activities",
-          "count": 469
+          "count": 472
         },
         {
           "label": "Education",
-          "count": 427
+          "count": 432
         },
         {
           "label": "Construction",
-          "count": 410
+          "count": 421
         },
         {
           "label": "Transportation and storage",
-          "count": 273
+          "count": 275
+        },
+        {
+          "label": "Human health and social work activities",
+          "count": 265
         },
         {
           "label": "Wholesale and retail trade",
           "count": 262
-        },
-        {
-          "label": "Human health and social work activities",
-          "count": 261
         },
         {
           "label": "Accommodation and food service activities",
@@ -3526,23 +3526,23 @@
       "top_jobs": [
         {
           "label": "Professionals",
-          "count": 1738
+          "count": 1777
         },
         {
           "label": "Managers",
-          "count": 648
+          "count": 656
         },
         {
           "label": "Technicians and associate professionals",
-          "count": 379
+          "count": 386
         },
         {
           "label": "Service and sales workers",
-          "count": 283
+          "count": 287
         },
         {
           "label": "Clerical support workers",
-          "count": 174
+          "count": 175
         },
         {
           "label": "Plant and machine operators, and assemblers",
@@ -3550,11 +3550,11 @@
         },
         {
           "label": "Craft and related trades workers",
-          "count": 81
+          "count": 83
         },
         {
           "label": "Elementary occupations",
-          "count": 40
+          "count": 41
         },
         {
           "label": "Skilled agricultural, forestry and fishery workers",
@@ -3564,15 +3564,15 @@
       "top_locations": [
         {
           "label": "Addis Ababa, Addis Ababa",
-          "count": 3570
+          "count": 3641
         },
         {
           "label": "Unspecified",
-          "count": 195
+          "count": 199
         },
         {
           "label": "NC, Oromia",
-          "count": 122
+          "count": 123
         },
         {
           "label": "Bule Hora, Oromia",
@@ -3587,16 +3587,16 @@
           "count": 44
         },
         {
+          "label": "Hawassa, Sidama",
+          "count": 33
+        },
+        {
           "label": "Adama, Oromia",
           "count": 32
         },
         {
           "label": "Jimma, Oromia",
           "count": 31
-        },
-        {
-          "label": "Hawassa, Sidama",
-          "count": 30
         },
         {
           "label": "NC, Amhara",
