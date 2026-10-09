@@ -3650,41 +3650,41 @@
   {
     "date": "2026-10-09",
     "weekly": {
-      "posting_count": 3218,
+      "posting_count": 2967,
       "coverage": {
         "education": {
-          "known": 1585,
-          "total": 3218
+          "known": 1441,
+          "total": 2967
         },
         "experience": {
-          "known": 1951,
-          "total": 3218
+          "known": 1897,
+          "total": 2967
         },
         "salary": {
-          "known": 52,
-          "total": 3218
+          "known": 54,
+          "total": 2967
         },
         "employer_type": {
-          "known": 1363,
-          "total": 3218
+          "known": 1362,
+          "total": 2967
         }
       },
       "top_skills": [
         {
           "label": "Communication",
-          "count": 803
+          "count": 689
         },
         {
           "label": "Time management",
-          "count": 632
+          "count": 619
         },
         {
           "label": "Attention to detail",
-          "count": 626
+          "count": 593
         },
         {
           "label": "Problem solving",
-          "count": 352
+          "count": 309
         },
         {
           "label": "Technical Knowledge",
@@ -3692,75 +3692,75 @@
         },
         {
           "label": "Accounting",
-          "count": 118
-        },
-        {
-          "label": "Leadership",
-          "count": 81
+          "count": 115
         },
         {
           "label": "Strategic Thinking",
-          "count": 73
+          "count": 72
+        },
+        {
+          "label": "Leadership",
+          "count": 65
         },
         {
           "label": "Teamwork",
-          "count": 61
+          "count": 54
         },
         {
-          "label": "Creativity",
-          "count": 59
+          "label": "Analytical thinking",
+          "count": 42
         }
       ],
       "top_categories": [
         {
           "label": "Professional, scientific and technical activities",
-          "count": 507
+          "count": 459
         },
         {
           "label": "Construction",
-          "count": 372
+          "count": 358
         },
         {
           "label": "Financial and insurance activities",
-          "count": 257
+          "count": 253
         },
         {
           "label": "Education",
-          "count": 216
+          "count": 206
         },
         {
           "label": "Wholesale and retail trade",
-          "count": 184
-        },
-        {
-          "label": "Transportation and storage",
-          "count": 178
+          "count": 176
         },
         {
           "label": "Public administration and defence",
-          "count": 172
+          "count": 175
+        },
+        {
+          "label": "Transportation and storage",
+          "count": 169
         },
         {
           "label": "Manufacturing",
-          "count": 134
+          "count": 120
         },
         {
           "label": "Information and communication",
-          "count": 121
+          "count": 115
         },
         {
           "label": "Human health and social work activities",
-          "count": 100
+          "count": 97
         }
       ],
       "top_jobs": [
         {
           "label": "Professionals",
-          "count": 1138
+          "count": 1062
         },
         {
           "label": "Managers",
-          "count": 424
+          "count": 407
         },
         {
           "label": "Technicians and associate professionals",
@@ -3768,23 +3768,23 @@
         },
         {
           "label": "Service and sales workers",
-          "count": 192
+          "count": 162
         },
         {
           "label": "Clerical support workers",
-          "count": 113
+          "count": 105
         },
         {
           "label": "Plant and machine operators, and assemblers",
-          "count": 109
+          "count": 101
         },
         {
           "label": "Craft and related trades workers",
-          "count": 65
+          "count": 63
         },
         {
           "label": "Elementary occupations",
-          "count": 29
+          "count": 25
         },
         {
           "label": "Skilled agricultural, forestry and fishery workers",
@@ -3794,19 +3794,19 @@
       "top_locations": [
         {
           "label": "Addis Ababa, Addis Ababa",
-          "count": 2404
+          "count": 2152
         },
         {
           "label": "Unspecified",
-          "count": 156
-        },
-        {
-          "label": "NC, Oromia",
-          "count": 61
+          "count": 143
         },
         {
           "label": "Project Based, Region not identified",
           "count": 57
+        },
+        {
+          "label": "NC, Oromia",
+          "count": 55
         },
         {
           "label": "On Site, Region not identified",
@@ -3814,7 +3814,11 @@
         },
         {
           "label": "NC, Gambela",
-          "count": 30
+          "count": 34
+        },
+        {
+          "label": "Hawassa, Sidama",
+          "count": 33
         },
         {
           "label": "Worabe, Central Ethiopia",
@@ -3825,12 +3829,8 @@
           "count": 26
         },
         {
-          "label": "Hawassa, Sidama",
-          "count": 26
-        },
-        {
-          "label": "Remote",
-          "count": 24
+          "label": "Galan, Oromia",
+          "count": 21
         }
       ],
       "top_employers": [
@@ -3843,28 +3843,20 @@
           "count": 39
         },
         {
-          "label": "World Vision Ethiopia",
-          "count": 35
+          "label": "Abeba Giday Business Group",
+          "count": 38
         },
         {
-          "label": "Abeba Giday Business Group",
-          "count": 31
+          "label": "World Vision Ethiopia",
+          "count": 37
         },
         {
           "label": "Werabe University",
           "count": 30
         },
         {
-          "label": "National Aviation College",
-          "count": 29
-        },
-        {
           "label": "Jambo Investment Group",
           "count": 29
-        },
-        {
-          "label": "Amg Holdings",
-          "count": 27
         },
         {
           "label": "Yotek Construction P.l.c",
@@ -3873,33 +3865,41 @@
         {
           "label": "Eden Business P.l.c",
           "count": 27
+        },
+        {
+          "label": "Amg Holdings",
+          "count": 26
+        },
+        {
+          "label": "Hamracon Construction",
+          "count": 25
         }
       ]
     },
     "monthly": {
-      "posting_count": 5122,
+      "posting_count": 5244,
       "coverage": {
         "education": {
-          "known": 2193,
-          "total": 5122
+          "known": 2268,
+          "total": 5244
         },
         "experience": {
-          "known": 3477,
-          "total": 5122
+          "known": 3565,
+          "total": 5244
         },
         "salary": {
-          "known": 114,
-          "total": 5122
+          "known": 118,
+          "total": 5244
         },
         "employer_type": {
-          "known": 2399,
-          "total": 5122
+          "known": 2459,
+          "total": 5244
         }
       },
       "top_skills": [
         {
           "label": "Communication",
-          "count": 1323
+          "count": 1332
         },
         {
           "label": "Attention to detail",
@@ -3907,15 +3907,15 @@
         },
         {
           "label": "Time management",
-          "count": 650
+          "count": 653
         },
         {
           "label": "Problem solving",
-          "count": 540
+          "count": 541
         },
         {
           "label": "Accounting",
-          "count": 220
+          "count": 222
         },
         {
           "label": "Technical Knowledge",
@@ -3927,7 +3927,7 @@
         },
         {
           "label": "Leadership",
-          "count": 119
+          "count": 121
         },
         {
           "label": "Decision-making",
@@ -3935,37 +3935,37 @@
         },
         {
           "label": "Creativity",
-          "count": 101
+          "count": 103
         }
       ],
       "top_categories": [
         {
           "label": "Professional, scientific and technical activities",
-          "count": 1272
+          "count": 1295
         },
         {
           "label": "Financial and insurance activities",
-          "count": 519
+          "count": 523
         },
         {
           "label": "Education",
-          "count": 438
+          "count": 441
         },
         {
           "label": "Construction",
-          "count": 423
+          "count": 427
         },
         {
           "label": "Transportation and storage",
-          "count": 298
+          "count": 305
         },
         {
           "label": "Wholesale and retail trade",
-          "count": 292
+          "count": 294
         },
         {
           "label": "Human health and social work activities",
-          "count": 285
+          "count": 289
         },
         {
           "label": "Accommodation and food service activities",
@@ -3973,37 +3973,37 @@
         },
         {
           "label": "Information and communication",
-          "count": 202
+          "count": 213
         },
         {
           "label": "Manufacturing",
-          "count": 188
+          "count": 190
         }
       ],
       "top_jobs": [
         {
           "label": "Professionals",
-          "count": 1883
+          "count": 1926
         },
         {
           "label": "Managers",
-          "count": 716
+          "count": 736
         },
         {
           "label": "Technicians and associate professionals",
-          "count": 413
+          "count": 430
         },
         {
           "label": "Service and sales workers",
-          "count": 302
+          "count": 310
         },
         {
           "label": "Clerical support workers",
-          "count": 183
+          "count": 188
         },
         {
           "label": "Plant and machine operators, and assemblers",
-          "count": 141
+          "count": 147
         },
         {
           "label": "Craft and related trades workers",
@@ -4011,7 +4011,7 @@
         },
         {
           "label": "Elementary occupations",
-          "count": 42
+          "count": 44
         },
         {
           "label": "Skilled agricultural, forestry and fishery workers",
@@ -4021,11 +4021,11 @@
       "top_locations": [
         {
           "label": "Addis Ababa, Addis Ababa",
-          "count": 3814
+          "count": 3884
         },
         {
           "label": "Unspecified",
-          "count": 221
+          "count": 223
         },
         {
           "label": "NC, Oromia",
@@ -4036,12 +4036,12 @@
           "count": 59
         },
         {
-          "label": "Project Based, Region not identified",
+          "label": "Hawassa, Sidama",
           "count": 57
         },
         {
-          "label": "Hawassa, Sidama",
-          "count": 50
+          "label": "Project Based, Region not identified",
+          "count": 57
         },
         {
           "label": "On Site, Region not identified",
@@ -4052,12 +4052,12 @@
           "count": 37
         },
         {
-          "label": "Adama, Oromia",
-          "count": 32
+          "label": "NC, Gambela",
+          "count": 34
         },
         {
-          "label": "Jimma, Oromia",
-          "count": 31
+          "label": "Adama, Oromia",
+          "count": 32
         }
       ],
       "top_employers": [
@@ -4070,6 +4070,10 @@
           "count": 42
         },
         {
+          "label": "World Vision Ethiopia",
+          "count": 39
+        },
+        {
           "label": "Kushladder Construction P.l.c",
           "count": 39
         },
@@ -4078,12 +4082,12 @@
           "count": 39
         },
         {
-          "label": "World Vision Ethiopia",
-          "count": 37
+          "label": "Abeba Giday Business Group",
+          "count": 38
         },
         {
-          "label": "Abeba Giday Business Group",
-          "count": 31
+          "label": "Amg Holdings PLC",
+          "count": 36
         },
         {
           "label": "Werabe University",
@@ -4096,10 +4100,6 @@
         {
           "label": "Jambo Investment Group",
           "count": 29
-        },
-        {
-          "label": "Ethiopian Food and Drug Authority (Efda)",
-          "count": 28
         }
       ]
     }
