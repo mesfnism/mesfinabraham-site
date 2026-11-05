@@ -15957,5 +15957,458 @@
         }
       ]
     }
+  },
+  {
+    "date": "2026-11-05",
+    "weekly": {
+      "posting_count": 2891,
+      "coverage": {
+        "education": {
+          "known": 1283,
+          "total": 2891
+        },
+        "experience": {
+          "known": 2019,
+          "total": 2891
+        },
+        "salary": {
+          "known": 71,
+          "total": 2891
+        },
+        "employer_type": {
+          "known": 1431,
+          "total": 2891
+        }
+      },
+      "top_skills": [
+        {
+          "label": "Communication",
+          "count": 601
+        },
+        {
+          "label": "Attention to detail",
+          "count": 553
+        },
+        {
+          "label": "Time management",
+          "count": 431
+        },
+        {
+          "label": "Problem solving",
+          "count": 272
+        },
+        {
+          "label": "Technical Knowledge",
+          "count": 183
+        },
+        {
+          "label": "Accounting",
+          "count": 125
+        },
+        {
+          "label": "Strategic Thinking",
+          "count": 84
+        },
+        {
+          "label": "Analytical thinking",
+          "count": 68
+        },
+        {
+          "label": "Decision-making",
+          "count": 60
+        },
+        {
+          "label": "Leadership",
+          "count": 56
+        }
+      ],
+      "top_categories": [
+        {
+          "label": "Professional, scientific and technical activities",
+          "count": 589
+        },
+        {
+          "label": "Financial and insurance activities",
+          "count": 352
+        },
+        {
+          "label": "Construction",
+          "count": 246
+        },
+        {
+          "label": "Human health and social work activities",
+          "count": 154
+        },
+        {
+          "label": "Public administration and defence",
+          "count": 147
+        },
+        {
+          "label": "Manufacturing",
+          "count": 136
+        },
+        {
+          "label": "Transportation and storage",
+          "count": 126
+        },
+        {
+          "label": "Education",
+          "count": 103
+        },
+        {
+          "label": "Information and communication",
+          "count": 95
+        },
+        {
+          "label": "Wholesale and retail trade",
+          "count": 94
+        }
+      ],
+      "top_jobs": [
+        {
+          "label": "Professionals",
+          "count": 1008
+        },
+        {
+          "label": "Managers",
+          "count": 391
+        },
+        {
+          "label": "Service and sales workers",
+          "count": 218
+        },
+        {
+          "label": "Technicians and associate professionals",
+          "count": 187
+        },
+        {
+          "label": "Clerical support workers",
+          "count": 83
+        },
+        {
+          "label": "Plant and machine operators, and assemblers",
+          "count": 74
+        },
+        {
+          "label": "Craft and related trades workers",
+          "count": 56
+        },
+        {
+          "label": "Elementary occupations",
+          "count": 12
+        }
+      ],
+      "top_locations": [
+        {
+          "label": "Addis Ababa, Addis Ababa",
+          "count": 1832
+        },
+        {
+          "label": "Job Type Onsite, Region not identified",
+          "count": 320
+        },
+        {
+          "label": "Project Based, Region not identified",
+          "count": 72
+        },
+        {
+          "label": "NC, Oromia",
+          "count": 65
+        },
+        {
+          "label": "Unspecified",
+          "count": 64
+        },
+        {
+          "label": "Adama, Oromia",
+          "count": 29
+        },
+        {
+          "label": "Full Time, Region not identified",
+          "count": 28
+        },
+        {
+          "label": "Hawassa, Sidama",
+          "count": 26
+        },
+        {
+          "label": "NC, Tigray",
+          "count": 25
+        },
+        {
+          "label": "NC, Amhara",
+          "count": 22
+        }
+      ],
+      "top_employers": [
+        {
+          "label": "Midroc Construction Ethiopia P.l.c",
+          "count": 62
+        },
+        {
+          "label": "Ethiopian Tourist Trading",
+          "count": 52
+        },
+        {
+          "label": "Medical Teams International",
+          "count": 38
+        },
+        {
+          "label": "Addis Ababa University",
+          "count": 35
+        },
+        {
+          "label": "Mesay Oli General Contractor",
+          "count": 35
+        },
+        {
+          "label": "British International School",
+          "count": 23
+        },
+        {
+          "label": "Shangi Furniture PLC",
+          "count": 21
+        },
+        {
+          "label": "School of Aygoda",
+          "count": 19
+        },
+        {
+          "label": "Jiva School",
+          "count": 19
+        },
+        {
+          "label": "Enyi General \u00a0Business \u00a0P.l.c",
+          "count": 17
+        }
+      ]
+    },
+    "monthly": {
+      "posting_count": 12022,
+      "coverage": {
+        "education": {
+          "known": 5679,
+          "total": 12022
+        },
+        "experience": {
+          "known": 7931,
+          "total": 12022
+        },
+        "salary": {
+          "known": 283,
+          "total": 12022
+        },
+        "employer_type": {
+          "known": 5730,
+          "total": 12022
+        }
+      },
+      "top_skills": [
+        {
+          "label": "Communication",
+          "count": 2887
+        },
+        {
+          "label": "Attention to detail",
+          "count": 2432
+        },
+        {
+          "label": "Time management",
+          "count": 1947
+        },
+        {
+          "label": "Problem solving",
+          "count": 1182
+        },
+        {
+          "label": "Technical Knowledge",
+          "count": 680
+        },
+        {
+          "label": "Accounting",
+          "count": 559
+        },
+        {
+          "label": "Leadership",
+          "count": 293
+        },
+        {
+          "label": "Strategic Thinking",
+          "count": 288
+        },
+        {
+          "label": "Analytical thinking",
+          "count": 250
+        },
+        {
+          "label": "Decision-making",
+          "count": 222
+        }
+      ],
+      "top_categories": [
+        {
+          "label": "Professional, scientific and technical activities",
+          "count": 2385
+        },
+        {
+          "label": "Financial and insurance activities",
+          "count": 1258
+        },
+        {
+          "label": "Construction",
+          "count": 1193
+        },
+        {
+          "label": "Human health and social work activities",
+          "count": 661
+        },
+        {
+          "label": "Transportation and storage",
+          "count": 611
+        },
+        {
+          "label": "Wholesale and retail trade",
+          "count": 594
+        },
+        {
+          "label": "Education",
+          "count": 556
+        },
+        {
+          "label": "Public administration and defence",
+          "count": 549
+        },
+        {
+          "label": "Manufacturing",
+          "count": 490
+        },
+        {
+          "label": "Information and communication",
+          "count": 420
+        }
+      ],
+      "top_jobs": [
+        {
+          "label": "Professionals",
+          "count": 4426
+        },
+        {
+          "label": "Managers",
+          "count": 1611
+        },
+        {
+          "label": "Technicians and associate professionals",
+          "count": 834
+        },
+        {
+          "label": "Service and sales workers",
+          "count": 758
+        },
+        {
+          "label": "Clerical support workers",
+          "count": 405
+        },
+        {
+          "label": "Plant and machine operators, and assemblers",
+          "count": 369
+        },
+        {
+          "label": "Craft and related trades workers",
+          "count": 293
+        },
+        {
+          "label": "Elementary occupations",
+          "count": 72
+        },
+        {
+          "label": "Skilled agricultural, forestry and fishery workers",
+          "count": 6
+        }
+      ],
+      "top_locations": [
+        {
+          "label": "Addis Ababa, Addis Ababa",
+          "count": 8168
+        },
+        {
+          "label": "Job Type Onsite, Region not identified",
+          "count": 561
+        },
+        {
+          "label": "Unspecified",
+          "count": 330
+        },
+        {
+          "label": "NC, Oromia",
+          "count": 297
+        },
+        {
+          "label": "Project Based, Region not identified",
+          "count": 217
+        },
+        {
+          "label": "Adama, Oromia",
+          "count": 169
+        },
+        {
+          "label": "NC, Amhara",
+          "count": 149
+        },
+        {
+          "label": "Bahir Dar, Amhara",
+          "count": 118
+        },
+        {
+          "label": "NC, Gambela",
+          "count": 111
+        },
+        {
+          "label": "On Site, Region not identified",
+          "count": 101
+        }
+      ],
+      "top_employers": [
+        {
+          "label": "Midroc Construction Ethiopia P.l.c",
+          "count": 95
+        },
+        {
+          "label": "Ethiopian Tourist Trading",
+          "count": 88
+        },
+        {
+          "label": "Medical Teams International",
+          "count": 87
+        },
+        {
+          "label": "Love in Action Ethiopia",
+          "count": 80
+        },
+        {
+          "label": "Midroc Construction Ethiopia PLC",
+          "count": 79
+        },
+        {
+          "label": "Elhadar Engineering PLC",
+          "count": 65
+        },
+        {
+          "label": "World Vision Ethiopia",
+          "count": 55
+        },
+        {
+          "label": "Yotek Construction P.l.c",
+          "count": 50
+        },
+        {
+          "label": "Oromia Broadcasting Network (Obn)",
+          "count": 46
+        },
+        {
+          "label": "British International School",
+          "count": 46
+        }
+      ]
+    }
   }
 ]
