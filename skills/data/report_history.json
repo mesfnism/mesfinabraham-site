@@ -18222,5 +18222,458 @@
         }
       ]
     }
+  },
+  {
+    "date": "2026-11-10",
+    "weekly": {
+      "posting_count": 2365,
+      "coverage": {
+        "education": {
+          "known": 842,
+          "total": 2365
+        },
+        "experience": {
+          "known": 1462,
+          "total": 2365
+        },
+        "salary": {
+          "known": 56,
+          "total": 2365
+        },
+        "employer_type": {
+          "known": 1064,
+          "total": 2365
+        }
+      },
+      "top_skills": [
+        {
+          "label": "Communication",
+          "count": 390
+        },
+        {
+          "label": "Attention to detail",
+          "count": 179
+        },
+        {
+          "label": "Problem solving",
+          "count": 146
+        },
+        {
+          "label": "Accounting",
+          "count": 94
+        },
+        {
+          "label": "Decision-making",
+          "count": 58
+        },
+        {
+          "label": "Teamwork",
+          "count": 57
+        },
+        {
+          "label": "Creativity",
+          "count": 53
+        },
+        {
+          "label": "Leadership",
+          "count": 44
+        },
+        {
+          "label": "Adaptability",
+          "count": 33
+        },
+        {
+          "label": "Office",
+          "count": 30
+        }
+      ],
+      "top_categories": [
+        {
+          "label": "Professional, scientific and technical activities",
+          "count": 565
+        },
+        {
+          "label": "Financial and insurance activities",
+          "count": 256
+        },
+        {
+          "label": "Public administration and defence",
+          "count": 191
+        },
+        {
+          "label": "Human health and social work activities",
+          "count": 153
+        },
+        {
+          "label": "Transportation and storage",
+          "count": 150
+        },
+        {
+          "label": "Information and communication",
+          "count": 99
+        },
+        {
+          "label": "Education",
+          "count": 94
+        },
+        {
+          "label": "Wholesale and retail trade",
+          "count": 86
+        },
+        {
+          "label": "Construction",
+          "count": 74
+        },
+        {
+          "label": "Manufacturing",
+          "count": 65
+        }
+      ],
+      "top_jobs": [
+        {
+          "label": "Professionals",
+          "count": 849
+        },
+        {
+          "label": "Managers",
+          "count": 260
+        },
+        {
+          "label": "Service and sales workers",
+          "count": 222
+        },
+        {
+          "label": "Technicians and associate professionals",
+          "count": 147
+        },
+        {
+          "label": "Clerical support workers",
+          "count": 61
+        },
+        {
+          "label": "Plant and machine operators, and assemblers",
+          "count": 54
+        },
+        {
+          "label": "Craft and related trades workers",
+          "count": 26
+        },
+        {
+          "label": "Elementary occupations",
+          "count": 5
+        }
+      ],
+      "top_locations": [
+        {
+          "label": "Addis Ababa, Addis Ababa",
+          "count": 1464
+        },
+        {
+          "label": "Job Type Onsite, Region not identified",
+          "count": 318
+        },
+        {
+          "label": "Unspecified",
+          "count": 74
+        },
+        {
+          "label": "NC, Oromia",
+          "count": 64
+        },
+        {
+          "label": "Full Time, Region not identified",
+          "count": 30
+        },
+        {
+          "label": "NC, Amhara",
+          "count": 29
+        },
+        {
+          "label": "Hawassa, Sidama",
+          "count": 27
+        },
+        {
+          "label": "Bahir Dar, Amhara",
+          "count": 18
+        },
+        {
+          "label": "NC, Tigray",
+          "count": 17
+        },
+        {
+          "label": "NC, Afar",
+          "count": 15
+        }
+      ],
+      "top_employers": [
+        {
+          "label": "Ethiopian Ministry of Revenues",
+          "count": 54
+        },
+        {
+          "label": "Addis Ababa University",
+          "count": 36
+        },
+        {
+          "label": "Medical Teams International",
+          "count": 29
+        },
+        {
+          "label": "Mirab Construction",
+          "count": 27
+        },
+        {
+          "label": "Plan International",
+          "count": 23
+        },
+        {
+          "label": "Golden Buffalo Trading",
+          "count": 22
+        },
+        {
+          "label": "Aser Construction",
+          "count": 22
+        },
+        {
+          "label": "Abay Investment Holding",
+          "count": 17
+        },
+        {
+          "label": "Jiva School",
+          "count": 17
+        },
+        {
+          "label": "The Well in Action",
+          "count": 15
+        }
+      ]
+    },
+    "monthly": {
+      "posting_count": 11397,
+      "coverage": {
+        "education": {
+          "known": 4975,
+          "total": 11397
+        },
+        "experience": {
+          "known": 7506,
+          "total": 11397
+        },
+        "salary": {
+          "known": 263,
+          "total": 11397
+        },
+        "employer_type": {
+          "known": 5345,
+          "total": 11397
+        }
+      },
+      "top_skills": [
+        {
+          "label": "Communication",
+          "count": 2439
+        },
+        {
+          "label": "Attention to detail",
+          "count": 1933
+        },
+        {
+          "label": "Time management",
+          "count": 1329
+        },
+        {
+          "label": "Problem solving",
+          "count": 937
+        },
+        {
+          "label": "Accounting",
+          "count": 512
+        },
+        {
+          "label": "Technical Knowledge",
+          "count": 486
+        },
+        {
+          "label": "Leadership",
+          "count": 269
+        },
+        {
+          "label": "Decision-making",
+          "count": 219
+        },
+        {
+          "label": "Strategic Thinking",
+          "count": 217
+        },
+        {
+          "label": "Analytical thinking",
+          "count": 198
+        }
+      ],
+      "top_categories": [
+        {
+          "label": "Professional, scientific and technical activities",
+          "count": 2401
+        },
+        {
+          "label": "Financial and insurance activities",
+          "count": 1257
+        },
+        {
+          "label": "Construction",
+          "count": 905
+        },
+        {
+          "label": "Human health and social work activities",
+          "count": 672
+        },
+        {
+          "label": "Public administration and defence",
+          "count": 637
+        },
+        {
+          "label": "Transportation and storage",
+          "count": 594
+        },
+        {
+          "label": "Education",
+          "count": 507
+        },
+        {
+          "label": "Wholesale and retail trade",
+          "count": 483
+        },
+        {
+          "label": "Manufacturing",
+          "count": 446
+        },
+        {
+          "label": "Information and communication",
+          "count": 418
+        }
+      ],
+      "top_jobs": [
+        {
+          "label": "Professionals",
+          "count": 4187
+        },
+        {
+          "label": "Managers",
+          "count": 1471
+        },
+        {
+          "label": "Service and sales workers",
+          "count": 782
+        },
+        {
+          "label": "Technicians and associate professionals",
+          "count": 764
+        },
+        {
+          "label": "Clerical support workers",
+          "count": 367
+        },
+        {
+          "label": "Plant and machine operators, and assemblers",
+          "count": 311
+        },
+        {
+          "label": "Craft and related trades workers",
+          "count": 247
+        },
+        {
+          "label": "Elementary occupations",
+          "count": 50
+        },
+        {
+          "label": "Skilled agricultural, forestry and fishery workers",
+          "count": 3
+        }
+      ],
+      "top_locations": [
+        {
+          "label": "Addis Ababa, Addis Ababa",
+          "count": 7645
+        },
+        {
+          "label": "Job Type Onsite, Region not identified",
+          "count": 755
+        },
+        {
+          "label": "Unspecified",
+          "count": 288
+        },
+        {
+          "label": "NC, Oromia",
+          "count": 287
+        },
+        {
+          "label": "Project Based, Region not identified",
+          "count": 160
+        },
+        {
+          "label": "Adama, Oromia",
+          "count": 158
+        },
+        {
+          "label": "NC, Amhara",
+          "count": 150
+        },
+        {
+          "label": "Bahir Dar, Amhara",
+          "count": 104
+        },
+        {
+          "label": "Mekelle, Tigray",
+          "count": 92
+        },
+        {
+          "label": "NC, Dire Dawa",
+          "count": 82
+        }
+      ],
+      "top_employers": [
+        {
+          "label": "Midroc Construction Ethiopia P.l.c",
+          "count": 95
+        },
+        {
+          "label": "Ethiopian Tourist Trading",
+          "count": 88
+        },
+        {
+          "label": "Medical Teams International",
+          "count": 86
+        },
+        {
+          "label": "Midroc Construction Ethiopia PLC",
+          "count": 78
+        },
+        {
+          "label": "Elhadar Engineering PLC",
+          "count": 65
+        },
+        {
+          "label": "World Vision Ethiopia",
+          "count": 57
+        },
+        {
+          "label": "Love in Action Ethiopia",
+          "count": 56
+        },
+        {
+          "label": "Ethiopian Ministry of Revenues",
+          "count": 55
+        },
+        {
+          "label": "Oromia Broadcasting Network (Obn)",
+          "count": 46
+        },
+        {
+          "label": "British International School",
+          "count": 46
+        }
+      ]
+    }
   }
 ]
