@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-11-12 14:37:29 UTC",
+  "generated_at": "2026-11-13 13:56:12 UTC",
   "stalled_streak_threshold": 3,
   "sources": [
     {
       "source": "EthioJobs",
       "status": "active",
-      "total_runs_logged": 63,
-      "last_run_timestamp_utc": "2026-11-12 14:29:20 UTC",
-      "last_run_new_postings": 119,
+      "total_runs_logged": 64,
+      "last_run_timestamp_utc": "2026-11-13 13:48:57 UTC",
+      "last_run_new_postings": 130,
       "consecutive_zero_new_runs": 0,
-      "new_postings_last_5_runs": 533,
-      "current_total_postings": 4293,
+      "new_postings_last_5_runs": 645,
+      "current_total_postings": 4423,
       "note": ""
     },
     {
       "source": "HaHuJobs",
       "status": "active",
-      "total_runs_logged": 59,
-      "last_run_timestamp_utc": "2026-11-12 14:31:11 UTC",
-      "last_run_new_postings": 166,
+      "total_runs_logged": 60,
+      "last_run_timestamp_utc": "2026-11-13 13:50:49 UTC",
+      "last_run_new_postings": 132,
       "consecutive_zero_new_runs": 0,
-      "new_postings_last_5_runs": 801,
-      "current_total_postings": 6412,
+      "new_postings_last_5_runs": 919,
+      "current_total_postings": 6544,
       "note": ""
     },
     {
@@ -49,35 +49,35 @@
     {
       "source": "DevNetJobs",
       "status": "active",
-      "total_runs_logged": 58,
-      "last_run_timestamp_utc": "2026-11-12 14:31:39 UTC",
+      "total_runs_logged": 59,
+      "last_run_timestamp_utc": "2026-11-13 13:51:15 UTC",
       "last_run_new_postings": 1,
       "consecutive_zero_new_runs": 0,
-      "new_postings_last_5_runs": 3,
-      "current_total_postings": 29,
+      "new_postings_last_5_runs": 4,
+      "current_total_postings": 30,
       "note": ""
     },
     {
       "source": "HarmeeJobs",
-      "status": "active",
-      "total_runs_logged": 58,
-      "last_run_timestamp_utc": "2026-11-12 14:31:47 UTC",
-      "last_run_new_postings": 16,
-      "consecutive_zero_new_runs": 0,
-      "new_postings_last_5_runs": 43,
+      "status": "quiet",
+      "total_runs_logged": 59,
+      "last_run_timestamp_utc": "2026-11-13 13:51:19 UTC",
+      "last_run_new_postings": 0,
+      "consecutive_zero_new_runs": 1,
+      "new_postings_last_5_runs": 42,
       "current_total_postings": 332,
-      "note": ""
+      "note": "The most recent run added no new postings, but this has not yet repeated enough times to call it stalled."
     },
     {
       "source": "ElelanaJobs",
       "status": "stalled",
-      "total_runs_logged": 51,
-      "last_run_timestamp_utc": "2026-11-12 14:31:49 UTC",
+      "total_runs_logged": 52,
+      "last_run_timestamp_utc": "2026-11-13 13:51:22 UTC",
       "last_run_new_postings": 0,
-      "consecutive_zero_new_runs": 16,
+      "consecutive_zero_new_runs": 17,
       "new_postings_last_5_runs": 0,
       "current_total_postings": 19,
-      "note": "No new postings logged across the last 16 consecutive runs. This may reflect a genuinely exhausted source, or a pipeline problem worth investigating directly against the live site."
+      "note": "No new postings logged across the last 17 consecutive runs. This may reflect a genuinely exhausted source, or a pipeline problem worth investigating directly against the live site."
     },
     {
       "source": "KebenaJobs",
@@ -93,63 +93,64 @@
     {
       "source": "Afriworket",
       "status": "active",
-      "total_runs_logged": 51,
-      "last_run_timestamp_utc": "2026-11-12 14:33:57 UTC",
-      "last_run_new_postings": 72,
+      "total_runs_logged": 52,
+      "last_run_timestamp_utc": "2026-11-13 13:52:19 UTC",
+      "last_run_new_postings": 7,
       "consecutive_zero_new_runs": 0,
-      "new_postings_last_5_runs": 302,
-      "current_total_postings": 2552,
+      "new_postings_last_5_runs": 300,
+      "current_total_postings": 2559,
       "note": ""
     },
     {
       "source": "GeezJobs",
       "status": "active",
-      "total_runs_logged": 50,
-      "last_run_timestamp_utc": "2026-11-12 14:34:20 UTC",
+      "total_runs_logged": 51,
+      "last_run_timestamp_utc": "2026-11-13 13:52:45 UTC",
       "last_run_new_postings": 16,
       "consecutive_zero_new_runs": 0,
-      "new_postings_last_5_runs": 59,
-      "current_total_postings": 573,
+      "new_postings_last_5_runs": 75,
+      "current_total_postings": 589,
       "note": ""
     },
     {
       "source": "NGOJobs",
       "status": "active",
-      "total_runs_logged": 45,
-      "last_run_timestamp_utc": "2026-11-12 14:35:28 UTC",
-      "last_run_new_postings": 30,
+      "total_runs_logged": 46,
+      "last_run_timestamp_utc": "2026-11-13 13:53:35 UTC",
+      "last_run_new_postings": 26,
       "consecutive_zero_new_runs": 0,
-      "new_postings_last_5_runs": 121,
-      "current_total_postings": 933,
+      "new_postings_last_5_runs": 134,
+      "current_total_postings": 959,
       "note": ""
     },
     {
       "source": "ReliefWeb",
-      "status": "quiet",
-      "total_runs_logged": 42,
-      "last_run_timestamp_utc": "2026-11-12 14:35:29 UTC",
+      "status": "stalled",
+      "total_runs_logged": 43,
+      "last_run_timestamp_utc": "2026-11-13 13:53:36 UTC",
       "last_run_new_postings": 0,
-      "consecutive_zero_new_runs": 2,
+      "consecutive_zero_new_runs": 3,
       "new_postings_last_5_runs": 1,
       "current_total_postings": 47,
-      "note": "The most recent run added no new postings, but this has not yet repeated enough times to call it stalled."
+      "note": "No new postings logged across the last 3 consecutive runs. This may reflect a genuinely exhausted source, or a pipeline problem worth investigating directly against the live site."
     },
     {
       "source": "GoogleJobs",
       "status": "active",
-      "total_runs_logged": 37,
-      "last_run_timestamp_utc": "2026-11-12 14:35:29 UTC",
-      "last_run_new_postings": 21,
+      "total_runs_logged": 38,
+      "last_run_timestamp_utc": "2026-11-13 13:53:36 UTC",
+      "last_run_new_postings": 13,
       "consecutive_zero_new_runs": 0,
       "new_postings_last_5_runs": 77,
-      "current_total_postings": 926,
+      "current_total_postings": 939,
       "note": ""
     }
   ],
   "summary": {
     "stalled_sources": [
       "ElelanaJobs",
-      "KebenaJobs"
+      "KebenaJobs",
+      "ReliefWeb"
     ],
     "sources_with_no_data_yet": []
   }
