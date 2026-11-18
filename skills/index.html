@@ -225,27 +225,19 @@
     <p class="sub" style="text-transform:uppercase; letter-spacing:0.07em; font-weight:700; font-size:12px; color:var(--navy-soft); margin:0 0 4px;">EthioSkills Intelligence</p>
     <h1>Ethiopia Labour Market Dashboard</h1>
     <p class="sub">Skills, education levels, sectors, job roles and locations in demand. Tracked automatically from live job postings.</p>
-    <p class="sub" style="margin-top:8px;">
-      Weekly Intelligence Report:
-      <a href="./reports/weekly-intelligence-report.html" style="color:var(--navy-soft); font-weight:600; text-decoration:none;">HTML</a>
-      &nbsp;/&nbsp;
-      <a href="./reports/weekly-intelligence-report.pdf" style="color:var(--navy-soft); font-weight:600; text-decoration:none;">PDF</a>
-      &nbsp;&middot;&nbsp;
-      Monthly Intelligence Report:
-      <a href="./reports/monthly-intelligence-report.html" style="color:var(--navy-soft); font-weight:600; text-decoration:none;">HTML</a>
-      &nbsp;/&nbsp;
-      <a href="./reports/monthly-intelligence-report.pdf" style="color:var(--navy-soft); font-weight:600; text-decoration:none;">PDF</a>
-    </p>
   </header>
 
   <div class="tabs" id="tabs"></div>
+  <p class="note" id="windowNote" style="margin:-8px 0 16px;"></p>
   <div class="stat-row" id="statRow"></div>
 
   <div class="panel wide" style="margin-bottom:20px;">
     <h2>Posting Trends Over Time</h2>
     <p class="panel-sub" id="trendsSub">How many new postings were first tracked per period, across the whole history so far.</p>
-    <div class="tabs" id="trendTabs" style="margin:0 0 14px; border-bottom:none; padding-bottom:0;"></div>
+    <div class="tabs" id="trendTabs" style="margin:0 0 8px; border-bottom:none; padding-bottom:0;"></div>
+    <div class="tabs" id="trendMode" style="margin:0 0 14px; border-bottom:none; padding-bottom:0;"></div>
     <div class="chart-holder"><canvas id="trendsChart" height="220"></canvas></div>
+    <p class="note" id="trendsNote"></p>
   </div>
 
   <div class="grid">
@@ -305,7 +297,7 @@
       <div class="chart-holder"><canvas id="googleViaChart" height="220"></canvas></div>
     </div>
     <div class="panel">
-      <h2>Job Sources</h2>
+      <h2>Sources</h2>
       <p class="panel-sub" id="sourcesSub"></p>
       <div class="chart-holder"><canvas id="sourcesChart" height="220"></canvas></div>
       <div class="drilldown" id="sourcesSkills"></div>
@@ -355,7 +347,6 @@
 
   <footer class="page-foot">
     <span id="generatedAt">Loading…</span>
-    <span id="sourceBreakdown">Data from EthioJobs and HaHuJobs, tracked daily</span>
   </footer>
 </div>
 
@@ -379,11 +370,29 @@ let charts = {
 };
 let currentWindow = "monthly";
 let currentTrend = "monthly";
+let trendMode = "perday";   // "perday" (average per day, default) or "total"
+const WINDOW_DAYS = { daily: 1, weekly: 7, monthly: 30, quarterly: 90, yearly: 365 };
+const fmtDate = iso => new Date(iso + "T00:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
+
+function windowNote(key) {
+  const t = payload.tracking;
+  if (key === "all_time") {
+    return t ? `All Time covers every posting collected from ${fmtDate(t.first_date)} to ${fmtDate(t.last_date)} (${t.days} days of tracking).` : "";
+  }
+  const n = WINDOW_DAYS[key];
+  let s = key === "daily" ? "Postings first collected in the last 24 hours." : `Postings first collected in the last ${n} days.`;
+  if (t && t.days < n) {
+    s += ` Tracking began on ${fmtDate(t.first_date)}, so only ${t.days} days of data exist. This view shows everything collected so far, and its total will keep rising until ${n} days have been collected.`;
+  } else if (key === "weekly" || key === "monthly") {
+    s += ` This is a total for the ${n} days, not a daily average, so it is not comparable with the total of a window of a different length. For the change over time, see the trend chart above, which marks incomplete periods.`;
+  }
+  return s;
+}
 
 const TREND_LABELS = { daily: "Day", weekly: "Week", monthly: "Month", yearly: "Year" };
 const TREND_ORDER = ["daily", "weekly", "monthly", "yearly"];
 
-function drawLine(canvasId, key, series) {
+function drawLine(canvasId, key, series, perDay) {
   const ctx = document.getElementById(canvasId);
   const holder = ctx.parentElement;
   if (charts[key]) { charts[key].destroy(); charts[key] = null; }
@@ -404,7 +413,8 @@ function drawLine(canvasId, key, series) {
   ctx.style.display = "block";
 
   const labels = series.map(d => d.period);
-  const values = series.map(d => d.count);
+  const values = series.map(d => perDay ? d.per_day : d.count);
+  const partial = series.map(d => !!d.partial);
 
   charts[key] = new Chart(ctx, {
     type: "line",
@@ -416,8 +426,11 @@ function drawLine(canvasId, key, series) {
         backgroundColor: "rgba(31,59,87,0.08)",
         fill: true,
         tension: 0.25,
-        pointRadius: 3,
-        pointBackgroundColor: NAVY,
+        pointRadius: 4,
+        pointBorderWidth: 2,
+        pointBorderColor: NAVY,
+        pointBackgroundColor: partial.map(p => p ? "#FFFFFF" : NAVY),
+        segment: { borderDash: c => (partial[c.p0DataIndex] || partial[c.p1DataIndex]) ? [6, 5] : undefined },
       }]
     },
     options: {
@@ -429,12 +442,25 @@ function drawLine(canvasId, key, series) {
           backgroundColor: "#20242B",
           padding: 10,
           titleFont: { family: "Source Sans 3" },
-          bodyFont: { family: "Source Sans 3" }
+          bodyFont: { family: "Source Sans 3" },
+          callbacks: {
+            label: c => perDay ? `${c.parsed.y} postings per day` : `${c.parsed.y} postings`,
+            afterLabel: c => {
+              const d = series[c.dataIndex];
+              if (d.days_covered == null) return "";
+              const lines = [];
+              if (perDay) lines.push(`Total ${d.count} over ${d.days_covered} days`);
+              if (d.partial) lines.push(`Incomplete period: ${d.days_covered} of ${d.days_in_period} days covered`);
+              return lines;
+            }
+          }
         }
       },
       scales: {
         x: { grid: { display: false }, border: { display: false }, ticks: { color: INK_SOFT, font: { family: "Source Sans 3", size: 11.5 } } },
-        y: { beginAtZero: true, grid: { color: LINE }, border: { display: false }, ticks: { color: INK, font: { family: "Source Sans 3", size: 11.5 } } }
+        y: { beginAtZero: true, grid: { color: LINE }, border: { display: false },
+             title: { display: true, text: perDay ? "New postings per day" : "New postings", color: INK_SOFT, font: { family: "Source Sans 3", size: 11.5 } },
+             ticks: { color: INK, font: { family: "Source Sans 3", size: 11.5 } } }
       }
     }
   });
@@ -446,7 +472,31 @@ function renderTrends(granularity) {
     btn.classList.toggle("active", btn.dataset.trend === granularity);
   });
   const series = payload.trends ? payload.trends[granularity] : null;
-  drawLine("trendsChart", "trends", series);
+  const isDaily = granularity === "daily";
+  const hasPerDay = !!series && series.length > 0 && series.every(d => d.per_day != null);
+  const perDay = !isDaily && hasPerDay && trendMode === "perday";
+
+  const modeEl = document.getElementById("trendMode");
+  modeEl.style.display = (isDaily || !hasPerDay) ? "none" : "flex";
+  document.querySelectorAll("#trendMode .tab-btn").forEach(btn => {
+    btn.classList.toggle("active", btn.dataset.mode === (perDay ? "perday" : "total"));
+  });
+
+  document.getElementById("trendsSub").textContent = perDay
+    ? "Average number of new postings first tracked per day, in each period, across the whole history so far."
+    : "Total number of new postings first tracked in each period, across the whole history so far.";
+  const note = document.getElementById("trendsNote");
+  const anyPartial = !!series && series.some(d => d.partial);
+  let text = "";
+  if (anyPartial) {
+    text += "Dashed lines and hollow points mark periods that are incomplete: tracking began part-way through them, or they have not finished yet. ";
+    if (!perDay) text += "A total for an unfinished week or month is lower only because fewer days have been counted, so it is not a decline. ";
+    text += "A week or month can be compared with others only once its 7 or 30 days have passed. ";
+  }
+  text += "Counts follow the day a posting was first collected. Some sources are collected in batches, and a newly added source loads its existing postings at once, so single periods can rise or fall for that reason too.";
+  note.textContent = text;
+
+  drawLine("trendsChart", "trends", series, perDay);
 }
 
 function buildTrendTabs() {
@@ -459,6 +509,16 @@ function buildTrendTabs() {
     btn.textContent = "By " + TREND_LABELS[g];
     btn.onclick = () => renderTrends(g);
     el.appendChild(btn);
+  });
+  const modeEl = document.getElementById("trendMode");
+  modeEl.innerHTML = "";
+  [["perday", "Average per day"], ["total", "Total"]].forEach(([m, label]) => {
+    const btn = document.createElement("button");
+    btn.className = "tab-btn";
+    btn.dataset.mode = m;
+    btn.textContent = label;
+    btn.onclick = () => { trendMode = m; renderTrends(currentTrend); };
+    modeEl.appendChild(btn);
   });
 }
 
@@ -762,17 +822,13 @@ function renderWindow(windowKey) {
   const data = payload.windows[windowKey];
   if (!data) return;
 
-  document.querySelectorAll(".tab-btn").forEach(btn => {
+  document.querySelectorAll("#tabs .tab-btn").forEach(btn => {
     btn.classList.toggle("active", btn.dataset.window === windowKey);
   });
 
   renderStatRow(data, windowKey);
 
-  const srcEl = document.getElementById("sourceBreakdown");
-  if (srcEl && data.source_breakdown && data.source_breakdown.length) {
-    srcEl.textContent = "Data from " + data.source_breakdown
-      .map(s => `${s.label} (${s.count})`).join(", ");
-  }
+  document.getElementById("windowNote").textContent = windowNote(windowKey);
 
   hideEduSpecialization();
   hideCriticalSkills("subCatSkills");
