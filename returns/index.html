@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Returns. Do Ethiopian job ads say what the job pays?</title>
+<meta name="description" content="How many Ethiopian job ads give a salary figure, which kinds of jobs are most open about it, and how advertised pay changes with the education a job asks for.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#faf6ef; --card:#fffdf8; --ink:#23201b; --muted:#6b645a; --line:#e6dece; --track:#ebe5d8;
+  --amount:#1f6f6b; --mention:#a3d1cb; --nothing:#ebe5d8;
+  --public:#c4532d; --other:#4a5b6c; --focus:#1f6f6b;
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --sans:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#171511; --card:#1f1c17; --ink:#f1ece2; --muted:#a79f91; --line:#322d25; --track:#2c2820;
+  --amount:#4db3aa; --mention:#2f6560; --nothing:#2c2820;
+  --public:#ec8260; --other:#9db0c3; --focus:#4db3aa; color-scheme:dark;}}
+:root[data-theme="dark"]{
+  --bg:#171511; --card:#1f1c17; --ink:#f1ece2; --muted:#a79f91; --line:#322d25; --track:#2c2820;
+  --amount:#4db3aa; --mention:#2f6560; --nothing:#2c2820;
+  --public:#ec8260; --other:#9db0c3; --focus:#4db3aa; color-scheme:dark;}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 var(--sans);padding-block:0}
+.wrap{max-width:900px;margin:0 auto;padding:0 20px}
+header.top{padding:56px 0 8px}
+.eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:500}
+h1{font:600 clamp(30px,5.4vw,46px)/1.1 var(--serif);margin:10px 0 14px;text-wrap:balance;letter-spacing:-.01em}
+.lead{font-size:18px;color:var(--muted);max-width:60ch;margin:0}
+.meta{font-size:13px;color:var(--muted);margin-top:14px}
+section{padding:44px 0 8px;border-top:1px solid var(--line);margin-top:40px}
+section:first-of-type{border-top:0;margin-top:20px}
+h2{font:600 clamp(22px,3.4vw,28px)/1.2 var(--serif);margin:0 0 8px;text-wrap:balance}
+.sub{color:var(--muted);margin:0 0 22px;max-width:62ch}
+.hero{display:grid;grid-template-columns:auto 1fr;gap:12px 28px;align-items:end}
+.big{font:600 clamp(64px,14vw,120px)/.9 var(--serif);color:var(--amount);font-variant-numeric:lining-nums tabular-nums;letter-spacing:-.03em}
+.big small{font-size:.4em;margin-left:2px}
+.hero p{margin:0 0 6px;font-size:18px;max-width:34ch}
+@media (max-width:620px){.hero{grid-template-columns:1fr}}
+.stack{display:flex;gap:2px;height:30px;margin:26px 0 10px}
+.stack>div{min-width:2px}
+.stack>div:first-child{border-radius:6px 0 0 6px}.stack>div:last-child{border-radius:0 6px 6px 0}
+.legend{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:13.5px;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:7px}
+.sw{width:11px;height:11px;border-radius:3px;display:inline-block;flex:none}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px}
+.tabs button{font:500 14px var(--sans);color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:999px;padding:7px 15px;cursor:pointer}
+.tabs button:hover{border-color:var(--muted)}
+.tabs button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+button:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.row{display:grid;grid-template-columns:minmax(0,210px) minmax(0,1fr) 78px;gap:6px 14px;align-items:center;padding:9px 0;border-bottom:1px solid var(--line)}
+.row .name{font-size:15px;line-height:1.3}
+.row .name.pub{font-weight:600;color:var(--public)}
+.bar{display:flex;gap:2px;height:22px}
+.bar>div{height:100%}
+.bar .a{background:var(--amount);border-radius:5px 0 0 5px}
+.bar .m{background:var(--mention)}
+.bar .z{flex:1;background:var(--nothing);border-radius:0 5px 5px 0}
+.bar.few{opacity:.45}
+.row .val{text-align:right;font-variant-numeric:tabular-nums;line-height:1.25}
+.row .val b{font-weight:600;font-size:16px}
+.row .val i{display:block;font-style:normal;font-size:12px;color:var(--muted)}
+@media (max-width:620px){.row{grid-template-columns:1fr 70px}.row .bar{grid-column:1/-1;order:3}}
+.note{font-size:13px;color:var(--muted);margin:14px 0 0;max-width:70ch}
+.chart{width:100%}
+.chart svg{display:block;width:100%;height:auto;overflow:visible}
+.chart text{font-family:var(--sans)}
+.keyline{display:flex;flex-wrap:wrap;gap:6px 24px;font-size:13.5px;color:var(--muted);margin:0 0 14px}
+.keyline span{display:inline-flex;align-items:center;gap:8px}
+.dot{width:12px;height:12px;border-radius:50%;display:inline-block}
+.takeaways{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin:26px 0 0}
+.tk{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.tk b{display:block;font:600 22px/1.2 var(--serif);margin-bottom:4px}
+.tk span{font-size:14px;color:var(--muted)}
+.stat{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin:22px 0 4px}
+.stat b{font:600 clamp(40px,8vw,60px)/1 var(--serif);color:var(--amount);letter-spacing:-.02em}
+.stat span{font-size:16px;max-width:36ch;line-height:1.35}
+.stat i{font-style:normal;font-size:13px;color:var(--muted);flex-basis:100%}
+.block{margin-top:34px}
+.block h3{font:600 20px/1.25 var(--serif);margin:0 0 6px}
+.panel-title{font:600 16px var(--sans);margin:22px 0 2px}
+.panel-sub{font-size:13px;color:var(--muted);margin:0 0 4px}
+.method{font-size:15px;color:var(--muted);max-width:68ch}
+.method li{margin:0 0 8px}
+footer{border-top:1px solid var(--line);margin-top:56px;padding:22px 0 56px;font-size:13px;color:var(--muted)}
+.sr{position:absolute;left:-9999px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <div class="eyebrow">EthioSkills &middot; Returns</div>
+  <h1>Do Ethiopian job ads say what the job pays?</h1>
+  <p class="lead">Most Ethiopian job ads never say what the job pays. This page counts how many do, which kinds of jobs are most open about it, and how the advertised pay changes with the education a job asks for.</p>
+  <div class="meta" id="meta"></div>
+</header>
+
+<section id="headline" aria-labelledby="h-head">
+  <h2 id="h-head" class="sr">Headline</h2>
+  <div class="hero">
+    <div class="big" id="bigNum" aria-hidden="true"></div>
+    <p id="bigText"></p>
+  </div>
+  <div class="stack" id="stack" role="img" aria-label=""></div>
+  <div class="legend">
+    <span><i class="sw" style="background:var(--amount)"></i>Gives a salary figure</span>
+    <span><i class="sw" style="background:var(--mention)"></i>Only says &ldquo;negotiable&rdquo; or &ldquo;as per scale&rdquo;, no figure</span>
+    <span><i class="sw" style="background:var(--nothing);border:1px solid var(--line)"></i>Says nothing about pay</span>
+  </div>
+</section>
+
+<section id="disclosure" aria-labelledby="h-disc">
+  <h2 id="h-disc">Which kinds of jobs give a salary?</h2>
+  <p class="sub">Each row is one kind of job. The dark part of the bar is the share of its ads that give a real salary figure. The light part is ads that only say &ldquo;negotiable&rdquo; or something similar. The most open kinds of job come first.</p>
+  <div class="tabs" id="tabs" role="group" aria-label="Show job ads by"></div>
+  <div id="rows"></div>
+  <p class="note" id="discNote"></p>
+</section>
+
+<section id="ladder" aria-labelledby="h-lad">
+  <h2 id="h-lad">Does more education mean higher advertised pay?</h2>
+  <p class="sub">These are the typical monthly salaries, in Birr, that ads offer for jobs asking for each level of education. The dot marks the middle salary. The bar around it covers the range where most ads fall. A bigger dot means more ads behind the figure.</p>
+  <div class="keyline" id="ladKey"></div>
+  <div class="chart" id="ladChart"></div>
+  <div class="takeaways" id="ladTake"></div>
+  <p class="note">This shows what employers offer. It does not show what a person gains from studying, because that also depends on what studying costs and whether you find a job afterwards. Few ads give a salary at all, so take these figures as a rough guide.</p>
+</section>
+
+<section id="adjusted" aria-labelledby="h-adj" hidden>
+  <h2 id="h-adj">What changes when we compare like with like?</h2>
+  <p class="sub" id="adjIntro"></p>
+
+  <div class="block">
+    <h3>Education, with experience held the same</h3>
+    <p class="sub" id="eduAdjSub"></p>
+    <div class="keyline"><span><i class="dot" style="background:var(--amount)"></i>After comparing ads that ask for the same experience</span><span><i class="dot" style="background:transparent;border:2px solid var(--muted)"></i>Simple comparison</span></div>
+    <div class="chart" id="eduAdj"></div>
+    <p class="note" id="eduAdjNote"></p>
+  </div>
+
+  <div class="block">
+    <h3>Each extra year of study</h3>
+    <div class="stat" id="schoolStat"></div>
+    <p class="sub" id="schoolSub"></p>
+    <div class="keyline" id="schoolKey"></div>
+    <div class="chart" id="schoolChart"></div>
+  </div>
+
+  <div class="block">
+    <h3>Each extra year of experience</h3>
+    <div class="stat" id="expStat"></div>
+    <p class="sub" id="expSub"></p>
+    <div class="keyline" id="expKey"></div>
+    <div class="chart" id="expChart"></div>
+  </div>
+  <p class="note" id="adjNote"></p>
+</section>
+
+<section id="trend" aria-labelledby="h-tr">
+  <h2 id="h-tr">Is it changing over time?</h2>
+  <p class="sub">Each week, the share of newly found ads that give a salary figure. A dashed line and hollow dots mean we only covered part of that week.</p>
+  <div class="panel-title">Other postings</div>
+  <p class="panel-sub">Private companies, NGOs and other employers</p>
+  <div class="chart" id="trOther"></div>
+  <div class="panel-title">Public sector jobs</div>
+  <p class="panel-sub" id="pubSub"></p>
+  <div class="chart" id="trPub"></div>
+  <p class="note">The two charts use different scales because public sector ads almost always give a salary and other ads rarely do. A week with fewer than 30 ads is left blank, since the share would not be reliable.</p>
+</section>
+
+<section id="method" aria-labelledby="h-me">
+  <h2 id="h-me">Good to know</h2>
+  <ul class="method">
+    <li><b>What counts as a salary figure.</b> An ad counts when it gives a number, such as &ldquo;16,780 Birr monthly&rdquo; or &ldquo;17,001 to 20,000&rdquo;. Ads that only say &ldquo;as per company scale&rdquo; or &ldquo;negotiable&rdquo; are counted on their own and shown in the lighter colour.</li>
+    <li><b>Birr and months.</b> When an ad gives a number with no currency or period, we assume Birr per month. The education chart uses only monthly Birr figures between 1,000 and 300,000 and leaves out other currencies.</li>
+    <li><b>Public sector jobs.</b> These are government job announcements. Their pay follows a fixed salary scale by grade, so almost all of them give a figure. We show them on their own because the government sets that pay by rule and nobody negotiates it.</li>
+    <li><b>Comparing like with like.</b> To compare ads that ask for the same experience, we fit a straight line through the ads, working with percentage differences in pay instead of Birr amounts. Each extra year of study or experience then shows up as a percentage rise. The likely range is the span in which the true figure falls 95 times out of 100.</li>
+    <li><b>Small numbers.</b> We hide a percentage when a row has fewer than 30 ads, and a dot on the education chart when fewer than 10 ads give a figure.</li>
+    <li><b>A partial picture.</b> Employers who give a salary are not typical of all employers. They hire more often for entry level, contract and certificate level jobs. The gaps between groups tell you how jobs get advertised, and only roughly what people earn.</li>
+    <li><b>Where the figures come from.</b> We collect ads every day from Ethiopian job websites and government announcements. An ad that appears on several sites is counted once, and it is dated by the day we first found it.</li>
+  </ul>
+</section>
+<footer>
+  <div id="foot"></div>
+</footer>
+</div>
+
+<script src="returns_data.js"></script>
+<script>
+(function(){
+var D = window.RETURNS_DATA;
+if(!D){document.getElementById("bigText").textContent="Data file not found. Place returns_data.js next to this page.";return;}
+var $ = function(id){return document.getElementById(id)};
+var fmt = function(n){return Math.round(n).toLocaleString("en-US")};
+var P = function(v){return (Math.round(v*10)/10).toFixed(1)+"%"};
+var PUB = D.public_label;
+
+function fmtDate(iso){var d=new Date(iso+"T00:00:00Z");return d.toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric",timeZone:"UTC"});}
+$("meta").textContent = fmt(D.total.n)+" job ads collected, "+fmtDate(D.trend.first_day)+" to "+fmtDate(D.trend.last_day);
+$("foot").textContent = "Data up to "+fmtDate(D.trend.last_day)+". All figures describe advertised pay, which can differ from what people actually earn.";
+
+/* headline */
+var T = D.total;
+$("bigNum").innerHTML = (Math.round(T.pct_amount*10)/10).toFixed(1)+"<small>%</small>";
+$("bigText").textContent = "of the "+fmt(T.n)+" job ads we collected give a salary figure. Another "+P(T.pct_mention)+" only say the pay is negotiable or something similar, and "+P(T.pct_nothing)+" say nothing about pay.";
+var st=$("stack");
+st.setAttribute("aria-label","Of "+fmt(T.n)+" ads, "+P(T.pct_amount)+" give a salary figure, "+P(T.pct_mention)+" only say pay is negotiable or something similar, "+P(T.pct_nothing)+" say nothing.");
+st.innerHTML='<div title="Gives a salary figure, '+fmt(T.amount)+' ads" style="width:'+T.pct_amount+'%;background:var(--amount)"></div><div title="Only says negotiable or similar, '+fmt(T.mention)+' ads" style="width:'+T.pct_mention+'%;background:var(--mention)"></div><div title="Says nothing, '+fmt(T.nothing)+' ads" style="flex:1;background:var(--nothing)"></div>';
+
+/* disclosure by group */
+var dims = [["Industry","ISIC sector"],["Type of work","ISCO occupation group"],["Education asked","Education level"],["Seniority","Career level"],["Who is hiring","Employer type"]];
+var NICE = {
+ "Wholesale and retail trade":"Shops and trade","Transportation and storage":"Transport and storage",
+ "Accommodation and food service activities":"Hotels and restaurants","Human health and social work activities":"Health and social care",
+ "Administrative and support service activities":"Office and support services","Professional, scientific and technical activities":"Professional and technical services",
+ "Public administration and defence":"Government and defence","Financial and insurance activities":"Banking and insurance",
+ "Information and communication":"IT and communication","Agriculture, forestry and fishing":"Farming, forestry and fishing",
+ "Activities of extraterritorial organizations and bodies":"International organisations",
+ "Professionals":"Professionals (engineers, doctors, accountants)","Technicians and associate professionals":"Technicians and assistants",
+ "Service and sales workers":"Service and sales staff","Clerical support workers":"Office clerks",
+ "Plant and machine operators, and assemblers":"Machine operators and drivers","Craft and related trades workers":"Skilled trades (builders, mechanics)",
+ "Elementary occupations":"Basic manual jobs (cleaners, labourers)","Skilled agricultural, forestry and fishery workers":"Skilled farm workers",
+ "TVET":"Vocational training (TVET)","Not required":"No education required","High school":"High school","Entry":"Entry level",
+ "Junior":"Junior","Mid":"Mid level","Senior":"Senior","Executive":"Executive","Expert":"Expert","NGO":"NGOs and charities","Private":"Private companies"
+};
+var nice=function(g){return NICE[g]||g;};
+var cur = 0;
+function drawDisc(){
+  var d = D.disclosure[dims[cur][1]];
+  var tiny=d.rows.filter(function(r){return r.n<10});
+  var rows = d.rows.filter(function(r){return r.n>=10}).sort(function(a,b){
+    if(a.few!==b.few) return a.few?1:-1;
+    return (b.amount||0)-(a.amount||0);
+  });
+  var h="";
+  rows.forEach(function(r){
+    var pub = r.group===PUB;
+    var a=r.few?0:r.amount, m=r.few?0:r.mention;
+    h+='<div class="row"><div class="name'+(pub?' pub':'')+'">'+nice(r.group)+'</div>'+
+       '<div class="bar'+(r.few?' few':'')+'" role="img" aria-label="'+nice(r.group)+', '+(r.few?'too few ads to show':P(r.amount)+' give a salary figure')+'">'+
+       (r.few?'<div class="z" style="border-radius:5px"></div>':'<div class="a" style="width:'+a+'%;min-width:'+(a>0?3:0)+'px" title="Gives a salary figure"></div><div class="m" style="width:'+m+'%" title="Only says negotiable or similar"></div><div class="z"></div>')+
+       '</div><div class="val">'+(r.few?'<b>few</b>':'<b>'+P(r.amount)+'</b>')+'<i>'+fmt(r.n)+' ads</i></div></div>';
+  });
+  $("rows").innerHTML=h;
+  var note="The percentage is the share of ads that give a salary figure. The small number under it is how many ads we counted in that row.";
+  var left=d.unclassified+tiny.reduce(function(s,r){return s+r.n},0);
+  if(left>0) note+=" "+fmt(left)+" ads are left out here because we could not tell which group they belong to, or the group has fewer than 10 ads.";
+  if(rows.some(function(r){return r.few})) note+=" Rows with fewer than "+D.min_base+" ads are faded and show no percentage, because it would not be reliable.";
+  $("discNote").textContent=note;
+  var btns=document.querySelectorAll("#tabs button");
+  btns.forEach(function(b,i){b.setAttribute("aria-pressed",i===cur?"true":"false")});
+}
+var tb="";
+dims.forEach(function(x,i){tb+='<button type="button" data-i="'+i+'" aria-pressed="false">'+x[0]+'</button>'});
+$("tabs").innerHTML=tb;
+$("tabs").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;cur=+b.dataset.i;drawDisc();});
+drawDisc();
+
+/* pay ladder */
+var NS="http://www.w3.org/2000/svg";
+function el(n,a,txt){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);if(txt!=null)e.textContent=txt;return e;}
+function css(v){return getComputedStyle(document.documentElement).getPropertyValue(v).trim();}
+var EDU=["Certificate","Diploma","Bachelor's","Master's","PhD"];
+function ladderData(){var m={};D.ladder.forEach(function(r){m[r.group+"|"+r.education]=r;});return m;}
+function drawLadder(){
+  var box=$("ladChart"); box.innerHTML="";
+  var W=Math.max(300,box.clientWidth), narrow=W<560;
+  var L=narrow?78:104, R=narrow?44:120, top=26, rowH=narrow?72:68, H=top+EDU.length*rowH+34;
+  var data=ladderData();
+  var maxv=0; D.ladder.forEach(function(r){if(r.p75)maxv=Math.max(maxv,r.p75)});
+  var step=maxv>60000?20000:10000; var xmax=Math.ceil(maxv/step)*step;
+  var x=function(v){return L+(W-L-R)*v/xmax};
+  var svg=el("svg",{viewBox:"0 0 "+W+" "+H,role:"img","aria-label":"Typical advertised monthly pay in Birr for each education level, for public sector jobs and other job ads"});
+  var ink=css("--ink"),muted=css("--muted"),line=css("--line");
+  for(var v=0;v<=xmax;v+=step){
+    svg.appendChild(el("line",{x1:x(v),x2:x(v),y1:top-6,y2:H-30,stroke:line,"stroke-width":1}));
+    svg.appendChild(el("text",{x:x(v),y:H-10,"text-anchor":"middle","font-size":12,fill:muted},v===0?"0":(v/1000)+"k"));
+  }
+  svg.appendChild(el("text",{x:L,y:12,"font-size":12,fill:muted},"Birr per month"));
+  var groups=[[PUB,css("--public"),-12],["Other postings",css("--other"),12]];
+  EDU.forEach(function(e,i){
+    var cy=top+rowH*i+rowH/2;
+    svg.appendChild(el("text",{x:0,y:cy+4,"font-size":14,fill:ink,"font-weight":500},e));
+    groups.forEach(function(g){
+      var r=data[g[0]+"|"+e]; var y=cy+g[2];
+      if(!r||r.median==null){
+        svg.appendChild(el("text",{x:L+6,y:y+4,"font-size":12,fill:muted,"font-style":"italic"},r?("too few ads ("+r.n+")"):"no ads with a figure"));
+        return;
+      }
+      var rad=Math.max(5,Math.min(13,3+Math.sqrt(r.n)*0.9));
+      svg.appendChild(el("line",{x1:x(r.p25),x2:x(r.p75),y1:y,y2:y,stroke:g[1],"stroke-width":6,"stroke-linecap":"round",opacity:.35}));
+      var c=el("circle",{cx:x(r.median),cy:y,r:rad,fill:g[1],stroke:css("--bg"),"stroke-width":2});
+      c.appendChild(el("title",{},g[0]+", "+e+", typical salary "+fmt(r.median)+" Birr a month, most ads between "+fmt(r.p25)+" and "+fmt(r.p75)+", from "+r.n+" ads"));
+      svg.appendChild(c);
+      var lab=narrow?(r.median/1000).toFixed(1)+"k":fmt(r.median);
+      svg.appendChild(el("text",{x:x(r.p75)+10,y:y+4,"font-size":12.5,fill:ink,"font-weight":600},lab+(narrow?"":"  ")));
+      if(!narrow) svg.appendChild(el("text",{x:x(r.p75)+10+lab.length*7.4+8,y:y+4,"font-size":12,fill:muted},r.n+" ads"));
+    });
+  });
+  box.appendChild(svg);
+}
+$("ladKey").innerHTML='<span><i class="dot" style="background:var(--public)"></i>'+PUB+' (government salary scale)</span><span><i class="dot" style="background:var(--other)"></i>Other job ads</span><span>Bigger dot = more ads</span>';
+function takeaways(){
+  var data=ladderData(),h="";
+  var pairs=[["Bachelor's","Certificate"],["Master's","Bachelor's"]];
+  [[PUB,"--public"],["Other postings","--other"]].forEach(function(g){
+    pairs.forEach(function(p){
+      var a=data[g[0]+"|"+p[0]],b=data[g[0]+"|"+p[1]];
+      if(!a||!b||a.median==null||b.median==null)return;
+      var pct=Math.round((a.median/b.median-1)*100);
+      var who=g[0]===PUB?"In public sector jobs":"In other job ads";
+      h+='<div class="tk" style="border-top:3px solid var('+g[1]+')"><b>+'+pct+'%</b><span>'+who+', ads asking for a '+p[0]+(p[0]==="Certificate"?"":" degree")+' offer about '+pct+'% more than ads asking for a '+p[1]+(p[1]==="Certificate"?"":" degree")+'.</span></div>';
+    });
+  });
+  $("ladTake").innerHTML=h;
+}
+takeaways();
+
+/* weekly trend */
+function drawTrend(boxId,key,color,ymaxFixed){
+  var box=$(boxId); box.innerHTML="";
+  var W=Math.max(300,box.clientWidth), H=210, L=40, R=16, top=14, B=34;
+  var weeks=D.trend.weeks, n=weeks.length;
+  var pts=weeks.map(function(w,i){return {i:i,w:w,v:w[key].pct,n:w[key].n};});
+  var vals=pts.filter(function(p){return p.v!=null}).map(function(p){return p.v});
+  var ymax=ymaxFixed||Math.max(5,Math.ceil(Math.max.apply(null,vals.length?vals:[5])*1.25));
+  var x=function(i){return L+(W-L-R)*(n>1?i/(n-1):0)};
+  var y=function(v){return top+(H-top-B)*(1-v/ymax)};
+  var svg=el("svg",{viewBox:"0 0 "+W+" "+H,role:"img","aria-label":"Weekly share of ads giving a salary figure, "+key});
+  var muted=css("--muted"),line=css("--line"),bg=css("--bg");
+  var ticks=4;
+  for(var t=0;t<=ticks;t++){var v=ymax*t/ticks;
+    svg.appendChild(el("line",{x1:L,x2:W-R,y1:y(v),y2:y(v),stroke:line,"stroke-width":1}));
+    svg.appendChild(el("text",{x:L-8,y:y(v)+4,"text-anchor":"end","font-size":12,fill:muted},(Math.round(v*10)/10)+"%"));
+  }
+  var skip=n>7?2:1;
+  pts.forEach(function(p){
+    if(p.i%skip!==0&&p.i!==n-1)return;
+    var d=new Date(p.w.week+"T00:00:00Z");
+    svg.appendChild(el("text",{x:x(p.i),y:H-12,"text-anchor":"middle","font-size":12,fill:muted},d.toLocaleDateString("en-GB",{day:"numeric",month:"short",timeZone:"UTC"})));
+  });
+  for(var i=1;i<n;i++){
+    var a=pts[i-1],b=pts[i]; if(a.v==null||b.v==null)continue;
+    var dash=(a.w.partial||b.w.partial);
+    svg.appendChild(el("line",{x1:x(a.i),y1:y(a.v),x2:x(b.i),y2:y(b.v),stroke:color,"stroke-width":2.5,"stroke-linecap":"round","stroke-dasharray":dash?"5 5":"none"}));
+  }
+  pts.forEach(function(p){
+    if(p.v==null)return;
+    var c=el("circle",{cx:x(p.i),cy:y(p.v),r:5,fill:p.w.partial?bg:color,stroke:color,"stroke-width":2});
+    c.appendChild(el("title",{},"Week of "+fmtDate(p.w.week)+", "+P(p.v)+" of "+fmt(p.n)+" ads give a salary."+(p.w.partial?" We only covered "+p.w.days_covered+" days of that week.":"")));
+    svg.appendChild(c);
+    svg.appendChild(el("text",{x:x(p.i)+(p.i===0?-4:(p.i===n-1?4:0)),y:y(p.v)-11,"text-anchor":(p.i===0?"start":(p.i===n-1?"end":"middle")),"font-size":12,"font-weight":600,fill:color},P(p.v)));
+  });
+  if(!vals.length) svg.appendChild(el("text",{x:W/2,y:H/2,"text-anchor":"middle","font-size":13,fill:muted},"Not enough ads yet"));
+  box.appendChild(svg);
+}
+(function(){
+  var first=D.trend.weeks.filter(function(w){return w[PUB].pct!=null})[0];
+  $("pubSub").textContent=first?("We started collecting these in the week of "+fmtDate(first.week)+", so there are only "+D.trend.weeks.filter(function(w){return w[PUB].pct!=null}).length+" weeks so far"):"Not enough weekly data yet";
+})();
+
+
+/* like-with-like section */
+var A = D.adjusted;
+function drawEduAdj(){
+  var box=$("eduAdj"); box.innerHTML="";
+  var rows=A.education, W=Math.max(300,box.clientWidth), narrow=W<560;
+  var L=narrow?78:104, R=34, top=24, rowH=56, H=top+rows.length*rowH+30;
+  var maxv=0; rows.forEach(function(r){maxv=Math.max(maxv,r.hi,r.raw)});
+  var step=maxv>250?100:50, xmax=Math.ceil(maxv/step)*step;
+  var x=function(v){return L+(W-L-R)*v/xmax};
+  var svg=el("svg",{viewBox:"0 0 "+W+" "+H,role:"img","aria-label":"How much more advertised pay each education level offers than "+A.base_education+", before and after comparing ads that ask for the same experience"});
+  var ink=css("--ink"),muted=css("--muted"),line=css("--line"),amt=css("--amount"),bg=css("--bg");
+  for(var v=0;v<=xmax;v+=step){
+    svg.appendChild(el("line",{x1:x(v),x2:x(v),y1:top-6,y2:H-26,stroke:line,"stroke-width":1}));
+    svg.appendChild(el("text",{x:x(v),y:H-8,"text-anchor":"middle","font-size":12,fill:muted},"+"+v+"%"));
+  }
+  svg.appendChild(el("text",{x:L,y:12,"font-size":12,fill:muted},"More pay than a "+A.base_education+" job"));
+  rows.forEach(function(r,i){
+    var cy=top+rowH*i+rowH/2;
+    svg.appendChild(el("text",{x:0,y:cy+4,"font-size":14,fill:ink,"font-weight":500},r.education));
+    svg.appendChild(el("text",{x:0,y:cy+20,"font-size":11.5,fill:muted},r.n+" ads"));
+    svg.appendChild(el("line",{x1:x(r.lo),x2:x(r.hi),y1:cy,y2:cy,stroke:amt,"stroke-width":6,"stroke-linecap":"round",opacity:.3}));
+    var h=el("circle",{cx:x(r.raw),cy:cy,r:7,fill:bg,stroke:muted,"stroke-width":2});
+    h.appendChild(el("title",{},r.education+", simple comparison, "+Math.round(r.raw)+"% more than "+A.base_education));
+    svg.appendChild(h);
+    var c=el("circle",{cx:x(r.adjusted),cy:cy,r:8,fill:amt,stroke:bg,"stroke-width":2});
+    c.appendChild(el("title",{},r.education+", comparing ads that ask for the same experience, "+Math.round(r.adjusted)+"% more than "+A.base_education+", likely range "+Math.round(r.lo)+"% to "+Math.round(r.hi)+"%"));
+    svg.appendChild(c);
+    svg.appendChild(el("text",{x:x(r.adjusted),y:cy-14,"text-anchor":"middle","font-size":13,"font-weight":600,fill:ink},"+"+Math.round(r.adjusted)+"%"));
+  });
+  box.appendChild(svg);
+}
+function drawCurve(boxId,spec,xlabel,subLabels){
+  var box=$(boxId); box.innerHTML="";
+  var W=Math.max(300,box.clientWidth), H=290, L=46, R=24, top=16, B=subLabels?58:40;
+  var xs=spec.x, n=xs.length;
+  var keys=[PUB,"Other postings"], cols=[css("--public"),css("--other")];
+  var maxv=0; keys.forEach(function(k){spec.lines[k].hi.forEach(function(v){maxv=Math.max(maxv,v)})});
+  var step=maxv>60000?20000:(maxv>30000?10000:5000), ymax=Math.ceil(maxv/step)*step;
+  var x=function(i){return L+(W-L-R)*(n>1?i/(n-1):0)};
+  var y=function(v){return top+(H-top-B)*(1-v/ymax)};
+  var svg=el("svg",{viewBox:"0 0 "+W+" "+H,role:"img","aria-label":"Advertised monthly pay in Birr by "+xlabel+", for public sector jobs and other ads"});
+  var muted=css("--muted"),line=css("--line"),ink=css("--ink");
+  for(var v=0;v<=ymax;v+=step){
+    svg.appendChild(el("line",{x1:L,x2:W-R,y1:y(v),y2:y(v),stroke:line,"stroke-width":1}));
+    svg.appendChild(el("text",{x:L-8,y:y(v)+4,"text-anchor":"end","font-size":12,fill:muted},v===0?"0":(v/1000)+"k"));
+  }
+  xs.forEach(function(v,i){
+    var skip=n>8?2:1; if(i%skip!==0&&i!==n-1)return;
+    svg.appendChild(el("text",{x:x(i),y:H-(subLabels?34:14),"text-anchor":"middle","font-size":12,fill:muted},String(v)));
+    if(subLabels&&subLabels[v]) svg.appendChild(el("text",{x:x(i),y:H-18,"text-anchor":"middle","font-size":11,fill:ink,"font-weight":500},subLabels[v]));
+  });
+  svg.appendChild(el("text",{x:(L+W-R)/2,y:H-2,"text-anchor":"middle","font-size":12,fill:muted},xlabel));
+  keys.forEach(function(k,j){
+    var s=spec.lines[k], pts=[], back=[];
+    s.hi.forEach(function(v,i){pts.push(x(i)+","+y(v))});
+    for(var i=n-1;i>=0;i--)back.push(x(i)+","+y(s.lo[i]));
+    svg.appendChild(el("polygon",{points:pts.concat(back).join(" "),fill:cols[j],opacity:.14}));
+    var d="";s.y.forEach(function(v,i){d+=(i?"L":"M")+x(i)+" "+y(v)});
+    svg.appendChild(el("path",{d:d,fill:"none",stroke:cols[j],"stroke-width":2.5,"stroke-linecap":"round","stroke-linejoin":"round"}));
+    s.y.forEach(function(v,i){
+      var c=el("circle",{cx:x(i),cy:y(v),r:3.5,fill:cols[j]});
+      c.appendChild(el("title",{},k+", "+xlabel+" "+xs[i]+", about "+fmt(v)+" Birr a month, likely range "+fmt(s.lo[i])+" to "+fmt(s.hi[i])));
+      svg.appendChild(c);
+    });
+    var last=n-1;
+    svg.appendChild(el("text",{x:x(last),y:y(s.y[last])+(j===0?18:-10),"text-anchor":"end","font-size":12.5,"font-weight":600,fill:cols[j]},fmt(s.y[last])));
+    svg.appendChild(el("text",{x:x(0),y:y(s.y[0])+(j===0?18:-10),"text-anchor":"start","font-size":12.5,"font-weight":600,fill:cols[j]},fmt(s.y[0])));
+  });
+  box.appendChild(svg);
+}
+function lineKey(id){
+  $(id).innerHTML='<span><i class="dot" style="background:var(--public)"></i>'+PUB+'</span><span><i class="dot" style="background:var(--other)"></i>Other job ads</span><span>The shaded area is the likely range</span>';
+}
+function drawAdj(){drawEduAdj();
+  var lv={};Object.keys(A.years_map).forEach(function(k){lv[A.years_map[k]]=k});
+  drawCurve("schoolChart",A.school,"years of study",lv);
+  drawCurve("expChart",A.experience,"years of experience the ad asks for",null);}
+if(A){
+  $("adjusted").hidden=false;
+  var rng=function(o){return Math.round(o.lo)+"% to "+Math.round(o.hi)+"%"};
+  $("adjIntro").textContent="Jobs that ask for more education often ask for more experience too, so the education chart above mixes the two. Here we compare ads that ask for the same experience, and ads from the same group, either public sector or other. Only "+fmt(A.n)+" ads give a salary together with the education and experience they ask for, so take these as rough guides.";
+  $("eduAdjSub").textContent="How much more pay each level of education offers than a "+A.base_education+" job. The hollow mark is the simple comparison. The filled mark comes from comparing ads that ask for the same experience, and the line shows the likely range. A longer line means we are less sure.";
+  $("eduAdjNote").textContent="PhD is left out because only a handful of ads with a salary ask for it. The Master's range is wide because only "+(A.education.filter(function(r){return r.education==="Master's"})[0]||{n:"a few"}).n+" ads sit behind it.";
+  $("schoolStat").innerHTML='<b>+'+Math.round(A.school.pct)+'%</b><span>more pay for each extra year of study</span><i>Likely range '+rng(A.school)+'</i>';
+  var ym=A.years_map, ymTxt=Object.keys(ym).map(function(k){return k+" "+ym[k]}).join(", ");
+  $("schoolSub").textContent="Advertised monthly pay for ads that ask for "+A.school.at_experience+" years of experience, by years of study counted from the first year of primary school. We count "+ymTxt+" years. Programmes differ in length, so treat these years as approximate.";
+  lineKey("schoolKey");
+  $("expStat").innerHTML='<b>+'+Math.round(A.experience.pct)+'%</b><span>more pay for each extra year of experience the ad asks for</span><i>Likely range '+rng(A.experience)+'</i>';
+  $("expSub").textContent="Advertised monthly pay for ads that ask for a "+A.experience.at_education+" degree, by the years of experience they ask for.";
+  lineKey("expKey");
+  $("adjNote").textContent="Public sector jobs advertise about "+Math.abs(Math.round(A.public_gap))+"% less than other ads that ask for the same education and experience. These figures describe ads. They show how pay and requirements go together, and they do not prove that one more year of study causes the pay rise.";
+}
+
+function drawAll(){drawLadder();if(A)drawAdj();drawTrend("trOther","Other postings",css("--other"));drawTrend("trPub",PUB,css("--public"),100);}
+drawAll();
+var rt;window.addEventListener("resize",function(){clearTimeout(rt);rt=setTimeout(drawAll,120);});
+if(window.matchMedia){var mq=window.matchMedia("(prefers-color-scheme: dark)");(mq.addEventListener?mq.addEventListener.bind(mq,"change"):function(){})(drawAll);}
+})();
+</script>
+</body>
+</html>
