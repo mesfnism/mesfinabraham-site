@@ -25001,5 +25001,454 @@
         }
       ]
     }
+  },
+  {
+    "date": "2026-11-25",
+    "weekly": {
+      "posting_count": 2304,
+      "coverage": {
+        "education": {
+          "known": 982,
+          "total": 2304
+        },
+        "experience": {
+          "known": 1364,
+          "total": 2304
+        },
+        "salary": {
+          "known": 133,
+          "total": 2304
+        },
+        "employer_type": {
+          "known": 813,
+          "total": 2304
+        }
+      },
+      "top_skills": [
+        {
+          "label": "Communication",
+          "count": 316
+        },
+        {
+          "label": "Accounting",
+          "count": 117
+        },
+        {
+          "label": "Attention to detail",
+          "count": 112
+        },
+        {
+          "label": "Problem solving",
+          "count": 103
+        },
+        {
+          "label": "Adaptability",
+          "count": 67
+        },
+        {
+          "label": "Decision-making",
+          "count": 46
+        },
+        {
+          "label": "Office",
+          "count": 37
+        },
+        {
+          "label": "Teamwork",
+          "count": 33
+        },
+        {
+          "label": "Leadership",
+          "count": 29
+        },
+        {
+          "label": "Computer literacy",
+          "count": 29
+        }
+      ],
+      "top_categories": [
+        {
+          "label": "Professional, scientific and technical activities",
+          "count": 558
+        },
+        {
+          "label": "Financial and insurance activities",
+          "count": 232
+        },
+        {
+          "label": "Human health and social work activities",
+          "count": 149
+        },
+        {
+          "label": "Wholesale and retail trade",
+          "count": 109
+        },
+        {
+          "label": "Public administration and defence",
+          "count": 100
+        },
+        {
+          "label": "Transportation and storage",
+          "count": 88
+        },
+        {
+          "label": "Information and communication",
+          "count": 62
+        },
+        {
+          "label": "Administrative and support service activities",
+          "count": 59
+        },
+        {
+          "label": "Construction",
+          "count": 57
+        },
+        {
+          "label": "Manufacturing",
+          "count": 46
+        }
+      ],
+      "top_jobs": [
+        {
+          "label": "Professionals",
+          "count": 755
+        },
+        {
+          "label": "Managers",
+          "count": 272
+        },
+        {
+          "label": "Service and sales workers",
+          "count": 204
+        },
+        {
+          "label": "Technicians and associate professionals",
+          "count": 172
+        },
+        {
+          "label": "Clerical support workers",
+          "count": 66
+        },
+        {
+          "label": "Craft and related trades workers",
+          "count": 46
+        },
+        {
+          "label": "Plant and machine operators, and assemblers",
+          "count": 25
+        },
+        {
+          "label": "Elementary occupations",
+          "count": 5
+        }
+      ],
+      "top_locations": [
+        {
+          "label": "Addis Ababa, Addis Ababa",
+          "count": 1280
+        },
+        {
+          "label": "Job Type On Site, Region not identified",
+          "count": 443
+        },
+        {
+          "label": "Unspecified",
+          "count": 80
+        },
+        {
+          "label": "NC, Oromia",
+          "count": 72
+        },
+        {
+          "label": "NC, Amhara",
+          "count": 31
+        },
+        {
+          "label": "NC, Dire Dawa",
+          "count": 24
+        },
+        {
+          "label": "Adama, Oromia",
+          "count": 24
+        },
+        {
+          "label": "NC, Tigray",
+          "count": 20
+        },
+        {
+          "label": "Full Time, Region not identified",
+          "count": 18
+        },
+        {
+          "label": "Bahir Dar, Amhara",
+          "count": 15
+        }
+      ],
+      "top_employers": [
+        {
+          "label": "Medical Teams International",
+          "count": 36
+        },
+        {
+          "label": "El-hadar Engineering PLC",
+          "count": 35
+        },
+        {
+          "label": "World Vision Ethiopia",
+          "count": 32
+        },
+        {
+          "label": "Tacon PLC Sarl",
+          "count": 26
+        },
+        {
+          "label": "Sos Children's Villages in Ethiopia",
+          "count": 20
+        },
+        {
+          "label": "Adama Investment Group",
+          "count": 20
+        },
+        {
+          "label": "\u1260\u1308\u1262\u12ce\u127d \u121a\u1292\u1235\u1274\u122d \u1218\u12ab\u12a8\u1208\u129b \u130d\u1265\u122d \u12a8\u134b\u12ee\u127d \u1241\u1325\u122d 2 \u1245\u122d\u1295\u132b\u134d \u133d/\u1264\u1275",
+          "count": 19
+        },
+        {
+          "label": "Chilalo Food Complex",
+          "count": 18
+        },
+        {
+          "label": "Ethiopian Construction Works Corporation",
+          "count": 18
+        },
+        {
+          "label": "Amg Holdings PLC",
+          "count": 17
+        }
+      ]
+    },
+    "monthly": {
+      "posting_count": 10923,
+      "coverage": {
+        "education": {
+          "known": 4429,
+          "total": 10923
+        },
+        "experience": {
+          "known": 6925,
+          "total": 10923
+        },
+        "salary": {
+          "known": 575,
+          "total": 10923
+        },
+        "employer_type": {
+          "known": 4474,
+          "total": 10923
+        }
+      },
+      "top_skills": [
+        {
+          "label": "Communication",
+          "count": 1867
+        },
+        {
+          "label": "Attention to detail",
+          "count": 1083
+        },
+        {
+          "label": "Problem solving",
+          "count": 776
+        },
+        {
+          "label": "Time management",
+          "count": 473
+        },
+        {
+          "label": "Accounting",
+          "count": 463
+        },
+        {
+          "label": "Decision-making",
+          "count": 272
+        },
+        {
+          "label": "Teamwork",
+          "count": 194
+        },
+        {
+          "label": "Adaptability",
+          "count": 193
+        },
+        {
+          "label": "Office",
+          "count": 183
+        },
+        {
+          "label": "Technical Knowledge",
+          "count": 183
+        }
+      ],
+      "top_categories": [
+        {
+          "label": "Professional, scientific and technical activities",
+          "count": 2595
+        },
+        {
+          "label": "Financial and insurance activities",
+          "count": 1184
+        },
+        {
+          "label": "Human health and social work activities",
+          "count": 647
+        },
+        {
+          "label": "Transportation and storage",
+          "count": 558
+        },
+        {
+          "label": "Public administration and defence",
+          "count": 532
+        },
+        {
+          "label": "Construction",
+          "count": 438
+        },
+        {
+          "label": "Wholesale and retail trade",
+          "count": 432
+        },
+        {
+          "label": "Information and communication",
+          "count": 387
+        },
+        {
+          "label": "Manufacturing",
+          "count": 382
+        },
+        {
+          "label": "Education",
+          "count": 366
+        }
+      ],
+      "top_jobs": [
+        {
+          "label": "Professionals",
+          "count": 3664
+        },
+        {
+          "label": "Managers",
+          "count": 1310
+        },
+        {
+          "label": "Service and sales workers",
+          "count": 931
+        },
+        {
+          "label": "Technicians and associate professionals",
+          "count": 745
+        },
+        {
+          "label": "Clerical support workers",
+          "count": 292
+        },
+        {
+          "label": "Plant and machine operators, and assemblers",
+          "count": 228
+        },
+        {
+          "label": "Craft and related trades workers",
+          "count": 211
+        },
+        {
+          "label": "Elementary occupations",
+          "count": 45
+        }
+      ],
+      "top_locations": [
+        {
+          "label": "Addis Ababa, Addis Ababa",
+          "count": 6514
+        },
+        {
+          "label": "Job Type Onsite, Region not identified",
+          "count": 1163
+        },
+        {
+          "label": "Job Type On Site, Region not identified",
+          "count": 443
+        },
+        {
+          "label": "NC, Oromia",
+          "count": 354
+        },
+        {
+          "label": "Unspecified",
+          "count": 303
+        },
+        {
+          "label": "Adama, Oromia",
+          "count": 132
+        },
+        {
+          "label": "NC, Amhara",
+          "count": 118
+        },
+        {
+          "label": "Full Time, Region not identified",
+          "count": 102
+        },
+        {
+          "label": "NC, Dire Dawa",
+          "count": 82
+        },
+        {
+          "label": "Hawassa, Sidama",
+          "count": 74
+        }
+      ],
+      "top_employers": [
+        {
+          "label": "Medical Teams International",
+          "count": 99
+        },
+        {
+          "label": "Ethiopian Tourist Trading",
+          "count": 86
+        },
+        {
+          "label": "Midroc Construction Ethiopia P.l.c",
+          "count": 63
+        },
+        {
+          "label": "Amg Holdings",
+          "count": 58
+        },
+        {
+          "label": "World Vision Ethiopia",
+          "count": 57
+        },
+        {
+          "label": "Ethiopian Ministry of Revenues",
+          "count": 55
+        },
+        {
+          "label": "Canonical",
+          "count": 49
+        },
+        {
+          "label": "Midroc Construction Ethiopia PLC",
+          "count": 46
+        },
+        {
+          "label": "Tacon PLC Sarl",
+          "count": 44
+        },
+        {
+          "label": "Nigat Global Initiative (Ngi)",
+          "count": 44
+        }
+      ]
+    }
   }
 ]
